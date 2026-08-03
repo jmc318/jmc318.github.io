@@ -1,6 +1,6 @@
 const STORAGE_KEY = 'beachWeatherLocations';
 const CACHE_PREFIX = 'beachWeatherCache_';
-const CACHE_VERSION = 14;
+const CACHE_VERSION = 15;
 const CACHE_MAX_AGE_MS = 30 * 60 * 1000;
 const STEP_HOURS = 3;
 const TIMELINE_STEPS = 56; // 7 days at 3-hour resolution
@@ -487,7 +487,8 @@ function renderPanelContent(panelEl, loc, data) {
   const { periods, updated, timeline } = data;
   const updatedStr = updated ? new Date(updated).toLocaleString([], { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) : '';
 
-  const cardsHtml = periods.slice(0, 14).map(p => {
+  const fcardHtml = p => {
+    if (!p) return `<div class="fcard fcard-empty"></div>`;
     const pct = (p.probabilityOfPrecipitation && p.probabilityOfPrecipitation.value) || 0;
     const precipLines = [];
     if (pct > 0) precipLines.push(`${pct}% rain`);
@@ -499,7 +500,23 @@ function renderPanelContent(panelEl, loc, data) {
       <div class="precip">${precipLines.join('<br>')}</div>
       <div class="wind">${escapeHtml(p.windDirection || '')} ${escapeHtml(p.windSpeed || '')}</div>
     </div>`;
-  }).join('');
+  };
+
+  // Group periods by calendar date so each column pairs the same day's
+  // daytime/nighttime cards top/bottom — the raw NOAA list can start on an
+  // unpaired "Tonight" period (when fetched overnight), which would otherwise
+  // shift every later pair by one and mismatch days across the two grid rows.
+  const dayColumns = new Map();
+  periods.slice(0, 14).forEach(p => {
+    const d = new Date(p.startTime);
+    const key = `${d.getFullYear()}-${d.getMonth()}-${d.getDate()}`;
+    if (!dayColumns.has(key)) dayColumns.set(key, {});
+    dayColumns.get(key)[p.isDaytime ? 'day' : 'night'] = p;
+  });
+
+  const cardsHtml = Array.from(dayColumns.values())
+    .map(({ day, night }) => fcardHtml(day) + fcardHtml(night))
+    .join('');
 
   const detailHtml = periods.slice(0, 6).map(p => `
     <div class="detail-item"><b>${escapeHtml(p.name)}:</b> ${escapeHtml(p.detailedForecast)}</div>
