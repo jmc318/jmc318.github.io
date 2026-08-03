@@ -165,6 +165,10 @@ html, body {
   text-align: center;
 }
 
+.fcard-empty {
+  visibility: hidden;
+}
+
 .fcard .name {
   font-size: 12px;
   color: var(--muted);
