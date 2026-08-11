@@ -275,20 +275,24 @@ function tideItemHtml(e) {
   return `<div class="detail-item"><b>${kind} tide</b> — ${fmtHeight(e.height)} at ${fmtTime(e.time)}</div>`;
 }
 
+function tideBoxHtml(e) {
+  const kind = e.type === 'H' ? 'High' : 'Low';
+  return `<div class="cond"><div class="cond-label">${kind}</div><div class="cond-val">${fmtHeight(e.height)}</div><div class="cond-sub">${fmtTime(e.time)}</div></div>`;
+}
+
 function renderLocationBody(loc, data) {
   const now = new Date();
   const bodyEl = document.getElementById('body-' + loc.id);
   const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
 
-  const future = data.tides.filter(e => e.time >= now);
-  const todayEvents = future.filter(e => fmtDay(e.time, today) === 'Today');
-  const laterEvents = future.filter(e => fmtDay(e.time, today) !== 'Today');
+  const todayEvents = data.tides.filter(e => fmtDay(e.time, today) === 'Today');
+  const laterEvents = data.tides.filter(e => e.time >= now && fmtDay(e.time, today) !== 'Today');
 
   const todayHtml = `
     <div class="chart-section">
       <h2>Today's tides</h2>
-      <div class="detailed-list">${
-        todayEvents.length ? todayEvents.map(tideItemHtml).join('') : '<div class="detail-item">No more tide changes today.</div>'
+      <div class="cond-row tide-row">${
+        todayEvents.length ? todayEvents.map(tideBoxHtml).join('') : '<div class="status">No tide data for today.</div>'
       }</div>
     </div>`;
 
