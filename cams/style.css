@@ -29,11 +29,11 @@ html, body {
   background: var(--bg);
 }
 
-#tabbar {
+#topbar {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 10px 8px;
+  padding: 12px 14px;
   background: var(--bg2);
   border-bottom: 1px solid rgba(255,255,255,0.08);
   position: sticky;
@@ -41,76 +41,94 @@ html, body {
   z-index: 5;
 }
 
-#tabs {
-  display: flex;
-  gap: 6px;
-  overflow-x: auto;
-  flex: 1;
-  scrollbar-width: none;
-}
-#tabs::-webkit-scrollbar { display: none; }
-
-.tab {
+.back-btn {
   flex: 0 0 auto;
-  padding: 8px 14px;
-  border-radius: 999px;
-  background: rgba(255,255,255,0.06);
-  color: var(--muted);
-  font-size: 14px;
-  white-space: nowrap;
+  background: none;
   border: none;
-}
-
-.tab.active {
-  background: var(--accent);
-  color: #06182f;
+  color: var(--accent);
+  font-size: 15px;
   font-weight: 600;
+  padding: 4px 8px 4px 0;
 }
 
-#panels {
-  flex: 1;
-  padding: 14px 14px 40px;
-}
-
-.panel { display: none; }
-.panel.active { display: block; }
-
-.panel-header {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
-.panel-header h1 {
-  font-size: 20px;
+#pageTitle {
+  font-size: 18px;
   margin: 0;
-}
-
-.cam-picker {
-  display: flex;
-  gap: 6px;
-  overflow-x: auto;
-  margin-bottom: 12px;
-  scrollbar-width: none;
-}
-.cam-picker::-webkit-scrollbar { display: none; }
-
-.cam-pill {
-  flex: 0 0 auto;
-  padding: 6px 12px;
-  border-radius: 999px;
-  background: var(--card);
-  color: var(--muted);
-  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
-  border: none;
 }
 
-.cam-pill.active {
-  background: var(--accent);
-  color: #06182f;
+#content {
+  flex: 1;
+  padding: 0 0 40px;
+}
+
+.cam-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.town-heading {
+  padding: 18px 14px 6px;
+  font-size: 12px;
+  color: var(--accent);
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.town-heading:first-child { padding-top: 14px; }
+
+.cam-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  color: var(--text);
+  text-align: left;
+}
+
+.cam-row-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.cam-row-name {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.cam-row-source {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.cam-row-chevron {
+  flex: 0 0 auto;
+  color: var(--muted);
+  font-size: 20px;
+}
+
+.cam-detail {
+  padding: 14px 14px 0;
+}
+
+.detail-town {
+  font-size: 12px;
+  color: var(--accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.detail-name {
+  font-size: 18px;
+  margin: 2px 0 6px;
 }
 
 .source-row {
@@ -123,7 +141,7 @@ html, body {
   background: var(--card);
   border-radius: 12px;
   overflow: hidden;
-  aspect-ratio: 4 / 3;
+  min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
