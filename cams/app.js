@@ -9,6 +9,7 @@ const CAMS = [
     type: 'iframe',
     embedUrl: 'https://www.youtube.com/embed/VOJ1k88ZVNE',
     pageUrl: 'https://www.joyislbi.com/webcam',
+    note: "This provider's YouTube livestream is currently offline (confirmed on their own page too, not an app problem) — it may say \"stream recording is not available\" until they restart it.",
   },
   {
     id: 'harvey-cedars-tower',
