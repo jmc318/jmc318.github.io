@@ -148,6 +148,17 @@ html, body {
   font-weight: 600;
 }
 
+.cond-sub {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.tide-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
+
 .detailed-list {
   margin-top: 6px;
   margin-bottom: 6px;
