@@ -270,11 +270,6 @@ function renderPanelShell() {
   });
 }
 
-function tideItemHtml(e) {
-  const kind = e.type === 'H' ? 'High' : 'Low';
-  return `<div class="detail-item"><b>${kind} tide</b> — ${fmtHeight(e.height)} at ${fmtTime(e.time)}</div>`;
-}
-
 function tideBoxHtml(e) {
   const kind = e.type === 'H' ? 'High' : 'Low';
   return `<div class="cond"><div class="cond-label">${kind}</div><div class="cond-val">${fmtHeight(e.height)}</div><div class="cond-sub">${fmtTime(e.time)}</div></div>`;
@@ -285,15 +280,23 @@ function renderLocationBody(loc, data) {
   const bodyEl = document.getElementById('body-' + loc.id);
   const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
 
-  const todayEvents = data.tides.filter(e => fmtDay(e.time, today) === 'Today');
-  const laterEvents = data.tides.filter(e => e.time >= now && fmtDay(e.time, today) !== 'Today');
+  // group every day's tides (today onward, today keeps its already-passed events too)
+  const relevant = data.tides.filter(e => new Date(e.time.getFullYear(), e.time.getMonth(), e.time.getDate()) >= today);
+  const dayGroups = [];
+  relevant.forEach(e => {
+    const label = fmtDay(e.time, today);
+    let group = dayGroups.find(g => g.label === label);
+    if (!group) { group = { label, events: [] }; dayGroups.push(group); }
+    group.events.push(e);
+  });
 
-  const todayHtml = `
+  const tidesHtml = `
     <div class="chart-section">
-      <h2>Today's tides</h2>
-      <div class="cond-row tide-row">${
-        todayEvents.length ? todayEvents.map(tideBoxHtml).join('') : '<div class="status">No tide data for today.</div>'
-      }</div>
+      <h2>Tides</h2>
+      ${dayGroups.slice(0, 5).map(g => `
+        <div class="day-heading">${g.label}</div>
+        <div class="cond-row tide-row">${g.events.map(tideBoxHtml).join('')}</div>
+      `).join('')}
     </div>`;
 
   let conditionsHtml = '<div class="cond-row">';
@@ -313,23 +316,10 @@ function renderLocationBody(loc, data) {
       <div class="cond"><div class="cond-label">Moon</div><div class="cond-val">${moon.icon} ${moon.illumination}%</div></div>
     </div>`;
 
-  let lastDayLabel = null;
-  let listHtml = '<div class="detailed-list">';
-  laterEvents.slice(0, 12).forEach(e => {
-    const dayLabel = fmtDay(e.time, today);
-    if (dayLabel !== lastDayLabel) {
-      listHtml += `<div class="day-heading">${dayLabel}</div>`;
-      lastDayLabel = dayLabel;
-    }
-    listHtml += tideItemHtml(e);
-  });
-  listHtml += '</div>';
-
   bodyEl.innerHTML = `
-    ${todayHtml}
+    ${tidesHtml}
     ${conditionsHtml}
     ${sunMoonHtml}
-    <div class="chart-section"><h2>Upcoming tides</h2>${listHtml}</div>
     <div class="source-row">
       Tide predictions: <b>${loc.tideStationName}</b> NOAA station (~${loc.tideStationMiles} mi away).
       Water temp: <b>${loc.waterTempStationName}</b> NOAA station (~${loc.waterTempStationMiles} mi away).
