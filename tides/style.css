@@ -3,6 +3,7 @@
   --bg: #062341;
   --bg2: #0d3860;
   --card: #114a7d;
+  --tide-card: #0b5b68;
   --text: #eef3fb;
   --muted: #9fc1e0;
   --accent: #4fd1c5;
@@ -159,29 +160,19 @@ html, body {
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
 }
 
-.detailed-list {
-  margin-top: 6px;
-  margin-bottom: 6px;
+.tide-row .cond {
+  background: var(--tide-card);
 }
 
 .day-heading {
   font-size: 12px;
   color: var(--accent);
   font-weight: 600;
-  margin: 14px 0 2px;
+  margin: 14px 0 6px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
 .day-heading:first-child { margin-top: 0; }
-
-.detail-item {
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-  font-size: 13px;
-  color: var(--muted);
-}
-
-.detail-item b { color: var(--text); }
 
 .source-row {
   color: var(--muted);
