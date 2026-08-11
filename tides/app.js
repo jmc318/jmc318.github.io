@@ -272,7 +272,7 @@ function renderPanelShell() {
 
 function tideBoxHtml(e) {
   const kind = e.type === 'H' ? 'High' : 'Low';
-  return `<div class="cond"><div class="cond-label">${kind}</div><div class="cond-val">${fmtHeight(e.height)}</div><div class="cond-sub">${fmtTime(e.time)}</div></div>`;
+  return `<div class="cond"><div class="cond-label">${kind}</div><div class="cond-val">${fmtTime(e.time)}</div><div class="cond-sub">${fmtHeight(e.height)}</div></div>`;
 }
 
 function renderLocationBody(loc, data) {
