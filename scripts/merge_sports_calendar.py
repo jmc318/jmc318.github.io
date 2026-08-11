@@ -1,6 +1,11 @@
-"""Fetches Wisconsin's official Football and Men's Basketball calendar feeds
-and merges them into one combined sports.ics file. Add more (label, url) pairs
-to FEEDS as Purdue/Michigan State feeds become available.
+"""Fetches each school's official calendar feed and merges them into one
+combined sports.ics file, tagging every event with a CATEGORIES value equal to
+the school name (e.g. "Wisconsin"). Outlook/iCal import CATEGORIES from a
+subscribed .ics as a Category on each event; assigning a color to that
+category name locally (one-time, per user) then color-codes every game from
+that school. Add more (label, school, url) tuples to FEEDS as Purdue/Michigan
+State feeds become available -- their events will pick up the "Purdue" /
+"Michigan State" category automatically once added here.
 
 If any feed fails to fetch, the script exits without writing sports.ics, so a
 temporary outage never overwrites the last known-good combined file.
@@ -8,9 +13,10 @@ temporary outage never overwrites the last known-good combined file.
 import sys
 import urllib.request
 
+# (display label, category/school name written into each event, feed URL)
 FEEDS = [
-    ("Wisconsin Football", "https://uwbadgers.com/api/v2/Calendar/subscribe?type=ics&sportId=1&scheduleId=694"),
-    ("Wisconsin Men's Basketball", "https://uwbadgers.com/api/v2/Calendar/subscribe?type=ics&sportId=3&scheduleId=765"),
+    ("Wisconsin Football", "Wisconsin", "https://uwbadgers.com/api/v2/Calendar/subscribe?type=ics&sportId=1&scheduleId=694"),
+    ("Wisconsin Men's Basketball", "Wisconsin", "https://uwbadgers.com/api/v2/Calendar/subscribe?type=ics&sportId=3&scheduleId=765"),
 ]
 
 HEADERS = {
@@ -26,7 +32,7 @@ def fetch(url):
         return resp.read().decode("utf-8")
 
 
-def extract_vevents(ics_text):
+def extract_vevents(ics_text, category):
     events = []
     current = []
     inside = False
@@ -36,6 +42,7 @@ def extract_vevents(ics_text):
             inside = True
             current = [line]
         elif stripped == "END:VEVENT":
+            current.append(f"CATEGORIES:{category}")
             current.append(line)
             events.append("\r\n".join(current))
             inside = False
@@ -46,17 +53,17 @@ def extract_vevents(ics_text):
 
 def main():
     all_events = []
-    for label, url in FEEDS:
+    for label, category, url in FEEDS:
         try:
             text = fetch(url)
         except Exception as e:
             print(f"ERROR fetching {label}: {e}", file=sys.stderr)
             sys.exit(1)
-        events = extract_vevents(text)
+        events = extract_vevents(text, category)
         if not events:
             print(f"ERROR: {label} returned 0 events, treating as a failure", file=sys.stderr)
             sys.exit(1)
-        print(f"{label}: {len(events)} events")
+        print(f"{label}: {len(events)} events (category: {category})")
         all_events.append((label, events))
 
     header = (
