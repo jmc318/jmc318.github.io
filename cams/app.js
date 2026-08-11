@@ -5,16 +5,18 @@ const CAMS = [
     id: 'barnegat-inlet',
     town: 'Barnegat Light',
     name: 'Barnegat Inlet Cam',
-    source: 'Joy Luedtke Real Estate',
+    source: 'Joy Luedtke Real Estate (YouTube Live)',
     type: 'iframe',
+    embedUrl: 'https://www.youtube.com/embed/VOJ1k88ZVNE',
     pageUrl: 'https://www.joyislbi.com/webcam',
   },
   {
     id: 'harvey-cedars-tower',
     town: 'Harvey Cedars',
     name: 'Water Tower Cam',
-    source: 'Harvey Cedars Borough',
-    type: 'iframe',
+    source: 'Coastal Camera Network',
+    type: 'image',
+    imageUrl: 'https://ccn-media.coastalcameranetwork.com/New_Jersey/harveycedars.stream/latest.jpg',
     pageUrl: 'https://www.harveycedars.org/cn/webpage.cfm?tpid=16942',
   },
   {
@@ -23,7 +25,9 @@ const CAMS = [
     name: 'Main Causeway',
     source: 'iloveseaisle.com',
     type: 'iframe',
+    embedUrl: 'https://www.iloveseaisle.com/lbi.beach.main.causeway.cam.php',
     pageUrl: 'https://www.iloveseaisle.com/lbi.beach.main.causeway.cam.php',
+    note: "This provider's camera service is currently reporting an outage on their end — the box below may show blank until they fix it. Nothing wrong with the app; it'll start working again once they do.",
   },
   {
     id: 'sc-8th-west',
@@ -31,7 +35,9 @@ const CAMS = [
     name: '8th St Causeway (West)',
     source: 'iloveseaisle.com',
     type: 'iframe',
+    embedUrl: 'https://www.iloveseaisle.com/lbi.beach.8thst.causeway.west.pan.cam.php',
     pageUrl: 'https://www.iloveseaisle.com/lbi.beach.8thst.causeway.west.pan.cam.php',
+    note: "This provider's camera service is currently reporting an outage on their end — the box below may show blank until they fix it. Nothing wrong with the app; it'll start working again once they do.",
   },
   {
     id: 'sc-9th-east',
@@ -39,7 +45,9 @@ const CAMS = [
     name: '9th St Causeway (East)',
     source: 'iloveseaisle.com',
     type: 'iframe',
+    embedUrl: 'https://www.iloveseaisle.com/lbi.beach.9thst.causeway.east.pan.cam.php',
     pageUrl: 'https://www.iloveseaisle.com/lbi.beach.9thst.causeway.east.pan.cam.php',
+    note: "This provider's camera service is currently reporting an outage on their end — the box below may show blank until they fix it. Nothing wrong with the app; it'll start working again once they do.",
   },
   {
     id: 'sc-southeast-beach',
@@ -47,7 +55,9 @@ const CAMS = [
     name: 'Southeast Beach (Wide)',
     source: 'iloveseaisle.com',
     type: 'iframe',
+    embedUrl: 'https://www.iloveseaisle.com/lbi.beach.southeast.wide.cam.php',
     pageUrl: 'https://www.iloveseaisle.com/lbi.beach.southeast.wide.cam.php',
+    note: "This provider's camera service is currently reporting an outage on their end — the box below may show blank until they fix it. Nothing wrong with the app; it'll start working again once they do.",
   },
   {
     id: 'ship-bottom-drifting-sands',
@@ -64,6 +74,7 @@ const CAMS = [
     name: 'Beach Haven Surf Cam',
     source: 'NJ Beach Cams',
     type: 'iframe',
+    embedUrl: 'https://njbeachcams.com/beach-cams/network/lbi.php',
     pageUrl: 'https://njbeachcams.com/central-new-jersey/beach-haven-surf-cam/',
   },
   {
@@ -72,23 +83,17 @@ const CAMS = [
     name: 'Flow House LBI Webcam',
     source: 'NJ Beach Cams',
     type: 'iframe',
+    embedUrl: 'https://njbeachcams.com/beach-cams/network/flowhouse.php',
     pageUrl: 'https://njbeachcams.com/central-new-jersey/flow-house-lbi-webcam/',
-  },
-  {
-    id: 'lbi-foundation',
-    town: 'Beach Haven',
-    name: 'LBI Foundation of the Arts & Sciences',
-    source: 'livebeaches.com',
-    type: 'iframe',
-    pageUrl: 'https://www.livebeaches.com/webcams/long-beach-island-foundation-live-webcam/',
   },
   {
     id: 'the-hideaway',
     town: 'Holgate / South LBI',
     name: 'The Hideaway Cam',
-    source: 'livebeaches.com',
+    source: 'IPCamLive',
     type: 'iframe',
-    pageUrl: 'https://www.livebeaches.com/webcams/long-beach-island-nj-webcam-the-hideaway/',
+    embedUrl: 'https://g1.ipcamlive.com/player/player.php?alias=6606e0e3a7b57&skin=white&autoplay=1&mute=1&disabledownloadbutton=1',
+    pageUrl: 'https://www.thehideawaylbi.com/surf-cam',
   },
   {
     id: 'lbt-38th-north',
@@ -171,9 +176,19 @@ function openCam(camId) {
 }
 
 function goBack() {
+  stopImageRefresh();
   view = 'list';
   detailCamId = null;
   render();
+}
+
+// Interval id for the currently-open 'image' cam's periodic refresh, so it
+// can be cleared when leaving the detail view (no point re-fetching a
+// snapshot no one is looking at).
+let imageRefreshTimer = null;
+
+function stopImageRefresh() {
+  if (imageRefreshTimer) { clearInterval(imageRefreshTimer); imageRefreshTimer = null; }
 }
 
 function renderCamContent(cam) {
@@ -182,7 +197,7 @@ function renderCamContent(cam) {
   if (cam.type === 'iframe') {
     const iframe = el('iframe', {
       class: 'cam-frame',
-      src: cam.pageUrl,
+      src: cam.embedUrl,
       loading: 'lazy',
       allow: 'fullscreen',
     });
@@ -194,9 +209,20 @@ function renderCamContent(cam) {
       alt: cam.name,
     });
     wrap.appendChild(img);
+  } else if (cam.type === 'image') {
+    // Periodic snapshot (not a continuous stream) — re-fetch every 15s
+    // with a cache-busting timestamp so it updates while Jeff is looking.
+    const img = el('img', {
+      class: 'cam-frame cam-stream-img',
+      src: cam.imageUrl + '?t=' + Date.now(),
+      alt: cam.name,
+    });
+    wrap.appendChild(img);
+    imageRefreshTimer = setInterval(() => {
+      img.src = cam.imageUrl + '?t=' + Date.now();
+    }, 15000);
   } else if (cam.type === 'link') {
     const card = el('div', { class: 'cam-link-card' });
-    if (cam.note) card.appendChild(el('p', { class: 'cam-note', text: cam.note }));
     const a = el('a', { class: 'open-cam-btn', href: cam.pageUrl, target: '_blank', rel: 'noopener', text: 'Open live cam ↗' });
     card.appendChild(a);
     wrap.appendChild(card);
@@ -237,6 +263,7 @@ function renderDetail() {
   detail.appendChild(el('div', { class: 'detail-town', text: cam.town }));
   detail.appendChild(el('h2', { class: 'detail-name', text: cam.name }));
   detail.appendChild(el('div', { class: 'source-row', text: `Source: ${cam.source}` }));
+  if (cam.note) detail.appendChild(el('p', { class: 'cam-note', text: cam.note }));
   detail.appendChild(renderCamContent(cam));
 
   if (cam.type !== 'link') {
