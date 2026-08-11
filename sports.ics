@@ -5,7 +5,7 @@ X-WR-CALNAME:Wisconsin, Purdue & Michigan State Football/Basketball
 X-PUBLISHED-TTL:PT120M
 BEGIN:VEVENT
 UID:vcal_17124-uwbadgers.com
-DTSTAMP:20260811T154654Z
+DTSTAMP:20260811T163727Z
 DTSTART:20260906T233000Z
 DTEND:20260907T023000Z
 LOCATION:Green Bay\, Wis., Lambeau Field
@@ -13,10 +13,11 @@ SUMMARY:Wisconsin Athletics Football vs Notre Dame- Lambeau Field
 DESCRIPTION:Wisconsin Athletics Football vs Notre Dame- Lambeau Field\nTV: NBC/Peacock\nRadio: Badger Radio Network\nStreaming Video: https://www.nbc.com/live\n https://uwbadgers.com/calendar.aspx?game_id=17124&amp;sport_id=1
 URL:https://uwbadgers.com/calendar.aspx?game_id=17124&amp;sport_id=1
 PRIORITY:3
+CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17125-uwbadgers.com
-DTSTAMP:20260811T154654Z
+DTSTAMP:20260811T163727Z
 DTSTART:20260912T231500Z
 DTEND:20260913T021500Z
 LOCATION:Madison\, Wis., Camp Randall Stadium
@@ -24,10 +25,11 @@ SUMMARY:Wisconsin Athletics Football vs Western Illinois- Celebrate Ag Day
 DESCRIPTION:Wisconsin Athletics Football vs Western Illinois- Celebrate Ag Day\nTV: BTN\nRadio: Badger Radio Network\nStreaming Video: https://bigten.org/btn/watch-live/\nTickets: https://uwbadgers.evenue.net/list/F?RSRC=uwbadgerscom&RDAT=F26_ST_New_Sales\n https://uwbadgers.com/calendar.aspx?game_id=17125&amp;sport_id=1
 URL:https://uwbadgers.com/calendar.aspx?game_id=17125&amp;sport_id=1
 PRIORITY:3
+CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17126-uwbadgers.com
-DTSTAMP:20260811T154654Z
+DTSTAMP:20260811T163727Z
 DTSTART:20260919T163000Z
 DTEND:20260919T193000Z
 LOCATION:Madison\, Wis., Camp Randall Stadium
@@ -35,10 +37,11 @@ SUMMARY:Wisconsin Athletics Football vs Eastern Michigan
 DESCRIPTION:Wisconsin Athletics Football vs Eastern Michigan\nTV: Peacock\nRadio: Badger Radio Network\nStreaming Video: https://uwbadgers.com/peacocktv.com/watch/home?orig_ref=https://www.google.com/\nTickets: https://uwbadgers.evenue.net/list/F?RSRC=uwbadgerscom&RDAT=F26_ST_New_Sales\n https://uwbadgers.com/calendar.aspx?game_id=17126&amp;sport_id=1
 URL:https://uwbadgers.com/calendar.aspx?game_id=17126&amp;sport_id=1
 PRIORITY:3
+CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17144-uwbadgers.com
-DTSTAMP:20260811T154654Z
+DTSTAMP:20260811T163727Z
 DTSTART;VALUE=DATE:20260926
 DTEND;VALUE=DATE:20260927
 LOCATION:State College\, Pa.
@@ -46,10 +49,11 @@ SUMMARY:Wisconsin Athletics Football at Penn State
 DESCRIPTION:Wisconsin Athletics Football at Penn State\nRadio: Badger Radio Network\n https://uwbadgers.com/calendar.aspx?game_id=17144&amp;sport_id=1
 URL:https://uwbadgers.com/calendar.aspx?game_id=17144&amp;sport_id=1
 PRIORITY:3
+CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17145-uwbadgers.com
-DTSTAMP:20260811T154654Z
+DTSTAMP:20260811T163727Z
 DTSTART;VALUE=DATE:20261003
 DTEND;VALUE=DATE:20261004
 LOCATION:Madison\, Wis., Camp Randall Stadium
@@ -57,10 +61,11 @@ SUMMARY:Wisconsin Athletics Football vs Michigan State- Homecoming
 DESCRIPTION:Wisconsin Athletics Football vs Michigan State- Homecoming\nRadio: Badger Radio Network\nTickets: https://uwbadgers.evenue.net/list/F?RSRC=uwbadgerscom&RDAT=F26_ST_New_Sales\n https://uwbadgers.com/calendar.aspx?game_id=17145&amp;sport_id=1
 URL:https://uwbadgers.com/calendar.aspx?game_id=17145&amp;sport_id=1
 PRIORITY:3
+CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17146-uwbadgers.com
-DTSTAMP:20260811T154654Z
+DTSTAMP:20260811T163727Z
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261018
 LOCATION:Pasadena\, Calif.
@@ -68,10 +73,11 @@ SUMMARY:Wisconsin Athletics Football at UCLA
 DESCRIPTION:Wisconsin Athletics Football at UCLA\nRadio: Badger Radio Network\n https://uwbadgers.com/calendar.aspx?game_id=17146&amp;sport_id=1
 URL:https://uwbadgers.com/calendar.aspx?game_id=17146&amp;sport_id=1
 PRIORITY:3
+CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17147-uwbadgers.com
-DTSTAMP:20260811T154654Z
+DTSTAMP:20260811T163727Z
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261025
 LOCATION:Madison\, Wis., Camp Randall Stadium
@@ -79,10 +85,11 @@ SUMMARY:Wisconsin Athletics Football vs USC
 DESCRIPTION:Wisconsin Athletics Football vs USC\nRadio: Badger Radio Network\nTickets: https://uwbadgers.evenue.net/list/F?RSRC=uwbadgerscom&RDAT=F26_ST_New_Sales\n https://uwbadgers.com/calendar.aspx?game_id=17147&amp;sport_id=1
 URL:https://uwbadgers.com/calendar.aspx?game_id=17147&amp;sport_id=1
 PRIORITY:3
+CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17148-uwbadgers.com
-DTSTAMP:20260811T154654Z
+DTSTAMP:20260811T163727Z
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261101
 LOCATION:Iowa City\, Iowa
@@ -90,10 +97,11 @@ SUMMARY:Wisconsin Athletics Football at Iowa
 DESCRIPTION:Wisconsin Athletics Football at Iowa\nRadio: Badger Radio Network\n https://uwbadgers.com/calendar.aspx?game_id=17148&amp;sport_id=1
 URL:https://uwbadgers.com/calendar.aspx?game_id=17148&amp;sport_id=1
 PRIORITY:3
+CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17149-uwbadgers.com
-DTSTAMP:20260811T154654Z
+DTSTAMP:20260811T163727Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261108
 LOCATION:Madison\, Wis., Camp Randall Stadium
@@ -101,10 +109,11 @@ SUMMARY:Wisconsin Athletics Football vs Rutgers
 DESCRIPTION:Wisconsin Athletics Football vs Rutgers\nRadio: Badger Radio Network\nTickets: https://uwbadgers.evenue.net/list/F?RSRC=uwbadgerscom&RDAT=F26_ST_New_Sales\n https://uwbadgers.com/calendar.aspx?game_id=17149&amp;sport_id=1
 URL:https://uwbadgers.com/calendar.aspx?game_id=17149&amp;sport_id=1
 PRIORITY:3
+CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17150-uwbadgers.com
-DTSTAMP:20260811T154654Z
+DTSTAMP:20260811T163727Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 LOCATION:College Park\, Md.
@@ -112,10 +121,11 @@ SUMMARY:Wisconsin Athletics Football at Maryland
 DESCRIPTION:Wisconsin Athletics Football at Maryland\nRadio: Badger Radio Network\n https://uwbadgers.com/calendar.aspx?game_id=17150&amp;sport_id=1
 URL:https://uwbadgers.com/calendar.aspx?game_id=17150&amp;sport_id=1
 PRIORITY:3
+CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17151-uwbadgers.com
-DTSTAMP:20260811T154654Z
+DTSTAMP:20260811T163727Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 LOCATION:West Lafayette\, Ind.
@@ -123,10 +133,11 @@ SUMMARY:Wisconsin Athletics Football at Purdue
 DESCRIPTION:Wisconsin Athletics Football at Purdue\nRadio: Badger Radio Network\n https://uwbadgers.com/calendar.aspx?game_id=17151&amp;sport_id=1
 URL:https://uwbadgers.com/calendar.aspx?game_id=17151&amp;sport_id=1
 PRIORITY:3
+CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17152-uwbadgers.com
-DTSTAMP:20260811T154654Z
+DTSTAMP:20260811T163727Z
 DTSTART:20261128T003000Z
 DTEND:20261128T033000Z
 LOCATION:Madison\, Wis., Camp Randall Stadium
@@ -134,10 +145,11 @@ SUMMARY:Wisconsin Athletics Football vs Minnesota
 DESCRIPTION:Wisconsin Athletics Football vs Minnesota\nTV: NBC\nRadio: Badger Radio Network\nStreaming Video: https://uwbadgers.com/nbc.com/live\nTickets: https://uwbadgers.evenue.net/list/F?RSRC=uwbadgerscom&RDAT=F26_ST_New_Sales\n https://uwbadgers.com/calendar.aspx?game_id=17152&amp;sport_id=1
 URL:https://uwbadgers.com/calendar.aspx?game_id=17152&amp;sport_id=1
 PRIORITY:3
+CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17333-uwbadgers.com
-DTSTAMP:20260811T155311Z
+DTSTAMP:20260811T164254Z
 DTSTART;VALUE=DATE:20261010
 DTEND;VALUE=DATE:20261011
 LOCATION:Madison\, WI, Kohl Center
@@ -145,10 +157,11 @@ SUMMARY:Wisconsin Athletics Men's Basketball vs UW-Parkside- Exhibition
 DESCRIPTION:Wisconsin Athletics Men's Basketball vs UW-Parkside- Exhibition\n https://uwbadgers.com/calendar.aspx?game_id=17333&amp;sport_id=3
 URL:https://uwbadgers.com/calendar.aspx?game_id=17333&amp;sport_id=3
 PRIORITY:3
+CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17334-uwbadgers.com
-DTSTAMP:20260811T155311Z
+DTSTAMP:20260811T164254Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
 LOCATION:Green Bay\, WI
@@ -156,10 +169,11 @@ SUMMARY:Wisconsin Athletics Men's Basketball at Green Bay- Exhibition
 DESCRIPTION:Wisconsin Athletics Men's Basketball at Green Bay- Exhibition\n https://uwbadgers.com/calendar.aspx?game_id=17334&amp;sport_id=3
 URL:https://uwbadgers.com/calendar.aspx?game_id=17334&amp;sport_id=3
 PRIORITY:3
+CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17335-uwbadgers.com
-DTSTAMP:20260811T155311Z
+DTSTAMP:20260811T164254Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 LOCATION:Madison\, WI, Kohl Center
@@ -167,10 +181,11 @@ SUMMARY:Wisconsin Athletics Men's Basketball vs Oklahoma State- Exhibition
 DESCRIPTION:Wisconsin Athletics Men's Basketball vs Oklahoma State- Exhibition\n https://uwbadgers.com/calendar.aspx?game_id=17335&amp;sport_id=3
 URL:https://uwbadgers.com/calendar.aspx?game_id=17335&amp;sport_id=3
 PRIORITY:3
+CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17310-uwbadgers.com
-DTSTAMP:20260811T155311Z
+DTSTAMP:20260811T164254Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261103
 LOCATION:Madison\, WI, Kohl Center
@@ -178,10 +193,11 @@ SUMMARY:Wisconsin Athletics Men's Basketball vs Denver
 DESCRIPTION:Wisconsin Athletics Men's Basketball vs Denver\n https://uwbadgers.com/calendar.aspx?game_id=17310&amp;sport_id=3
 URL:https://uwbadgers.com/calendar.aspx?game_id=17310&amp;sport_id=3
 PRIORITY:3
+CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17311-uwbadgers.com
-DTSTAMP:20260811T155311Z
+DTSTAMP:20260811T164254Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 LOCATION:Madison\, WI, Kohl Center
@@ -189,10 +205,11 @@ SUMMARY:Wisconsin Athletics Men's Basketball vs Delaware
 DESCRIPTION:Wisconsin Athletics Men's Basketball vs Delaware\n https://uwbadgers.com/calendar.aspx?game_id=17311&amp;sport_id=3
 URL:https://uwbadgers.com/calendar.aspx?game_id=17311&amp;sport_id=3
 PRIORITY:3
+CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17312-uwbadgers.com
-DTSTAMP:20260811T155311Z
+DTSTAMP:20260811T164254Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 LOCATION:Madison\, WI, Kohl Center
@@ -200,10 +217,11 @@ SUMMARY:Wisconsin Athletics Men's Basketball vs Fairfield
 DESCRIPTION:Wisconsin Athletics Men's Basketball vs Fairfield \n https://uwbadgers.com/calendar.aspx?game_id=17312&amp;sport_id=3
 URL:https://uwbadgers.com/calendar.aspx?game_id=17312&amp;sport_id=3
 PRIORITY:3
+CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17313-uwbadgers.com
-DTSTAMP:20260811T155311Z
+DTSTAMP:20260811T164254Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 LOCATION:Madison\, WI, Kohl Center
@@ -211,10 +229,11 @@ SUMMARY:Wisconsin Athletics Men's Basketball vs Coastal Carolina
 DESCRIPTION:Wisconsin Athletics Men's Basketball vs Coastal Carolina \n https://uwbadgers.com/calendar.aspx?game_id=17313&amp;sport_id=3
 URL:https://uwbadgers.com/calendar.aspx?game_id=17313&amp;sport_id=3
 PRIORITY:3
+CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17314-uwbadgers.com
-DTSTAMP:20260811T155311Z
+DTSTAMP:20260811T164254Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 LOCATION:Nassau\, Bahamas
@@ -222,10 +241,11 @@ SUMMARY:Wisconsin Athletics Men's Basketball vs NC State/Seton Hall
 DESCRIPTION:Wisconsin Athletics Men's Basketball vs NC State/Seton Hall\n https://uwbadgers.com/calendar.aspx?game_id=17314&amp;sport_id=3
 URL:https://uwbadgers.com/calendar.aspx?game_id=17314&amp;sport_id=3
 PRIORITY:3
+CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17315-uwbadgers.com
-DTSTAMP:20260811T155311Z
+DTSTAMP:20260811T164254Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 LOCATION:Nassau\, Bahamas
@@ -233,10 +253,11 @@ SUMMARY:Wisconsin Athletics Men's Basketball vs NC State/Seton Hall
 DESCRIPTION:Wisconsin Athletics Men's Basketball vs NC State/Seton Hall\n https://uwbadgers.com/calendar.aspx?game_id=17315&amp;sport_id=3
 URL:https://uwbadgers.com/calendar.aspx?game_id=17315&amp;sport_id=3
 PRIORITY:3
+CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17316-uwbadgers.com
-DTSTAMP:20260811T155311Z
+DTSTAMP:20260811T164254Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 LOCATION:Madison\, WI, Kohl Center
@@ -244,10 +265,11 @@ SUMMARY:Wisconsin Athletics Men's Basketball vs Northeastern
 DESCRIPTION:Wisconsin Athletics Men's Basketball vs Northeastern \n https://uwbadgers.com/calendar.aspx?game_id=17316&amp;sport_id=3
 URL:https://uwbadgers.com/calendar.aspx?game_id=17316&amp;sport_id=3
 PRIORITY:3
+CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17307-uwbadgers.com
-DTSTAMP:20260811T155311Z
+DTSTAMP:20260811T164254Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 LOCATION:Milwaukee\, WI, Fiserv Forum
@@ -255,10 +277,11 @@ SUMMARY:Wisconsin Athletics Men's Basketball at Marquette
 DESCRIPTION:Wisconsin Athletics Men's Basketball at Marquette\n https://uwbadgers.com/calendar.aspx?game_id=17307&amp;sport_id=3
 URL:https://uwbadgers.com/calendar.aspx?game_id=17307&amp;sport_id=3
 PRIORITY:3
+CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17308-uwbadgers.com
-DTSTAMP:20260811T155311Z
+DTSTAMP:20260811T164254Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 LOCATION:Philadelphia\, PA
@@ -266,10 +289,11 @@ SUMMARY:Wisconsin Athletics Men's Basketball vs Villanova
 DESCRIPTION:Wisconsin Athletics Men's Basketball vs Villanova \nTickets: https://www.xfinitymobilearena.com/events/detail/hoops-showdown/\n https://uwbadgers.com/calendar.aspx?game_id=17308&amp;sport_id=3
 URL:https://uwbadgers.com/calendar.aspx?game_id=17308&amp;sport_id=3
 PRIORITY:3
+CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17309-uwbadgers.com
-DTSTAMP:20260811T155311Z
+DTSTAMP:20260811T164254Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
 LOCATION:Nashville\, TN
@@ -277,10 +301,11 @@ SUMMARY:Wisconsin Athletics Men's Basketball vs Auburn
 DESCRIPTION:Wisconsin Athletics Men's Basketball vs Auburn \nTickets: https://www.ticketmaster.com/auburn-v-wisconsin-nashville-tennessee-12-19-2026/event/1B0064A8CA38372A\n https://uwbadgers.com/calendar.aspx?game_id=17309&amp;sport_id=3
 URL:https://uwbadgers.com/calendar.aspx?game_id=17309&amp;sport_id=3
 PRIORITY:3
+CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17317-uwbadgers.com
-DTSTAMP:20260811T155311Z
+DTSTAMP:20260811T164254Z
 DTSTART;VALUE=DATE:20261222
 DTEND;VALUE=DATE:20261223
 LOCATION:Madison\, WI, Kohl Center
@@ -288,10 +313,11 @@ SUMMARY:Wisconsin Athletics Men's Basketball vs Purdue Fort Wayne
 DESCRIPTION:Wisconsin Athletics Men's Basketball vs Purdue Fort Wayne\n https://uwbadgers.com/calendar.aspx?game_id=17317&amp;sport_id=3
 URL:https://uwbadgers.com/calendar.aspx?game_id=17317&amp;sport_id=3
 PRIORITY:3
+CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17318-uwbadgers.com
-DTSTAMP:20260811T155311Z
+DTSTAMP:20260811T164254Z
 DTSTART;VALUE=DATE:20261230
 DTEND;VALUE=DATE:20261231
 LOCATION:Madison\, WI, Kohl Center
@@ -299,5 +325,6 @@ SUMMARY:Wisconsin Athletics Men's Basketball vs Colorado State
 DESCRIPTION:Wisconsin Athletics Men's Basketball vs Colorado State \n https://uwbadgers.com/calendar.aspx?game_id=17318&amp;sport_id=3
 URL:https://uwbadgers.com/calendar.aspx?game_id=17318&amp;sport_id=3
 PRIORITY:3
+CATEGORIES:Wisconsin
 END:VEVENT
 END:VCALENDAR
