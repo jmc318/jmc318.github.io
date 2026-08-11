@@ -198,36 +198,6 @@ function moonPhase(date) {
   return { name, icon, illumination };
 }
 
-// ---------- tide curve interpolation ----------
-
-// Approximates the smooth curve between NOAA's discrete high/low points with a
-// cosine "bell" interpolation -- the standard simplified model for a tide curve
-// when only hi/lo predictions are available (true for subordinate stations like
-// Beach Haven Crest, which don't publish a continuous 6-minute curve).
-function heightAt(events, t) {
-  for (let i = 0; i < events.length - 1; i++) {
-    const a = events[i], b = events[i + 1];
-    if (t >= a.time && t <= b.time) {
-      const frac = (t - a.time) / (b.time - a.time);
-      return a.height + (b.height - a.height) * (1 - Math.cos(Math.PI * frac)) / 2;
-    }
-  }
-  return null;
-}
-
-function currentStatus(events, now) {
-  for (let i = 0; i < events.length - 1; i++) {
-    const a = events[i], b = events[i + 1];
-    if (now >= a.time && now <= b.time) {
-      const height = heightAt(events, now);
-      const rising = b.height > a.height;
-      const msToNext = b.time - now;
-      return { height, rising, next: b, msToNext };
-    }
-  }
-  return null;
-}
-
 // ---------- formatting ----------
 
 function fmtTime(d) {
@@ -238,12 +208,6 @@ function fmtDay(d, today) {
   if (days === 0) return 'Today';
   if (days === 1) return 'Tomorrow';
   return d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
-}
-function fmtDuration(ms) {
-  const totalMin = Math.round(ms / 60000);
-  const h = Math.floor(totalMin / 60), m = totalMin % 60;
-  if (h <= 0) return `${m}m`;
-  return `${h}h ${m}m`;
 }
 function fmtHeight(ft) { return `${ft.toFixed(1)} ft`; }
 
@@ -262,78 +226,6 @@ async function loadLocationData(loc, { force } = {}) {
   const data = { tides, waterTemp, conditions, savedAt: Date.now() };
   writeCache(loc.id, data);
   return data;
-}
-
-// ---------- SVG tide chart ----------
-
-function buildChartSvg(events, now) {
-  const dayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-  const windowStart = new Date(dayStart.getTime() - 6 * 3600000);
-  const windowEnd = new Date(windowStart.getTime() + 48 * 3600000);
-
-  const W = 900, H = 200, PAD_TOP = 16, PAD_BOTTOM = 24, PAD_LEFT = 8, PAD_RIGHT = 8;
-  const plotW = W - PAD_LEFT - PAD_RIGHT;
-  const plotH = H - PAD_TOP - PAD_BOTTOM;
-  const hours = 48;
-
-  const inWindow = events.filter(e => e.time >= windowStart && e.time <= windowEnd);
-  const heights = [];
-  for (let m = 0; m <= hours * 60; m += 10) {
-    const t = new Date(windowStart.getTime() + m * 60000);
-    const h = heightAt(events, t);
-    if (h !== null) heights.push({ t, h });
-  }
-  if (!heights.length) return '';
-
-  let minH = Math.min(...heights.map(p => p.h), ...inWindow.map(e => e.height));
-  let maxH = Math.max(...heights.map(p => p.h), ...inWindow.map(e => e.height));
-  const pad = Math.max(0.3, (maxH - minH) * 0.15);
-  minH -= pad; maxH += pad;
-
-  const x = t => PAD_LEFT + ((t - windowStart) / (hours * 3600000)) * plotW;
-  const y = h => PAD_TOP + plotH - ((h - minH) / (maxH - minH)) * plotH;
-
-  let path = '';
-  heights.forEach((p, i) => {
-    path += (i === 0 ? 'M' : 'L') + x(p.t).toFixed(1) + ',' + y(p.h).toFixed(1) + ' ';
-  });
-  const areaPath = path + `L${x(heights[heights.length - 1].t).toFixed(1)},${(PAD_TOP + plotH).toFixed(1)} L${x(heights[0].t).toFixed(1)},${(PAD_TOP + plotH).toFixed(1)} Z`;
-
-  let svg = `<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg">`;
-  svg += `<path d="${areaPath}" fill="rgba(95,184,255,0.18)" stroke="none"/>`;
-  svg += `<path d="${path.trim()}" fill="none" stroke="#2f7fd6" stroke-width="2.5"/>`;
-
-  // day-boundary gridlines + hour labels
-  for (let hh = 0; hh <= hours; hh += 6) {
-    const t = new Date(windowStart.getTime() + hh * 3600000);
-    const xx = x(t).toFixed(1);
-    const isMidnight = t.getHours() === 0;
-    svg += `<line x1="${xx}" y1="${PAD_TOP}" x2="${xx}" y2="${PAD_TOP + plotH}" stroke="${isMidnight ? '#bbb' : '#e8e8e8'}" stroke-width="${isMidnight ? 1.2 : 1}"/>`;
-    const label = isMidnight
-      ? t.toLocaleDateString('en-US', { weekday: 'short' })
-      : t.toLocaleTimeString('en-US', { hour: 'numeric' });
-    svg += `<text x="${xx}" y="${H - 6}" font-size="10" fill="#777" text-anchor="middle">${label}</text>`;
-  }
-
-  // high/low markers
-  inWindow.forEach(e => {
-    const xx = x(e.time), yy = y(e.height);
-    svg += `<circle cx="${xx.toFixed(1)}" cy="${yy.toFixed(1)}" r="3.5" fill="#0b1d3a"/>`;
-    const above = e.type === 'H';
-    const ty = above ? yy - 8 : yy + 16;
-    svg += `<text x="${xx.toFixed(1)}" y="${ty.toFixed(1)}" font-size="10.5" fill="#0b1d3a" text-anchor="middle" font-weight="600">${e.height.toFixed(1)}</text>`;
-    svg += `<text x="${xx.toFixed(1)}" y="${(ty + (above ? -10 : 12)).toFixed(1)}" font-size="9" fill="#888" text-anchor="middle">${fmtTime(e.time)}</text>`;
-  });
-
-  // now marker
-  if (now >= windowStart && now <= windowEnd) {
-    const xx = x(now).toFixed(1);
-    svg += `<line x1="${xx}" y1="${PAD_TOP}" x2="${xx}" y2="${PAD_TOP + plotH}" stroke="#ff6b6b" stroke-width="1.5" stroke-dasharray="3,3"/>`;
-    svg += `<circle cx="${xx}" cy="${y(heightAt(events, now)).toFixed(1)}" r="4" fill="#ff6b6b"/>`;
-  }
-
-  svg += '</svg>';
-  return svg;
 }
 
 // ---------- rendering ----------
@@ -378,26 +270,27 @@ function renderPanelShell() {
   });
 }
 
+function tideItemHtml(e) {
+  const kind = e.type === 'H' ? 'High' : 'Low';
+  return `<div class="detail-item"><b>${kind} tide</b> — ${fmtHeight(e.height)} at ${fmtTime(e.time)}</div>`;
+}
+
 function renderLocationBody(loc, data) {
   const now = new Date();
   const bodyEl = document.getElementById('body-' + loc.id);
-  const status = currentStatus(data.tides, now);
   const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
 
-  let statusHtml = '';
-  if (status) {
-    const arrow = status.rising ? '⬆️' : '⬇️';
-    const verb = status.rising ? 'Rising' : 'Falling';
-    const nextLabel = status.next.type === 'H' ? 'high tide' : 'low tide';
-    statusHtml = `
-      <div class="tide-status">
-        <div class="ts-height">${fmtHeight(status.height)}</div>
-        <div class="ts-detail">${arrow} ${verb} — ${nextLabel} of ${fmtHeight(status.next.height)}
-          at ${fmtTime(status.next.time)} (in ${fmtDuration(status.msToNext)})</div>
-      </div>`;
-  }
+  const future = data.tides.filter(e => e.time >= now);
+  const todayEvents = future.filter(e => fmtDay(e.time, today) === 'Today');
+  const laterEvents = future.filter(e => fmtDay(e.time, today) !== 'Today');
 
-  const chartSvg = buildChartSvg(data.tides, now);
+  const todayHtml = `
+    <div class="chart-section">
+      <h2>Today's tides</h2>
+      <div class="detailed-list">${
+        todayEvents.length ? todayEvents.map(tideItemHtml).join('') : '<div class="detail-item">No more tide changes today.</div>'
+      }</div>
+    </div>`;
 
   let conditionsHtml = '<div class="cond-row">';
   if (data.waterTemp) conditionsHtml += `<div class="cond"><div class="cond-label">Water</div><div class="cond-val">${Math.round(data.waterTemp.tempF)}°</div></div>`;
@@ -416,33 +309,27 @@ function renderLocationBody(loc, data) {
       <div class="cond"><div class="cond-label">Moon</div><div class="cond-val">${moon.icon} ${moon.illumination}%</div></div>
     </div>`;
 
-  const upcoming = data.tides.filter(e => e.time >= now).slice(0, 10);
   let lastDayLabel = null;
   let listHtml = '<div class="detailed-list">';
-  upcoming.forEach(e => {
+  laterEvents.slice(0, 12).forEach(e => {
     const dayLabel = fmtDay(e.time, today);
     if (dayLabel !== lastDayLabel) {
       listHtml += `<div class="day-heading">${dayLabel}</div>`;
       lastDayLabel = dayLabel;
     }
-    const kind = e.type === 'H' ? 'High' : 'Low';
-    listHtml += `<div class="detail-item"><b>${kind} tide</b> — ${fmtHeight(e.height)} at ${fmtTime(e.time)}</div>`;
+    listHtml += tideItemHtml(e);
   });
   listHtml += '</div>';
 
   bodyEl.innerHTML = `
-    ${statusHtml}
-    <div class="chart-section">
-      <h2>Tide height (48 hrs)</h2>
-      <div class="hourly-chart">${chartSvg}</div>
-    </div>
+    ${todayHtml}
     ${conditionsHtml}
     ${sunMoonHtml}
     <div class="chart-section"><h2>Upcoming tides</h2>${listHtml}</div>
     <div class="source-row">
       Tide predictions: <b>${loc.tideStationName}</b> NOAA station (~${loc.tideStationMiles} mi away).
       Water temp: <b>${loc.waterTempStationName}</b> NOAA station (~${loc.waterTempStationMiles} mi away).
-      Air/wind: National Weather Service. Curve between predicted highs/lows is an approximation.
+      Air/wind: National Weather Service.
     </div>
   `;
 }
