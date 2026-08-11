@@ -17,6 +17,8 @@ import urllib.request
 FEEDS = [
     ("Wisconsin Football", "Wisconsin", "https://uwbadgers.com/api/v2/Calendar/subscribe?type=ics&sportId=1&scheduleId=694"),
     ("Wisconsin Men's Basketball", "Wisconsin", "https://uwbadgers.com/api/v2/Calendar/subscribe?type=ics&sportId=3&scheduleId=765"),
+    ("Michigan State Football", "Michigan State", "https://msuspartans.com/api/v2/Calendar/subscribe?type=ics&sportId=4"),
+    ("Michigan State Men's Basketball", "Michigan State", "https://msuspartans.com/api/v2/Calendar/subscribe?type=ics&sportId=6"),
 ]
 
 HEADERS = {
