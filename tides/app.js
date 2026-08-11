@@ -201,7 +201,10 @@ function moonPhase(date) {
 // ---------- formatting ----------
 
 function fmtTime(d) {
-  return d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+  let h = d.getHours();
+  const ap = h >= 12 ? 'P' : 'A';
+  h = h % 12 || 12;
+  return `${h}:${pad2(d.getMinutes())}${ap}`;
 }
 function fmtDay(d, today) {
   const days = Math.round((new Date(d.getFullYear(), d.getMonth(), d.getDate()) - today) / DAY_MS);
