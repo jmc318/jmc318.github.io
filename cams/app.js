@@ -145,9 +145,12 @@ const CAMS_BY_TOWN = Object.fromEntries(
 );
 
 // ---------- state ----------
+// Single-page app: 'list' shows every cam's location as a tappable row
+// (nothing live-loads on this screen — keeps it light and fast).
+// 'detail' shows one cam full-size; the header's Back button returns to 'list'.
 
-let activeTown = TOWNS[0];
-const selectedCamByTown = Object.fromEntries(TOWNS.map(t => [t, CAMS_BY_TOWN[t][0].id]));
+let view = 'list';
+let detailCamId = null;
 
 // ---------- rendering ----------
 
@@ -161,18 +164,16 @@ function el(tag, attrs = {}, children = []) {
   return node;
 }
 
-function renderTabs() {
-  const tabsEl = document.getElementById('tabs');
-  tabsEl.innerHTML = '';
-  for (const town of TOWNS) {
-    const btn = el('button', { class: 'tab' + (town === activeTown ? ' active' : ''), text: town });
-    btn.addEventListener('click', () => {
-      activeTown = town;
-      renderTabs();
-      renderPanel();
-    });
-    tabsEl.appendChild(btn);
-  }
+function openCam(camId) {
+  detailCamId = camId;
+  view = 'detail';
+  render();
+}
+
+function goBack() {
+  view = 'list';
+  detailCamId = null;
+  render();
 }
 
 function renderCamContent(cam) {
@@ -204,48 +205,66 @@ function renderCamContent(cam) {
   return wrap;
 }
 
-function renderPanel() {
-  const panelsEl = document.getElementById('panels');
-  panelsEl.innerHTML = '';
+function renderList() {
+  const content = document.getElementById('content');
+  content.innerHTML = '';
 
-  const cams = CAMS_BY_TOWN[activeTown];
-  const selectedId = selectedCamByTown[activeTown];
-  const cam = cams.find(c => c.id === selectedId) || cams[0];
-
-  const panel = el('div', { class: 'panel active' });
-
-  const header = el('div', { class: 'panel-header' });
-  header.appendChild(el('h1', { text: activeTown }));
-  panel.appendChild(header);
-
-  if (cams.length > 1) {
-    const picker = el('div', { class: 'cam-picker' });
-    for (const c of cams) {
-      const pill = el('button', {
-        class: 'cam-pill' + (c.id === cam.id ? ' active' : ''),
-        text: c.name,
-      });
-      pill.addEventListener('click', () => {
-        selectedCamByTown[activeTown] = c.id;
-        renderPanel();
-      });
-      picker.appendChild(pill);
+  const list = el('div', { class: 'cam-list' });
+  for (const town of TOWNS) {
+    list.appendChild(el('div', { class: 'town-heading', text: town }));
+    for (const cam of CAMS_BY_TOWN[town]) {
+      const row = el('button', { class: 'cam-row' });
+      const textWrap = el('div', { class: 'cam-row-text' });
+      textWrap.appendChild(el('div', { class: 'cam-row-name', text: cam.name }));
+      textWrap.appendChild(el('div', { class: 'cam-row-source', text: cam.source }));
+      row.appendChild(textWrap);
+      row.appendChild(el('div', { class: 'cam-row-chevron', text: '›' }));
+      row.addEventListener('click', () => openCam(cam.id));
+      list.appendChild(row);
     }
-    panel.appendChild(picker);
   }
+  content.appendChild(list);
+}
 
-  panel.appendChild(el('div', { class: 'source-row', text: `Source: ${cam.source}` }));
-  panel.appendChild(renderCamContent(cam));
+function renderDetail() {
+  const content = document.getElementById('content');
+  content.innerHTML = '';
+
+  const cam = CAMS.find(c => c.id === detailCamId);
+  if (!cam) { goBack(); return; }
+
+  const detail = el('div', { class: 'cam-detail' });
+  detail.appendChild(el('div', { class: 'detail-town', text: cam.town }));
+  detail.appendChild(el('h2', { class: 'detail-name', text: cam.name }));
+  detail.appendChild(el('div', { class: 'source-row', text: `Source: ${cam.source}` }));
+  detail.appendChild(renderCamContent(cam));
 
   if (cam.type !== 'link') {
     const openRow = el('div', { class: 'open-source-row' });
     const a = el('a', { href: cam.pageUrl, target: '_blank', rel: 'noopener', text: 'Open source page ↗' });
     openRow.appendChild(a);
-    panel.appendChild(openRow);
+    detail.appendChild(openRow);
   }
 
-  panelsEl.appendChild(panel);
+  content.appendChild(detail);
 }
 
-renderTabs();
-renderPanel();
+function render() {
+  const backBtn = document.getElementById('backBtn');
+  const pageTitle = document.getElementById('pageTitle');
+
+  if (view === 'detail') {
+    backBtn.hidden = false;
+    const cam = CAMS.find(c => c.id === detailCamId);
+    pageTitle.textContent = cam ? cam.name : 'LBI Cams';
+    renderDetail();
+  } else {
+    backBtn.hidden = true;
+    pageTitle.textContent = 'LBI Cams';
+    renderList();
+  }
+}
+
+document.getElementById('backBtn').addEventListener('click', goBack);
+
+render();
