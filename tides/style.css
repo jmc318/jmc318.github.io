@@ -2,11 +2,11 @@
   color-scheme: dark;
   --bg: #062341;
   --bg2: #0d3860;
-  --card: #114a7d;
-  --tide-card: #0b5b68;
-  --text: #eef3fb;
-  --muted: #9fc1e0;
-  --accent: #4fd1c5;
+  --card: #0e3f6b;
+  --tide-card: #0a4f5c;
+  --text: #ffffff;
+  --muted: #c9e0f4;
+  --accent: #5fe4d8;
   --danger: #ff6b6b;
 }
 
@@ -84,7 +84,8 @@ html, body {
 }
 
 .panel-header h1 {
-  font-size: 20px;
+  font-size: 23px;
+  font-weight: 800;
   margin: 0;
 }
 
@@ -93,7 +94,8 @@ html, body {
   align-items: center;
   justify-content: space-between;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 600;
   margin-bottom: 14px;
 }
 
@@ -101,7 +103,8 @@ html, body {
   background: none;
   border: none;
   color: var(--accent);
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 700;
   padding: 0;
 }
 
@@ -118,10 +121,10 @@ html, body {
 }
 
 .chart-section h2 {
-  font-size: 13px;
-  color: var(--muted);
-  font-weight: 500;
-  margin: 0 0 6px;
+  font-size: 14px;
+  color: var(--text);
+  font-weight: 700;
+  margin: 0 0 8px;
 }
 
 .cond-row {
@@ -134,25 +137,31 @@ html, body {
   flex: 1;
   background: var(--card);
   border-radius: 12px;
-  padding: 10px 6px;
+  padding: 12px 6px;
   text-align: center;
 }
 
 .cond-label {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--muted);
-  margin-bottom: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 5px;
 }
 
 .cond-val {
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 21px;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.15;
 }
 
 .cond-sub {
-  font-size: 11px;
+  font-size: 14px;
   color: var(--muted);
-  margin-top: 2px;
+  font-weight: 600;
+  margin-top: 3px;
 }
 
 .tide-row {
