@@ -112,23 +112,8 @@ html, body {
 }
 .status.error { color: var(--danger); }
 
-.tide-status {
-  background: var(--card);
-  border-radius: 14px;
-  padding: 16px;
-  margin-bottom: 16px;
-}
-
-.ts-height {
-  font-size: 30px;
-  font-weight: 700;
-}
-
-.ts-detail {
-  color: var(--muted);
-  font-size: 13px;
-  margin-top: 4px;
-  line-height: 1.4;
+.chart-section {
+  margin-bottom: 18px;
 }
 
 .chart-section h2 {
@@ -137,16 +122,6 @@ html, body {
   font-weight: 500;
   margin: 0 0 6px;
 }
-
-.hourly-chart {
-  background: #ffffff;
-  border-radius: 14px;
-  overflow-x: auto;
-  margin-bottom: 18px;
-  border: 1px solid rgba(255,255,255,0.15);
-}
-
-.hourly-chart svg { display: block; min-width: 720px; }
 
 .cond-row {
   display: flex;
