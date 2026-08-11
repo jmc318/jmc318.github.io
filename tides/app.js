@@ -290,13 +290,12 @@ function renderLocationBody(loc, data) {
     group.events.push(e);
   });
 
-  const tidesHtml = `
+  const [todayGroup, ...restGroups] = dayGroups;
+
+  const todayTidesHtml = `
     <div class="chart-section">
-      <h2>Tides</h2>
-      ${dayGroups.slice(0, 5).map(g => `
-        <div class="day-heading">${g.label}</div>
-        <div class="cond-row tide-row">${g.events.map(tideBoxHtml).join('')}</div>
-      `).join('')}
+      <h2>Today's tides</h2>
+      <div class="cond-row tide-row">${todayGroup ? todayGroup.events.map(tideBoxHtml).join('') : ''}</div>
     </div>`;
 
   let conditionsHtml = '<div class="cond-row">';
@@ -316,10 +315,20 @@ function renderLocationBody(loc, data) {
       <div class="cond"><div class="cond-label">Moon</div><div class="cond-val">${moon.icon} ${moon.illumination}%</div></div>
     </div>`;
 
+  const laterTidesHtml = restGroups.length ? `
+    <div class="chart-section">
+      <h2>Upcoming tides</h2>
+      ${restGroups.slice(0, 4).map(g => `
+        <div class="day-heading">${g.label}</div>
+        <div class="cond-row tide-row">${g.events.map(tideBoxHtml).join('')}</div>
+      `).join('')}
+    </div>` : '';
+
   bodyEl.innerHTML = `
-    ${tidesHtml}
+    ${todayTidesHtml}
     ${conditionsHtml}
     ${sunMoonHtml}
+    ${laterTidesHtml}
     <div class="source-row">
       Tide predictions: <b>${loc.tideStationName}</b> NOAA station (~${loc.tideStationMiles} mi away).
       Water temp: <b>${loc.waterTempStationName}</b> NOAA station (~${loc.waterTempStationMiles} mi away).
