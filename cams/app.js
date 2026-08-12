@@ -66,6 +66,7 @@ const CAMS = [
     name: 'Drifting Sands Hotel Beach Cam',
     source: 'dslbi.com',
     type: 'link',
+    directLink: true,
     note: "This site doesn't allow its cam to be shown inside other apps — tap below to open it directly.",
     pageUrl: 'https://www.dslbi.com/beach-camera.htm',
     thumb: 'https://www.dslbi.com/files/4448/Ship_Bottom_New_Jersey_Beach.png',
@@ -250,7 +251,12 @@ function placeholderIcon() {
 }
 
 function renderTile(cam) {
-  const tile = el('button', { class: 'cam-tile' });
+  // Cams flagged `directLink` have nothing to show in the detail view beyond
+  // a note + "open" button (their source can't be embedded at all) — the
+  // tile itself is a real link straight to pageUrl, skipping that extra tap.
+  const tile = cam.directLink
+    ? el('a', { class: 'cam-tile', href: cam.pageUrl, target: '_blank', rel: 'noopener' })
+    : el('button', { class: 'cam-tile' });
   tile.appendChild(el('div', { class: 'tile-label', text: cam.name }));
 
   const thumbWrap = el('div', { class: 'tile-thumb-wrap' });
@@ -265,7 +271,7 @@ function renderTile(cam) {
   }
   tile.appendChild(thumbWrap);
 
-  tile.addEventListener('click', () => openCam(cam.id));
+  if (!cam.directLink) tile.addEventListener('click', () => openCam(cam.id));
   return tile;
 }
 
