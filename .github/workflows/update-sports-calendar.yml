@@ -23,5 +23,17 @@ jobs:
           git config user.name "sports-calendar-bot"
           git config user.email "actions@github.com"
           git add sports.ics
-          git diff --staged --quiet || git commit -m "Update combined sports calendar"
-          git push
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Update combined sports calendar"
+          for i in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejected (attempt $i) - another update landed first. Pulling and retrying..."
+            git pull --rebase
+          done
+          echo "Push still failing after 5 attempts."
+          exit 1
