@@ -12,13 +12,16 @@ known-good combined file with an empty/partial one.
 
 Purdue has no working calendar-subscription feed (confirmed dead end -- see
 Sports Calendar/CLAUDE.md), so its games are scraped directly from Purdue's
-own schedule pages instead (PURDUE_PAGES below). Because that scrape depends
-on Purdue's page layout rather than a stable API contract, a Purdue failure
-is NOT treated the same as a Wisconsin/Michigan State feed failure: it does
-NOT abort the run. Instead it falls back to whatever Purdue events were
-already in the last-published sports.ics, so Wisconsin/Michigan State keep
-updating normally and Purdue just goes stale (rather than disappearing)
-until the scraper is fixed.
+own schedule pages instead (PURDUE_PAGES below). Every run first re-checks
+whether Purdue's official feed has come back online (try_purdue_official_feed)
+and prefers it over the scraper if so -- cheap to keep checking, and a real
+feed is more durable than a scraper if one ever becomes available again.
+Because the scraper depends on Purdue's page layout rather than a stable API
+contract, a Purdue failure is NOT treated the same as a Wisconsin/Michigan
+State feed failure: it does NOT abort the run. Instead it falls back to
+whatever Purdue events were already in the last-published sports.ics, so
+Wisconsin/Michigan State keep updating normally and Purdue just goes stale
+(rather than disappearing) until the scraper is fixed.
 """
 import gzip
 import re
@@ -187,6 +190,36 @@ def scrape_purdue_schedule(label, category, uid_tag, url):
     return events
 
 
+def try_purdue_official_feed(label, category, sport_keyword):
+    """Best-effort check whether Purdue's classic SIDEARM calendar API (the
+    same one Wisconsin/Michigan State use) has come back online for this
+    sport. Confirmed dead as of 2026-08-12 -- every sportId 1-12 returns 404,
+    meaning the route doesn't exist on Purdue's backend at all right now, not
+    just an outage. Cheap to keep re-checking every run (a couple dozen quick
+    404s, a few seconds total) so that if Purdue ever adds this route back,
+    the calendar switches to it automatically -- a real feed is more durable
+    than scraping a page layout that could change. sport_keyword guards
+    against matching the wrong sport's feed if a sportId ever starts
+    resolving to *something* unexpected.
+    Returns an events list if a working, matching feed is found, else None.
+    """
+    for sport_id in range(1, 13):
+        url = f"https://purduesports.com/api/v2/Calendar/subscribe?type=ics&sportId={sport_id}"
+        try:
+            text = fetch(url)
+        except Exception:
+            continue
+        if sport_keyword.lower() not in text.lower():
+            continue
+        events = extract_vevents(text, category)
+        if events:
+            print(f"NOTE: Purdue's official calendar API is now responding for {label} "
+                  f"(sportId={sport_id})! Using it instead of the scraper this run -- "
+                  f"consider moving this into FEEDS permanently.")
+            return events
+    return None
+
+
 def load_previous_sports_ics():
     try:
         with open(OUTPUT_FILE, "r") as f:
@@ -213,11 +246,21 @@ def main():
         print(f"{label}: {len(events)} events (category: {category})")
         all_events.append((label, events))
 
-    # Purdue: scraped, not a stable API -- a failure here falls back to the
-    # last-published events for that specific sport instead of aborting the
-    # whole run (see module docstring).
+    # Purdue: no working official feed as of 2026-08-12, so scraped instead --
+    # not a stable API, so a failure here falls back to the last-published
+    # events for that specific sport instead of aborting the whole run (see
+    # module docstring). Every run first checks whether Purdue's official
+    # feed has come back (see try_purdue_official_feed) and prefers it over
+    # the scraper if so.
     previous_ics = None
     for label, category, uid_tag, url in PURDUE_PAGES:
+        sport_keyword = "football" if uid_tag == "fb" else "basketball"
+
+        events = try_purdue_official_feed(label, category, sport_keyword)
+        if events:
+            all_events.append((label, events))
+            continue
+
         try:
             events = scrape_purdue_schedule(label, category, uid_tag, url)
             if not events:
