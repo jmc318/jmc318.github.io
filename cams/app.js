@@ -214,13 +214,6 @@ function renderCamContent(cam) {
       allow: 'fullscreen',
     });
     wrap.appendChild(iframe);
-  } else if (cam.type === 'stream') {
-    const img = el('img', {
-      class: 'cam-frame cam-stream-img',
-      src: cam.streamUrl + Date.now(),
-      alt: cam.name,
-    });
-    wrap.appendChild(img);
   } else if (cam.type === 'image') {
     // Periodic snapshot (not a continuous stream) — re-fetch every 15s
     // with a cache-busting timestamp so it updates while Jeff is looking.
