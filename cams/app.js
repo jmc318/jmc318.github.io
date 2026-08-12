@@ -1,4 +1,7 @@
 // ---------- cam data (north to south) ----------
+// `thumb` = static preview image shown on the home-screen grid tile. Not all
+// vendors expose one (see CLAUDE.md "Thumbnails" section) — cams without a
+// `thumb` fall back to a plain placeholder tile in renderTile().
 
 const CAMS = [
   {
@@ -9,7 +12,8 @@ const CAMS = [
     type: 'iframe',
     embedUrl: 'https://www.youtube.com/embed/VOJ1k88ZVNE',
     pageUrl: 'https://www.joyislbi.com/webcam',
-    note: "This provider's YouTube livestream is currently offline (confirmed on their own page too, not an app problem) — it may say \"stream recording is not available\" until they restart it.",
+    thumb: 'https://www.joyislbi.com/uploads/feature/webcam-og-12x9-lg.jpg',
+    note: "This provider's YouTube livestream is offline (confirmed again 2026-08-12, same as the day before — the box below will say \"stream recording is not available\" until they restart it). Not an app problem; it'll start working again on its own once they do.",
   },
   {
     id: 'harvey-cedars-tower',
@@ -25,40 +29,36 @@ const CAMS = [
     town: 'Surf City',
     name: 'Main Causeway',
     source: 'iloveseaisle.com',
-    type: 'iframe',
-    embedUrl: 'https://www.iloveseaisle.com/lbi.beach.main.causeway.cam.php',
+    type: 'link',
     pageUrl: 'https://www.iloveseaisle.com/lbi.beach.main.causeway.cam.php',
-    note: "This provider's camera service is currently reporting an outage on their end — the box below may show blank until they fix it. Nothing wrong with the app; it'll start working again once they do.",
+    note: "This camera runs on AccuWeather's widget platform, which has been down (server error 503) for at least 2 days straight as of 2026-08-12 — not something this app can fix. It used to be embeddable directly; changed to a plain \"open\" link for now so a dead widget doesn't dump you onto the provider's full website. Worth trying again in a few weeks in case AccuWeather restores it.",
   },
   {
     id: 'sc-8th-west',
     town: 'Surf City',
     name: '8th St Causeway (West)',
     source: 'iloveseaisle.com',
-    type: 'iframe',
-    embedUrl: 'https://www.iloveseaisle.com/lbi.beach.8thst.causeway.west.pan.cam.php',
+    type: 'link',
     pageUrl: 'https://www.iloveseaisle.com/lbi.beach.8thst.causeway.west.pan.cam.php',
-    note: "This provider's camera service is currently reporting an outage on their end — the box below may show blank until they fix it. Nothing wrong with the app; it'll start working again once they do.",
+    note: "Same AccuWeather widget outage as the Main Causeway cam above (503 error, ongoing 2+ days as of 2026-08-12) — not fixable from this app.",
   },
   {
     id: 'sc-9th-east',
     town: 'Surf City',
     name: '9th St Causeway (East)',
     source: 'iloveseaisle.com',
-    type: 'iframe',
-    embedUrl: 'https://www.iloveseaisle.com/lbi.beach.9thst.causeway.east.pan.cam.php',
+    type: 'link',
     pageUrl: 'https://www.iloveseaisle.com/lbi.beach.9thst.causeway.east.pan.cam.php',
-    note: "This provider's camera service is currently reporting an outage on their end — the box below may show blank until they fix it. Nothing wrong with the app; it'll start working again once they do.",
+    note: "Same AccuWeather widget outage as the Main Causeway cam above (503 error, ongoing 2+ days as of 2026-08-12) — not fixable from this app.",
   },
   {
     id: 'sc-southeast-beach',
     town: 'Surf City',
     name: 'Southeast Beach (Wide)',
     source: 'iloveseaisle.com',
-    type: 'iframe',
-    embedUrl: 'https://www.iloveseaisle.com/lbi.beach.southeast.wide.cam.php',
+    type: 'link',
     pageUrl: 'https://www.iloveseaisle.com/lbi.beach.southeast.wide.cam.php',
-    note: "This provider's camera service is currently reporting an outage on their end — the box below may show blank until they fix it. Nothing wrong with the app; it'll start working again once they do.",
+    note: "Same AccuWeather widget outage as the Main Causeway cam above (503 error, ongoing 2+ days as of 2026-08-12) — not fixable from this app.",
   },
   {
     id: 'ship-bottom-drifting-sands',
@@ -68,6 +68,7 @@ const CAMS = [
     type: 'link',
     note: "This site doesn't allow its cam to be shown inside other apps — tap below to open it directly.",
     pageUrl: 'https://www.dslbi.com/beach-camera.htm',
+    thumb: 'https://www.dslbi.com/files/4448/Ship_Bottom_New_Jersey_Beach.png',
   },
   {
     id: 'beach-haven-surf',
@@ -77,6 +78,8 @@ const CAMS = [
     type: 'iframe',
     embedUrl: 'https://njbeachcams.com/beach-cams/network/lbi.php',
     pageUrl: 'https://njbeachcams.com/central-new-jersey/beach-haven-surf-cam/',
+    thumb: 'https://njbeachcams.com/wp-content/uploads/2020/02/beach-haven-webcam.jpg',
+    note: "This provider's video stream is currently returning a server error on their end (confirmed 2026-08-12) — the box below may be blank until they fix it. Nothing wrong with the app.",
   },
   {
     id: 'flow-house',
@@ -86,6 +89,8 @@ const CAMS = [
     type: 'iframe',
     embedUrl: 'https://njbeachcams.com/beach-cams/network/flowhouse.php',
     pageUrl: 'https://njbeachcams.com/central-new-jersey/flow-house-lbi-webcam/',
+    thumb: 'https://njbeachcams.com/wp-content/uploads/2022/04/flow-house-lbi-webcam.jpg',
+    note: "This provider's video stream is currently returning a server error on their end (confirmed 2026-08-12) — the box below may be blank until they fix it. Nothing wrong with the app.",
   },
   {
     id: 'the-hideaway',
@@ -95,51 +100,55 @@ const CAMS = [
     type: 'iframe',
     embedUrl: 'https://g1.ipcamlive.com/player/player.php?alias=6606e0e3a7b57&skin=white&autoplay=1&mute=1&disabledownloadbutton=1',
     pageUrl: 'https://www.thehideawaylbi.com/surf-cam',
+    note: "This camera itself is offline at the source right now (confirmed 2026-08-12 — the player just spins on \"connecting\"), not an app problem. No preview thumbnail is available from this vendor even when it's up.",
   },
   {
     id: 'lbt-38th-north',
     town: 'Township Traffic Cams',
     name: '38th St, LBB (North)',
     source: 'Long Beach Township',
-    type: 'stream',
-    streamUrl: 'http://lbtpublic.packetalk.net:5350/video/1/0/fps=30/',
+    type: 'link',
     pageUrl: 'http://lbtpublic.packetalk.net:5350/IVC/views.htm',
+    thumb: 'thumbs/lbt-38th-north.jpg',
+    note: "This township relay only serves video over an insecure (non-HTTPS) connection, which phones and browsers block when loaded from this secure app — confirmed not fixable from here (the township would need to add HTTPS on their end). Tap below to view it directly on their own page instead; the preview above is a real recent snapshot, not live.",
   },
   {
     id: 'lbt-38th-south',
     town: 'Township Traffic Cams',
     name: '38th St, LBB (South)',
     source: 'Long Beach Township',
-    type: 'stream',
-    streamUrl: 'http://lbtpublic.packetalk.net:5350/video/2/0/fps=30/',
+    type: 'link',
     pageUrl: 'http://lbtpublic.packetalk.net:5350/IVC/views.htm',
+    thumb: 'thumbs/lbt-38th-south.jpg',
+    note: "Same insecure-connection limitation as the other township cams (see 38th St North) — tap below to view it directly on their own page. Preview above is a real recent snapshot, not live.",
   },
   {
     id: 'lbt-28th-south',
     town: 'Township Traffic Cams',
     name: '28th St, LBB (South)',
     source: 'Long Beach Township',
-    type: 'stream',
-    streamUrl: 'http://lbtpublic.packetalk.net:5350/video/3/0/fps=30/',
+    type: 'link',
     pageUrl: 'http://lbtpublic.packetalk.net:5350/IVC/views.htm',
+    thumb: 'thumbs/lbt-28th-south.jpg',
+    note: "Same insecure-connection limitation as the other township cams (see 38th St North) — tap below to view it directly on their own page. Preview above is a real recent snapshot, not live.",
   },
   {
     id: 'lbt-holgate',
     town: 'Township Traffic Cams',
     name: 'Holgate',
     source: 'Long Beach Township',
-    type: 'stream',
-    streamUrl: 'http://lbtpublic.packetalk.net:5350/video/4/0/fps=30/',
+    type: 'link',
     pageUrl: 'http://lbtpublic.packetalk.net:5350/IVC/views.htm',
+    note: "Same insecure-connection limitation as the other township cams (see 38th St North) — tap below to view it directly on their own page. This one was also showing \"Video Temporarily Down\" at the source when last checked (2026-08-12), so no preview snapshot is shown.",
   },
   {
     id: 'lbt-28th-north',
     town: 'Township Traffic Cams',
     name: '28th St, LBB (North)',
     source: 'Long Beach Township',
-    type: 'stream',
-    streamUrl: 'http://lbtpublic.packetalk.net:5350/video/5/0/fps=30/',
+    type: 'link',
     pageUrl: 'http://lbtpublic.packetalk.net:5350/IVC/views.htm',
+    note: "Same insecure-connection limitation as the other township cams (see 38th St North) — tap below to view it directly on their own page. This one was also showing \"Video Temporarily Down\" at the source when last checked (2026-08-12), so no preview snapshot is shown.",
   },
 ];
 
@@ -151,8 +160,10 @@ const CAMS_BY_TOWN = Object.fromEntries(
 );
 
 // ---------- state ----------
-// Single-page app: 'list' shows every cam's location as a tappable row
-// (nothing live-loads on this screen — keeps it light and fast).
+// Single-page app: 'list' shows a thumbnail grid, one tile per cam, grouped
+// by town heading. Nothing live-loads on this screen (grid thumbnails are
+// static/one-time image fetches, not continuous streams) — keeps it light
+// and fast, and doesn't leave multiple live video connections running.
 // 'detail' shows one cam full-size; the header's Back button returns to 'list'.
 
 let view = 'list';
@@ -232,6 +243,39 @@ function renderCamContent(cam) {
   return wrap;
 }
 
+// Inline camera-off icon for grid tiles that have no preview image available.
+function placeholderIcon() {
+  const ns = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(ns, 'svg');
+  svg.setAttribute('viewBox', '0 0 24 24');
+  svg.setAttribute('class', 'tile-placeholder-icon');
+  const path = document.createElementNS(ns, 'path');
+  path.setAttribute('fill', 'currentColor');
+  path.setAttribute('d', 'M17 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11l-4 4Zm-2 5.5H5V8h10v8ZM3.3 2.3 2 3.6l2 2V17a2 2 0 0 0 2 2h11.4l2 2 1.3-1.3L3.3 2.3Z');
+  svg.appendChild(path);
+  return svg;
+}
+
+function renderTile(cam) {
+  const tile = el('button', { class: 'cam-tile' });
+  tile.appendChild(el('div', { class: 'tile-label', text: cam.name }));
+
+  const thumbWrap = el('div', { class: 'tile-thumb-wrap' });
+  if (cam.thumb) {
+    thumbWrap.appendChild(el('img', { class: 'tile-thumb', src: cam.thumb, alt: cam.name, loading: 'lazy' }));
+  } else if (cam.type === 'image') {
+    thumbWrap.appendChild(el('img', { class: 'tile-thumb', src: cam.imageUrl, alt: cam.name, loading: 'lazy' }));
+  } else {
+    const placeholder = el('div', { class: 'tile-placeholder' });
+    placeholder.appendChild(placeholderIcon());
+    thumbWrap.appendChild(placeholder);
+  }
+  tile.appendChild(thumbWrap);
+
+  tile.addEventListener('click', () => openCam(cam.id));
+  return tile;
+}
+
 function renderList() {
   const content = document.getElementById('content');
   content.innerHTML = '';
@@ -239,16 +283,11 @@ function renderList() {
   const list = el('div', { class: 'cam-list' });
   for (const town of TOWNS) {
     list.appendChild(el('div', { class: 'town-heading', text: town }));
+    const grid = el('div', { class: 'cam-grid' });
     for (const cam of CAMS_BY_TOWN[town]) {
-      const row = el('button', { class: 'cam-row' });
-      const textWrap = el('div', { class: 'cam-row-text' });
-      textWrap.appendChild(el('div', { class: 'cam-row-name', text: cam.name }));
-      textWrap.appendChild(el('div', { class: 'cam-row-source', text: cam.source }));
-      row.appendChild(textWrap);
-      row.appendChild(el('div', { class: 'cam-row-chevron', text: '›' }));
-      row.addEventListener('click', () => openCam(cam.id));
-      list.appendChild(row);
+      grid.appendChild(renderTile(cam));
     }
+    list.appendChild(grid);
   }
   content.appendChild(list);
 }
