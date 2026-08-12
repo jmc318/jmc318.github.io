@@ -139,7 +139,12 @@ def scrape_purdue_schedule(label, category, uid_tag, url):
 
         month_day_text = day_el.get_text(strip=True)  # e.g. "Sep 4"
         try:
-            month_day = datetime.strptime(month_day_text, "%b %d")
+            # Append a placeholder year -- the page never gives one, and the
+            # real year is worked out below via prev_month rollover anyway.
+            # Parsing "%b %d" alone triggers a DeprecationWarning on newer
+            # Python (ambiguous day-of-month without a year); this sidesteps
+            # it without changing behavior.
+            month_day = datetime.strptime(f"{month_day_text} 1900", "%b %d %Y")
         except ValueError:
             continue  # unexpected date format -- skip rather than guess
 
