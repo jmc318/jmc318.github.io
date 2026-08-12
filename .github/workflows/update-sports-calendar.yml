@@ -16,6 +16,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
+      - name: Install dependencies
+        run: pip install beautifulsoup4 tzdata
       - name: Generate combined calendar
         run: python scripts/merge_sports_calendar.py
       - name: Commit and push if changed
