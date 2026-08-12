@@ -1,10 +1,12 @@
 const CACHE_PREFIX = 'beachTideCache_';
 const GRID_CACHE_PREFIX = 'beachTideGrid_';
+const STATION_CACHE_PREFIX = 'beachTideStations_';
+const LOCATIONS_KEY = 'beachTideLocations';
 const CACHE_VERSION = 1;
 const CACHE_MAX_AGE_MS = 30 * 60 * 1000;
 const UA_HEADERS = { 'User-Agent': 'BeachTideApp/1.0 (personal iphone web app)' };
 
-const LOCATIONS = [
+const DEFAULT_LOCATIONS = [
   {
     id: 'brant-beach',
     label: 'Brant Beach, NJ',
@@ -28,6 +30,96 @@ const LOCATIONS = [
     waterTempStationMiles: 14,
   },
 ];
+
+function loadLocations() {
+  try {
+    const raw = localStorage.getItem(LOCATIONS_KEY);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed) && parsed.length) return parsed;
+    }
+  } catch (e) {}
+  return DEFAULT_LOCATIONS.slice();
+}
+
+function saveLocations() {
+  localStorage.setItem(LOCATIONS_KEY, JSON.stringify(LOCATIONS));
+}
+
+let LOCATIONS = loadLocations();
+
+// ---------- adding a new location ----------
+// Nominatim geocodes the typed "City, State" text to lat/lon (same approach
+// as the weather app). NOAA's station metadata API then finds the nearest
+// tide-prediction station and nearest water-temperature station to that
+// point, the same way each hardcoded location above was picked by hand.
+
+async function geocodePlace(query) {
+  const url = `https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=us&q=${encodeURIComponent(query)}`;
+  const res = await fetch(url);
+  if (!res.ok) return null;
+  const results = await res.json();
+  if (!results.length) return null;
+  return { lat: parseFloat(results[0].lat), lon: parseFloat(results[0].lon) };
+}
+
+function haversineMiles(lat1, lon1, lat2, lon2) {
+  const R = 3958.8;
+  const rad = Math.PI / 180;
+  const dLat = (lat2 - lat1) * rad;
+  const dLon = (lon2 - lon1) * rad;
+  const a = Math.sin(dLat / 2) ** 2 +
+    Math.cos(lat1 * rad) * Math.cos(lat2 * rad) * Math.sin(dLon / 2) ** 2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+async function loadStationList(type) {
+  const key = STATION_CACHE_PREFIX + type;
+  try {
+    const raw = localStorage.getItem(key);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (parsed && parsed.v === CACHE_VERSION && Array.isArray(parsed.stations)) return parsed.stations;
+    }
+  } catch (e) {}
+  const url = `https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations.json?type=${type}`;
+  const res = await fetch(url);
+  if (!res.ok) throw new Error('Could not reach NOAA to find a nearby tide station.');
+  const data = await res.json();
+  const stations = (data.stations || []).map(s => ({ id: s.id, name: s.name, lat: s.lat, lon: s.lng }));
+  localStorage.setItem(key, JSON.stringify({ v: CACHE_VERSION, stations }));
+  return stations;
+}
+
+function nearestStation(stations, lat, lon) {
+  let best = null, bestDist = Infinity;
+  stations.forEach(s => {
+    const d = haversineMiles(lat, lon, s.lat, s.lon);
+    if (d < bestDist) { bestDist = d; best = s; }
+  });
+  return best ? { ...best, miles: Math.round(bestDist * 10) / 10 } : null;
+}
+
+async function resolveNewLocation(label, lat, lon) {
+  const [tidePredStations, waterTempStations] = await Promise.all([
+    loadStationList('tidepredictions'),
+    loadStationList('watertemp'),
+  ]);
+  const nearestTide = nearestStation(tidePredStations, lat, lon);
+  const nearestWaterTemp = nearestStation(waterTempStations, lat, lon);
+  if (!nearestTide) throw new Error('No nearby NOAA tide station found for that place.');
+  return {
+    id: 'loc-' + Date.now(),
+    label,
+    lat, lon,
+    tideStationId: nearestTide.id,
+    tideStationName: nearestTide.name,
+    tideStationMiles: nearestTide.miles,
+    waterTempStationId: nearestWaterTemp ? nearestWaterTemp.id : nearestTide.id,
+    waterTempStationName: nearestWaterTemp ? nearestWaterTemp.name : nearestTide.name,
+    waterTempStationMiles: nearestWaterTemp ? nearestWaterTemp.miles : nearestTide.miles,
+  };
+}
 
 // ---------- cache ----------
 
@@ -258,8 +350,10 @@ function renderPanelShell() {
     const panel = document.createElement('div');
     panel.className = 'panel' + (loc.id === activeLocId ? ' active' : '');
     panel.id = 'panel-' + loc.id;
+    const removeBtnHtml = LOCATIONS.length > 1
+      ? `<button class="remove-btn" data-loc="${loc.id}" aria-label="Remove location">✕</button>` : '';
     panel.innerHTML = `
-      <div class="panel-header"><h1>${loc.label}</h1></div>
+      <div class="panel-header"><h1>${loc.label}</h1>${removeBtnHtml}</div>
       <div class="updated-row">
         <span id="updated-${loc.id}"></span>
         <button class="refresh-btn" data-loc="${loc.id}">Refresh</button>
@@ -271,6 +365,21 @@ function renderPanelShell() {
   document.querySelectorAll('.refresh-btn').forEach(btn => {
     btn.addEventListener('click', () => renderLocation(LOCATIONS.find(l => l.id === btn.dataset.loc), { force: true }));
   });
+  document.querySelectorAll('.remove-btn').forEach(btn => {
+    btn.addEventListener('click', () => removeLocation(btn.dataset.loc));
+  });
+}
+
+function removeLocation(id) {
+  const loc = LOCATIONS.find(l => l.id === id);
+  if (!loc || LOCATIONS.length <= 1) return;
+  if (!confirm(`Remove ${loc.label}?`)) return;
+  LOCATIONS = LOCATIONS.filter(l => l.id !== id);
+  saveLocations();
+  if (activeLocId === id) activeLocId = LOCATIONS[0].id;
+  renderTabs();
+  renderPanelShell();
+  LOCATIONS.forEach(l => renderLocation(l));
 }
 
 function tideBoxHtml(e) {
@@ -354,10 +463,54 @@ async function renderLocation(loc, opts) {
   }
 }
 
+function wireAddModal() {
+  const addModal = document.getElementById('addModal');
+  const addInput = document.getElementById('addInput');
+  const addError = document.getElementById('addError');
+  const addConfirmBtn = document.getElementById('addConfirmBtn');
+
+  document.getElementById('addTabBtn').addEventListener('click', () => {
+    addInput.value = '';
+    addError.classList.add('hidden');
+    addModal.classList.remove('hidden');
+    addInput.focus();
+  });
+
+  document.getElementById('addCancelBtn').addEventListener('click', () => addModal.classList.add('hidden'));
+
+  addConfirmBtn.addEventListener('click', async () => {
+    const text = addInput.value.trim();
+    addError.classList.add('hidden');
+    if (!text) return;
+
+    addConfirmBtn.disabled = true;
+    addConfirmBtn.textContent = 'Looking up…';
+    try {
+      const geo = await geocodePlace(text);
+      if (!geo) throw new Error('Could not find that place. Try "City, State".');
+      const newLoc = await resolveNewLocation(text, geo.lat, geo.lon);
+      LOCATIONS.push(newLoc);
+      saveLocations();
+      activeLocId = newLoc.id;
+      addModal.classList.add('hidden');
+      renderTabs();
+      renderPanelShell();
+      LOCATIONS.forEach(l => renderLocation(l));
+    } catch (e) {
+      addError.textContent = e.message || 'Something went wrong. Try again.';
+      addError.classList.remove('hidden');
+    } finally {
+      addConfirmBtn.disabled = false;
+      addConfirmBtn.textContent = 'Add';
+    }
+  });
+}
+
 function init() {
   renderTabs();
   renderPanelShell();
   LOCATIONS.forEach(loc => renderLocation(loc));
+  wireAddModal();
 }
 
 document.addEventListener('DOMContentLoaded', init);
