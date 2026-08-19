@@ -19,6 +19,8 @@ jobs:
       - name: Install dependencies
         run: pip install beautifulsoup4 tzdata
       - name: Generate combined calendar
+        id: generate
+        continue-on-error: true
         run: python scripts/merge_sports_calendar.py
       - name: Commit and push if changed
         run: |
@@ -38,4 +40,10 @@ jobs:
             git pull --rebase
           done
           echo "Push still failing after 5 attempts."
+          exit 1
+      - name: Fail run if the calendar generation reported a problem
+        if: steps.generate.outcome == 'failure'
+        run: |
+          echo "merge_sports_calendar.py exited non-zero -- see the 'Generate combined calendar' step's log above for which feed/scrape failed."
+          echo "Whatever could still be produced was already committed above (if anything); failing this run on purpose so GitHub's own failed-workflow notification email fires."
           exit 1
