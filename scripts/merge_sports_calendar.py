@@ -22,6 +22,16 @@ State feed failure: it does NOT abort the run. Instead it falls back to
 whatever Purdue events were already in the last-published sports.ics, so
 Wisconsin/Michigan State keep updating normally and Purdue just goes stale
 (rather than disappearing) until the scraper is fixed.
+
+Exit codes (read by the GitHub Actions workflow to decide whether to fail the
+run and trigger Jeff's failure-notification email, added 2026-08-19):
+0 = totally clean run. 1 = fatal abort, nothing written (Wisconsin/Michigan
+State outage). 2 = sports.ics was still written and committed, but at least
+one Purdue sport fell back to stale carried-forward data. The workflow marks
+the whole run as failed on either 1 or 2 -- it still commits+pushes whatever
+was produced first (a no-op in the code-1 case, since nothing new was
+written), then fails the job afterward on purpose purely so GitHub's own
+scheduled-workflow-failure email fires.
 """
 import gzip
 import re
@@ -235,6 +245,7 @@ def load_previous_sports_ics():
 
 def main():
     all_events = []
+    degraded_labels = []
 
     # Wisconsin / Michigan State: stable official feeds -- a failure here is
     # treated as a real outage and aborts the whole run (see module docstring).
@@ -273,6 +284,7 @@ def main():
             print(f"{label}: {len(events)} events (category: {category})")
         except Exception as e:
             print(f"WARNING: {label} scrape failed ({e}); keeping last-published events for this sport instead", file=sys.stderr)
+            degraded_labels.append(label)
             if previous_ics is None:
                 previous_ics = load_previous_sports_ics()
             events = extract_vevents_by_uid_prefix(previous_ics, f"purdue-{uid_tag}-")
@@ -297,6 +309,10 @@ def main():
 
     total = sum(len(events) for _, events in all_events)
     print(f"Wrote {OUTPUT_FILE} with {total} total events")
+
+    if degraded_labels:
+        print(f"WARNING: run completed but degraded (stale data used for: {', '.join(degraded_labels)})", file=sys.stderr)
+        sys.exit(2)
 
 
 if __name__ == "__main__":
