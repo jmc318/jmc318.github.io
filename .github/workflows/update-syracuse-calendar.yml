@@ -1,0 +1,39 @@
+name: Update Syracuse Calendar
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Generate Syracuse calendar
+        run: python scripts/merge_syracuse_calendar.py
+      - name: Commit and push if changed
+        run: |
+          git config user.name "sports-calendar-bot"
+          git config user.email "actions@github.com"
+          git add syracuse.ics
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Update Syracuse calendar"
+          for i in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejected (attempt $i) - another update landed first. Pulling and retrying..."
+            git pull --rebase
+          done
+          echo "Push still failing after 5 attempts."
+          exit 1
