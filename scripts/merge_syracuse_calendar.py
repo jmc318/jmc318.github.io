@@ -10,7 +10,16 @@ see Sports Calendar/CLAUDE.md. If any feed fails to fetch or returns 0 events,
 the whole run aborts without writing syracuse.ics, so a temporary outage never
 overwrites the last known-good file with an empty/partial one (same safety
 behavior as the Wisconsin/Michigan State feeds in merge_sports_calendar.py).
+
+TV network (added 2026-09-06): when a game's broadcast network is known, it's
+appended to the event title as "(TV: ACCN)" etc., so it's visible on the
+calendar itself rather than only in the event description. Same approach as
+merge_sports_calendar.py's Wisconsin/Michigan State handling -- this feed
+format already carries a "TV: ..." field in DESCRIPTION, just wasn't
+previously surfaced in the title. Omitted entirely for games where a network
+hasn't been assigned yet.
 """
+import re
 import sys
 import urllib.request
 import gzip
@@ -40,8 +49,37 @@ def fetch(url):
         return raw.decode("utf-8")
 
 
+def extract_tv_network(description_line):
+    """cuse.com's SIDEARM feed DESCRIPTION field packs several labeled fields
+    onto one line separated by literal '\\n' (backslash-n text, not real
+    newlines -- SIDEARM's own escaping), e.g. '...\\nTV: ACCN\\nRadio: ...'.
+    Pulls out the network name after 'TV: ' if that field is present (it's
+    omitted entirely on games where a network hasn't been assigned yet)."""
+    m = re.search(r"\\nTV:\s*([^\\]+?)(?:\\n|$)", description_line)
+    return m.group(1).strip() if m else None
+
+
+def inject_tv_network_into_summary(lines):
+    """Given a VEVENT's raw lines, append the TV network (read off the
+    DESCRIPTION field) onto the SUMMARY line, so it shows up in the
+    calendar's event title/listing itself instead of being buried in the
+    description that only shows once an event is opened."""
+    network = None
+    for line in lines:
+        if line.startswith("DESCRIPTION:"):
+            network = extract_tv_network(line)
+            break
+    if not network:
+        return lines
+    return [
+        f"{line} (TV: {network})" if line.startswith("SUMMARY:") else line
+        for line in lines
+    ]
+
+
 def extract_vevents(ics_text):
-    """Pull every BEGIN:VEVENT..END:VEVENT block out of a raw .ics feed."""
+    """Pull every BEGIN:VEVENT..END:VEVENT block out of a raw .ics feed and
+    append the TV network (if known) onto the title."""
     events = []
     current = []
     inside = False
@@ -51,6 +89,7 @@ def extract_vevents(ics_text):
             inside = True
             current = [line]
         elif stripped == "END:VEVENT":
+            current = inject_tv_network_into_summary(current)
             current.append(line)
             events.append("\r\n".join(current))
             inside = False
