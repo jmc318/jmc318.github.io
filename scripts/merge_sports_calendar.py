@@ -23,6 +23,14 @@ whatever Purdue events were already in the last-published sports.ics, so
 Wisconsin/Michigan State keep updating normally and Purdue just goes stale
 (rather than disappearing) until the scraper is fixed.
 
+TV network (added 2026-09-06): when a game's broadcast network is known, it's
+appended to the event title as "(TV: NBC)" etc., so it's visible on the
+calendar itself rather than only in the event description. For
+Wisconsin/Michigan State this is read off a "TV: ..." field already present in
+their feed's DESCRIPTION (see extract_tv_network); for Purdue it's scraped off
+the schedule page's network-logo link (see extract_purdue_network). Omitted
+entirely for games where a network hasn't been assigned yet.
+
 Exit codes (read by the GitHub Actions workflow to decide whether to fail the
 run and trigger Jeff's failure-notification email, added 2026-08-19):
 0 = totally clean run. 1 = fatal abort, nothing written (Wisconsin/Michigan
@@ -78,9 +86,39 @@ def fetch(url):
         return raw.decode("utf-8")
 
 
+def extract_tv_network(description_line):
+    """Wisconsin/Michigan State's SIDEARM feed DESCRIPTION field packs several
+    labeled fields onto one line separated by literal '\\n' (backslash-n text,
+    not real newlines -- that's SIDEARM's own escaping, confirmed by fetching
+    the feed directly), e.g. '...\\nTV: NBC/Peacock\\nRadio: ...'. Pulls out the
+    network name after 'TV: ' if that field is present (it's omitted entirely
+    on games where a network hasn't been assigned yet)."""
+    m = re.search(r"\\nTV:\s*([^\\]+?)(?:\\n|$)", description_line)
+    return m.group(1).strip() if m else None
+
+
+def inject_tv_network_into_summary(lines):
+    """Given a VEVENT's raw lines (pre-CATEGORIES), append the TV network
+    (read off the DESCRIPTION field) onto the SUMMARY line, so it shows up in
+    the calendar's event title/listing itself instead of being buried in the
+    description that only shows once an event is opened."""
+    network = None
+    for line in lines:
+        if line.startswith("DESCRIPTION:"):
+            network = extract_tv_network(line)
+            break
+    if not network:
+        return lines
+    return [
+        f"{line} (TV: {network})" if line.startswith("SUMMARY:") else line
+        for line in lines
+    ]
+
+
 def extract_vevents(ics_text, category):
-    """Pull every BEGIN:VEVENT..END:VEVENT block out of a raw .ics feed and
-    tag it with CATEGORIES:<category>."""
+    """Pull every BEGIN:VEVENT..END:VEVENT block out of a raw .ics feed,
+    append the TV network (if known) onto the title, and tag it with
+    CATEGORIES:<category>."""
     events = []
     current = []
     inside = False
@@ -90,6 +128,7 @@ def extract_vevents(ics_text, category):
             inside = True
             current = [line]
         elif stripped == "END:VEVENT":
+            current = inject_tv_network_into_summary(current)
             current.append(f"CATEGORIES:{category}")
             current.append(line)
             events.append("\r\n".join(current))
@@ -125,6 +164,29 @@ def parse_event_time(text):
     if m.group(3).upper() == "PM":
         hour += 12
     return hour, int(m.group(2))
+
+
+def extract_purdue_network(item):
+    """Purdue's schedule page has no separate labeled 'TV' field -- when a
+    network is assigned, it shows up as the first link in
+    div.schedule-event-item-links__list, an <a aria-label="Read more - ...">
+    wrapping an <img alt="{Network} Logo"> (confirmed live: alt was "BTN Logo"
+    for one game and bare "FOX" for another -- inconsistent, so just strip a
+    trailing "Logo" if present rather than assuming the exact format). That
+    same list also always has a radio-station link later on whose image has a
+    generic alt="header-logo" (the station's own logo file, not a network
+    name) -- skipped so it's never mistaken for the TV network. Returns None
+    if no network has been assigned yet (common for games far out)."""
+    for a in item.select("div.schedule-event-item-links__list a"):
+        label = a.get("aria-label", "")
+        if not label.startswith("Read more"):
+            continue  # e.g. "Live Stats - ...", not a network link
+        img = a.select_one("img")
+        alt = (img.get("alt") or "").strip() if img else ""
+        if not alt or alt.lower() == "header-logo":
+            continue
+        return re.sub(r"\s*Logo$", "", alt, flags=re.IGNORECASE)
+    return None
 
 
 def scrape_purdue_schedule(label, category, uid_tag, url):
@@ -172,6 +234,9 @@ def scrape_purdue_schedule(label, category, uid_tag, url):
         entity_id = link_el.get("entity-id") if link_el else f"{month_day_text}-{opponent}"
 
         summary = f"Purdue {sport_name} {'vs.' if is_home else 'at'} {opponent}"
+        network = extract_purdue_network(item)
+        if network:
+            summary += f" (TV: {network})"
         uid = f"purdue-{uid_tag}-{re.sub(r'[^A-Za-z0-9-]', '', str(entity_id))}@purduesports.com"
 
         lines = [
