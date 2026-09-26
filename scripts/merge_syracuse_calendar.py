@@ -23,6 +23,8 @@ import re
 import sys
 import urllib.request
 import gzip
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 # (display label, feed URL) -- sportId found by probing cuse.com/api/v2/Calendar/subscribe
 # and reading each feed's X-WR-CALNAME: 8=Football, 6=Men's Basketball, 7=Women's Basketball.
@@ -38,6 +40,8 @@ HEADERS = {
 
 CALNAME = "Syracuse Football, Men's & Women's Basketball"
 OUTPUT_FILE = "syracuse.ics"
+EASTERN = ZoneInfo("America/New_York")
+UTC = ZoneInfo("UTC")
 
 
 def fetch(url):
@@ -98,6 +102,49 @@ def extract_vevents(ics_text):
     return events
 
 
+VTIMEZONE_EASTERN = (
+    "BEGIN:VTIMEZONE\r\n"
+    "TZID:America/New_York\r\n"
+    "X-LIC-LOCATION:America/New_York\r\n"
+    "BEGIN:DAYLIGHT\r\n"
+    "TZOFFSETFROM:-0500\r\n"
+    "TZOFFSETTO:-0400\r\n"
+    "TZNAME:EDT\r\n"
+    "DTSTART:19700308T020000\r\n"
+    "RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\n"
+    "END:DAYLIGHT\r\n"
+    "BEGIN:STANDARD\r\n"
+    "TZOFFSETFROM:-0400\r\n"
+    "TZOFFSETTO:-0500\r\n"
+    "TZNAME:EST\r\n"
+    "DTSTART:19701101T020000\r\n"
+    "RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\n"
+    "END:STANDARD\r\n"
+    "END:VTIMEZONE\r\n"
+)
+
+
+def mark_time_tbd(event):
+    """Append ' (time TBD)' to the SUMMARY of an all-day event (DTSTART with
+    VALUE=DATE, i.e. no game time posted yet). Idempotent; the label goes away
+    on its own once a time is posted. Same as merge_sports_calendar.py."""
+    if "DTSTART;VALUE=DATE:" not in event or "(time TBD)" in event:
+        return event
+    return re.sub(r"^(SUMMARY:.*?)(\r?)$", r"\1 (time TBD)\2", event, count=1, flags=re.MULTILINE)
+
+
+def utc_to_eastern_tzid(event):
+    """Rewrite timed DTSTART/DTEND from bare UTC ('...T210000Z') to Eastern
+    local time with an explicit TZID. Classic Outlook shows bare-UTC subscribed
+    events in the all-day strip (confirmed 2026-09-26 on the sports calendar);
+    TZID + VTIMEZONE in the header avoids it. All-day lines are left alone."""
+    def repl(m):
+        utc = datetime.strptime(m.group(2), "%Y%m%dT%H%M%S").replace(tzinfo=UTC)
+        local = utc.astimezone(EASTERN)
+        return f"{m.group(1)};TZID=America/New_York:{local.strftime('%Y%m%dT%H%M%S')}"
+    return re.sub(r"^(DTSTART|DTEND):(\d{8}T\d{6})Z", repl, event, flags=re.MULTILINE)
+
+
 def main():
     all_events = []
 
@@ -118,13 +165,17 @@ def main():
         "BEGIN:VCALENDAR\r\n"
         "VERSION:2.0\r\n"
         "PRODID:-//Jeff Cohen//Syracuse Sports Calendar//EN\r\n"
+        "CALSCALE:GREGORIAN\r\n"
+        "METHOD:PUBLISH\r\n"
         f"X-WR-CALNAME:{CALNAME}\r\n"
+        "X-WR-TIMEZONE:America/New_York\r\n"
         "X-PUBLISHED-TTL:PT120M\r\n"
+        + VTIMEZONE_EASTERN
     )
     footer = "END:VCALENDAR\r\n"
     body_parts = []
     for label, events in all_events:
-        body_parts.extend(events)
+        body_parts.extend(mark_time_tbd(utc_to_eastern_tzid(e)) for e in events)
     body = "\r\n".join(body_parts) + "\r\n"
 
     with open(OUTPUT_FILE, "w", newline="") as f:
