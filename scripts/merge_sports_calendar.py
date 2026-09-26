@@ -312,6 +312,43 @@ def mark_time_tbd(event):
     return re.sub(r"^(SUMMARY:.*?)(\r?)$", r"\1 (time TBD)\2", event, count=1, flags=re.MULTILINE)
 
 
+VTIMEZONE_EASTERN = (
+    "BEGIN:VTIMEZONE\r\n"
+    "TZID:America/New_York\r\n"
+    "X-LIC-LOCATION:America/New_York\r\n"
+    "BEGIN:DAYLIGHT\r\n"
+    "TZOFFSETFROM:-0500\r\n"
+    "TZOFFSETTO:-0400\r\n"
+    "TZNAME:EDT\r\n"
+    "DTSTART:19700308T020000\r\n"
+    "RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU\r\n"
+    "END:DAYLIGHT\r\n"
+    "BEGIN:STANDARD\r\n"
+    "TZOFFSETFROM:-0400\r\n"
+    "TZOFFSETTO:-0500\r\n"
+    "TZNAME:EST\r\n"
+    "DTSTART:19701101T020000\r\n"
+    "RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU\r\n"
+    "END:STANDARD\r\n"
+    "END:VTIMEZONE\r\n"
+)
+
+
+def utc_to_eastern_tzid(event):
+    """Rewrite timed DTSTART/DTEND lines from bare UTC ('...T210000Z') to
+    Eastern local time with an explicit TZID ('DTSTART;TZID=America/New_York:
+    ...T170000'). Classic Outlook was confirmed (2026-09-26) to show
+    bare-UTC subscribed events in the all-day strip instead of the timed grid;
+    TZID + a VTIMEZONE definition in the header is the documented way around
+    it. All-day (VALUE=DATE) lines don't match and are left alone; idempotent
+    on already-converted (carried-forward) events."""
+    def repl(m):
+        utc = datetime.strptime(m.group(2), "%Y%m%dT%H%M%S").replace(tzinfo=UTC)
+        local = utc.astimezone(EASTERN)
+        return f"{m.group(1)};TZID=America/New_York:{local.strftime('%Y%m%dT%H%M%S')}"
+    return re.sub(r"^(DTSTART|DTEND):(\d{8}T\d{6})Z", repl, event, flags=re.MULTILINE)
+
+
 def load_previous_sports_ics():
     try:
         with open(OUTPUT_FILE, "r") as f:
@@ -372,13 +409,17 @@ def main():
         "BEGIN:VCALENDAR\r\n"
         "VERSION:2.0\r\n"
         "PRODID:-//Jeff Cohen//Combined Sports Calendar//EN\r\n"
+        "CALSCALE:GREGORIAN\r\n"
+        "METHOD:PUBLISH\r\n"
         f"X-WR-CALNAME:{CALNAME}\r\n"
+        "X-WR-TIMEZONE:America/New_York\r\n"
         "X-PUBLISHED-TTL:PT120M\r\n"
+        + VTIMEZONE_EASTERN
     )
     footer = "END:VCALENDAR\r\n"
     body_parts = []
     for label, events in all_events:
-        body_parts.extend(mark_time_tbd(e) for e in events)
+        body_parts.extend(mark_time_tbd(utc_to_eastern_tzid(e)) for e in events)
     body = "\r\n".join(body_parts) + "\r\n"
 
     with open(OUTPUT_FILE, "w", newline="") as f:
