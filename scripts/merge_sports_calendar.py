@@ -300,6 +300,18 @@ def try_purdue_official_feed(label, category, sport_keyword):
     return None
 
 
+def mark_time_tbd(event):
+    """Append ' (time TBD)' to the SUMMARY of an all-day event (DTSTART with
+    VALUE=DATE, i.e. the school hasn't posted a game time yet), so an all-day
+    entry reads as 'time not announced' instead of looking like a mistake.
+    Idempotent (safe on carried-forward events that already have the label);
+    once a school posts a time the event is rebuilt as a timed event and the
+    label naturally disappears."""
+    if "DTSTART;VALUE=DATE:" not in event or "(time TBD)" in event:
+        return event
+    return re.sub(r"^(SUMMARY:.*?)(\r?)$", r"\1 (time TBD)\2", event, count=1, flags=re.MULTILINE)
+
+
 def load_previous_sports_ics():
     try:
         with open(OUTPUT_FILE, "r") as f:
@@ -366,7 +378,7 @@ def main():
     footer = "END:VCALENDAR\r\n"
     body_parts = []
     for label, events in all_events:
-        body_parts.extend(events)
+        body_parts.extend(mark_time_tbd(e) for e in events)
     body = "\r\n".join(body_parts) + "\r\n"
 
     with open(OUTPUT_FILE, "w", newline="") as f:
