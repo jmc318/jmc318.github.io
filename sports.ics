@@ -1,13 +1,34 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//Jeff Cohen//Combined Sports Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
 X-WR-CALNAME:Wisconsin, Purdue & Michigan State Football/Basketball
+X-WR-TIMEZONE:America/New_York
 X-PUBLISHED-TTL:PT120M
+BEGIN:VTIMEZONE
+TZID:America/New_York
+X-LIC-LOCATION:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
 BEGIN:VEVENT
 UID:vcal_17124-uwbadgers.com
 DTSTAMP:20260926T130959Z
-DTSTART:20260906T233000Z
-DTEND:20260907T023000Z
+DTSTART;TZID=America/New_York:20260906T193000
+DTEND;TZID=America/New_York:20260906T223000
 LOCATION:Green Bay\, Wis., Lambeau Field
 SUMMARY:[L] Wisconsin Athletics Football vs Notre Dame- Lambeau Field (TV: NBC/Peacock)
 DESCRIPTION:[L] Wisconsin Athletics Football vs Notre Dame- Lambeau Field\nL 13-41\nTV: NBC/Peacock\nRadio: Badger Radio Network\nStreaming Video: https://www.nbc.com/live\nStreaming Audio: https://uwbadgers.com/watch/?Live=797&type=live\n https://uwbadgers.com/calendar.aspx?game_id=17124&amp;sport_id=1
@@ -18,8 +39,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17125-uwbadgers.com
 DTSTAMP:20260926T130959Z
-DTSTART:20260912T231500Z
-DTEND:20260913T021500Z
+DTSTART;TZID=America/New_York:20260912T191500
+DTEND;TZID=America/New_York:20260912T221500
 LOCATION:Madison\, Wis. - Stripe Out, Camp Randall Stadium
 SUMMARY:[W] Wisconsin Athletics Football vs Western Illinois (TV: BTN)
 DESCRIPTION:[W] Wisconsin Athletics Football vs Western Illinois\nW 36-9\nTV: BTN\nTV Image Link: https://bigten.org/btn/watch-live/\nRadio: Badger Radio Network\nStreaming Video: https://bigten.org/btn/watch-live/\nStreaming Audio: https://thevarsitynetwork.com/audioapplink/source/oas-1048/content/wisconsin:allaccess-Live-798\nTickets: https://uwbadgers.evenue.net/list/F?RSRC=uwbadgerscom_fbschedule&RDAT=F26_New_Sales\n https://uwbadgers.com/calendar.aspx?game_id=17125&amp;sport_id=1
@@ -30,8 +51,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17126-uwbadgers.com
 DTSTAMP:20260926T130959Z
-DTSTART:20260919T163000Z
-DTEND:20260919T193000Z
+DTSTART;TZID=America/New_York:20260919T123000
+DTEND;TZID=America/New_York:20260919T153000
 LOCATION:Madison\, Wis., Camp Randall Stadium
 SUMMARY:[W] Wisconsin Athletics Football vs Eastern Michigan (TV: Peacock)
 DESCRIPTION:[W] Wisconsin Athletics Football vs Eastern Michigan\nW 54-10\nTV: Peacock\nTV Image Link: https://www.peacocktv.com/\nRadio: Badger Radio Network\nStreaming Video: https://www.peacocktv.com/\nStreaming Audio: https://thevarsitynetwork.com/audioapplink/source/oas-1048/content/wisconsin:allaccess-Live-799\nTickets: https://uwbadgers.evenue.net/list/F?RSRC=uwbadgerscom_fbschedule&RDAT=F26_New_Sales\n https://uwbadgers.com/calendar.aspx?game_id=17126&amp;sport_id=1
@@ -42,8 +63,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17144-uwbadgers.com
 DTSTAMP:20260926T130959Z
-DTSTART:20260926T210000Z
-DTEND:20260927T000000Z
+DTSTART;TZID=America/New_York:20260926T170000
+DTEND;TZID=America/New_York:20260926T200000
 LOCATION:State College\, Pa.
 SUMMARY:Wisconsin Athletics Football at Penn State (TV: Peacock)
 DESCRIPTION:Wisconsin Athletics Football at Penn State\nTV: Peacock\nTV Image Link: https://peacock.com/\nRadio: Badger Radio Network\nStreaming Video: https://peacock.com/\nStreaming Audio: https://uwbadgers.com/watch/?Live=800&type=Live\n https://uwbadgers.com/calendar.aspx?game_id=17144&amp;sport_id=1
@@ -54,8 +75,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17145-uwbadgers.com
 DTSTAMP:20260926T130959Z
-DTSTART:20261003T163000Z
-DTEND:20261003T193000Z
+DTSTART;TZID=America/New_York:20261003T123000
+DTEND;TZID=America/New_York:20261003T153000
 LOCATION:Madison\, Wis. - Homecoming, Camp Randall Stadium
 SUMMARY:Wisconsin Athletics Football vs Michigan State- Homecoming (TV: BTN)
 DESCRIPTION:Wisconsin Athletics Football vs Michigan State- Homecoming\nTV: BTN\nTV Image Link: https://www.foxsports.com/live/btn\nRadio: Badger Radio Network\nStreaming Video: https://www.foxsports.com/live/btn\nStreaming Audio: https://thevarsitynetwork.com/audioapplink/source/oas-1048/content/wisconsin:allaccess-Live-801\nTickets: System.Threading.Tasks.Task`1[System.String]\n https://uwbadgers.com/calendar.aspx?game_id=17145&amp;sport_id=1
@@ -138,8 +159,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17152-uwbadgers.com
 DTSTAMP:20260926T130959Z
-DTSTART:20261128T003000Z
-DTEND:20261128T033000Z
+DTSTART;TZID=America/New_York:20261127T193000
+DTEND;TZID=America/New_York:20261127T223000
 LOCATION:Madison\, Wis., Camp Randall Stadium
 SUMMARY:Wisconsin Athletics Football vs Minnesota (TV: NBC)
 DESCRIPTION:Wisconsin Athletics Football vs Minnesota\nTV: NBC\nRadio: Badger Radio Network\nStreaming Video: https://uwbadgers.com/nbc.com/live\nStreaming Audio: https://thevarsitynetwork.com/audioapplink/source/oas-1048/content/wisconsin:allaccess-Live-808\nTickets: System.Threading.Tasks.Task`1[System.String]\n https://uwbadgers.com/calendar.aspx?game_id=17152&amp;sport_id=1
@@ -150,8 +171,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17333-uwbadgers.com
 DTSTAMP:20260926T130549Z
-DTSTART:20261010T170000Z
-DTEND:20261010T190000Z
+DTSTART;TZID=America/New_York:20261010T130000
+DTEND;TZID=America/New_York:20261010T150000
 LOCATION:Madison\, WI, Kohl Center
 SUMMARY:Wisconsin Athletics Men's Basketball vs UW-Parkside- Exhibition
 DESCRIPTION:Wisconsin Athletics Men's Basketball vs UW-Parkside- Exhibition\n https://uwbadgers.com/calendar.aspx?game_id=17333&amp;sport_id=3
@@ -162,8 +183,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17334-uwbadgers.com
 DTSTAMP:20260926T130549Z
-DTSTART:20261015T233000Z
-DTEND:20261016T013000Z
+DTSTART;TZID=America/New_York:20261015T193000
+DTEND;TZID=America/New_York:20261015T213000
 LOCATION:Green Bay\, WI
 SUMMARY:Wisconsin Athletics Men's Basketball at Green Bay- Exhibition
 DESCRIPTION:Wisconsin Athletics Men's Basketball at Green Bay- Exhibition\n https://uwbadgers.com/calendar.aspx?game_id=17334&amp;sport_id=3
@@ -234,8 +255,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17314-uwbadgers.com
 DTSTAMP:20260926T130549Z
-DTSTART:20261120T013000Z
-DTEND:20261120T033000Z
+DTSTART;TZID=America/New_York:20261119T203000
+DTEND;TZID=America/New_York:20261119T223000
 LOCATION:Nassau\, Bahamas
 SUMMARY:Wisconsin Athletics Men's Basketball vs Seton Hall
 DESCRIPTION:Wisconsin Athletics Men's Basketball vs Seton Hall\n https://uwbadgers.com/calendar.aspx?game_id=17314&amp;sport_id=3
@@ -306,8 +327,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17308-uwbadgers.com
 DTSTAMP:20260926T130549Z
-DTSTART:20261212T170000Z
-DTEND:20261212T190000Z
+DTSTART;TZID=America/New_York:20261212T120000
+DTEND;TZID=America/New_York:20261212T140000
 LOCATION:Philadelphia\, PA
 SUMMARY:Wisconsin Athletics Men's Basketball vs Villanova 
 DESCRIPTION:Wisconsin Athletics Men's Basketball vs Villanova \nTickets: https://www.xfinitymobilearena.com/events/detail/hoops-showdown/\n https://uwbadgers.com/calendar.aspx?game_id=17308&amp;sport_id=3
@@ -318,8 +339,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17309-uwbadgers.com
 DTSTAMP:20260926T130549Z
-DTSTART:20261219T210000Z
-DTEND:20261219T230000Z
+DTSTART;TZID=America/New_York:20261219T160000
+DTEND;TZID=America/New_York:20261219T180000
 LOCATION:Nashville\, TN
 SUMMARY:Wisconsin Athletics Men's Basketball vs Auburn  (TV: ESPN)
 DESCRIPTION:Wisconsin Athletics Men's Basketball vs Auburn \nTV: ESPN\nTickets: https://www.ticketmaster.com/auburn-v-wisconsin-nashville-tennessee-12-19-2026/event/1B0064A8CA38372A\n https://uwbadgers.com/calendar.aspx?game_id=17309&amp;sport_id=3
@@ -581,9 +602,9 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20502-msuspartans.com
-DTSTAMP:20260926T130115Z
-DTSTART:20260905T000000Z
-DTEND:20260905T030000Z
+DTSTAMP:20260926T131116Z
+DTSTART;TZID=America/New_York:20260904T200000
+DTEND;TZID=America/New_York:20260904T230000
 LOCATION:East Lansing\, Mich., Spartan Stadium
 SUMMARY:[W] Michigan State University Football vs Toledo- Stripe The Stadium (TV: FS1)
 DESCRIPTION:[W] Michigan State University Football vs Toledo- Stripe The Stadium\nW 30-20\nTV: FS1\nRadio: Spartan Media Network\nStreaming Video: https://www.fox.com/sports/football/college-football/watch-toledo-rockets-vs-michigan-state-spartans-sep-04-2026\nStreaming Audio: https://msuspartans.com/showcase?Live=1648\nTickets: https://msuspartans.evenue.net/event/F26/F01\n https://msuspartans.com/calendar.aspx?game_id=20502&amp;sport_id=4
@@ -593,9 +614,9 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20503-msuspartans.com
-DTSTAMP:20260926T130115Z
-DTSTART:20260912T193000Z
-DTEND:20260912T223000Z
+DTSTAMP:20260926T131116Z
+DTSTART;TZID=America/New_York:20260912T153000
+DTEND;TZID=America/New_York:20260912T183000
 LOCATION:East Lansing\, Mich., Spartan Stadium
 SUMMARY:[W] Michigan State University Football vs Eastern Michigan - Varsity S Hall Of Fame Celebration Weekend (TV: BTN)
 DESCRIPTION:[W] Michigan State University Football vs Eastern Michigan - Varsity S Hall Of Fame Celebration Weekend\nW 35-7\nTV: BTN\nRadio: Spartan Media Network\nStreaming Video: https://www.fox.com/detail/event/ea081438-ab99-4aed-a477-927c3acf8621/b1g-football-eastern-michigan-at-michigan-state\nStreaming Audio: https://msuspartans.com/showcase?Live=1649\nTickets: https://msuspartans.evenue.net/event/F26/F02\n https://msuspartans.com/calendar.aspx?game_id=20503&amp;sport_id=4
@@ -605,9 +626,9 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20504-msuspartans.com
-DTSTAMP:20260926T130115Z
-DTSTART:20260919T233000Z
-DTEND:20260920T023000Z
+DTSTAMP:20260926T131116Z
+DTSTART;TZID=America/New_York:20260919T193000
+DTEND;TZID=America/New_York:20260919T223000
 LOCATION:South Bend\, Ind.
 SUMMARY:[L] Michigan State University Football at #3 Notre Dame (TV: NBC/Peacock)
 DESCRIPTION:[L] Michigan State University Football at #3 Notre Dame\nL 10-27\nTV: NBC/Peacock\nRadio: Spartan Media Network\nStreaming Video: https://www.peacocktv.com/sports/michigan-state-vs.-notre-dame/1e8dee11-d249-3582-aa7e-0eb3dc5d9770\nStreaming Audio: https://msuspartans.com/showcase?Live=1650\n https://msuspartans.com/calendar.aspx?game_id=20504&amp;sport_id=4
@@ -617,9 +638,9 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20505-msuspartans.com
-DTSTAMP:20260926T130115Z
-DTSTART:20260926T210000Z
-DTEND:20260927T000000Z
+DTSTAMP:20260926T131116Z
+DTSTART;TZID=America/New_York:20260926T170000
+DTEND;TZID=America/New_York:20260926T200000
 LOCATION:East Lansing\, Mich., Spartan Stadium
 SUMMARY:Michigan State University Football vs Nebraska- Celebrating Agricultural (TV: BTN)
 DESCRIPTION:Michigan State University Football vs Nebraska- Celebrating Agricultural\nTV: BTN\nRadio: Spartan Media Network\nStreaming Video: https://www.fox.com/sports/football/college-football/watch-nebraska-cornhuskers-vs-michigan-state-spartans-sep-26-2026\nStreaming Audio: https://msuspartans.com/showcase?Live=1677\nTickets: System.Threading.Tasks.Task`1[System.String]\n https://msuspartans.com/calendar.aspx?game_id=20505&amp;sport_id=4
@@ -629,9 +650,9 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20506-msuspartans.com
-DTSTAMP:20260926T130115Z
-DTSTART:20261003T163000Z
-DTEND:20261003T193000Z
+DTSTAMP:20260926T131116Z
+DTSTART;TZID=America/New_York:20261003T123000
+DTEND;TZID=America/New_York:20261003T153000
 LOCATION:Madison\, Wis.
 SUMMARY:Michigan State University Football at Wisconsin (TV: BTN)
 DESCRIPTION:Michigan State University Football at Wisconsin\nTV: BTN\nRadio: Spartan Media Network\nStreaming Audio: https://msuspartans.com/showcase?Live=1678\n https://msuspartans.com/calendar.aspx?game_id=20506&amp;sport_id=4
@@ -641,7 +662,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20507-msuspartans.com
-DTSTAMP:20260926T130115Z
+DTSTAMP:20260926T131116Z
 DTSTART;VALUE=DATE:20261010
 DTEND;VALUE=DATE:20261011
 LOCATION:East Lansing\, Mich., Spartan Stadium
@@ -653,7 +674,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20508-msuspartans.com
-DTSTAMP:20260926T130115Z
+DTSTAMP:20260926T131116Z
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261018
 LOCATION:East Lansing\, Mich., Spartan Stadium
@@ -665,7 +686,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20509-msuspartans.com
-DTSTAMP:20260926T130115Z
+DTSTAMP:20260926T131116Z
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261025
 LOCATION:Pasadena\, Calif.
@@ -677,7 +698,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20510-msuspartans.com
-DTSTAMP:20260926T130115Z
+DTSTAMP:20260926T131116Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261108
 LOCATION:Ann Arbor\, Mich.
@@ -689,7 +710,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20511-msuspartans.com
-DTSTAMP:20260926T130115Z
+DTSTAMP:20260926T131116Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 LOCATION:East Lansing\, Mich., Spartan Stadium
@@ -701,9 +722,9 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20512-msuspartans.com
-DTSTAMP:20260926T130115Z
-DTSTART:20261121T010000Z
-DTEND:20261121T040000Z
+DTSTAMP:20260926T131116Z
+DTSTART;TZID=America/New_York:20261120T200000
+DTEND;TZID=America/New_York:20261120T230000
 LOCATION:East Lansing\, Mich., Spartan Stadium
 SUMMARY:Michigan State University Football vs Oregon- Senior Celebrations (TV: FOX)
 DESCRIPTION:Michigan State University Football vs Oregon- Senior Celebrations\nTV: FOX\nRadio: Spartan Media Network\nStreaming Audio: https://msuspartans.com/showcase?Live=1651\nTickets: System.Threading.Tasks.Task`1[System.String]\n https://msuspartans.com/calendar.aspx?game_id=20512&amp;sport_id=4
@@ -713,7 +734,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20513-msuspartans.com
-DTSTAMP:20260926T130115Z
+DTSTAMP:20260926T131116Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 LOCATION:Piscataway\, NJ
@@ -726,8 +747,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20902-msuspartans.com
 DTSTAMP:20260926T130450Z
-DTSTART:20261002T230000Z
-DTEND:20261003T010000Z
+DTSTART;TZID=America/New_York:20261002T190000
+DTEND;TZID=America/New_York:20261002T210000
 LOCATION:East Lansing\, Mich., Breslin Center
 SUMMARY:Michigan State University Men's Basketball vs Incarnate Word
 DESCRIPTION:Michigan State University Men's Basketball vs Incarnate Word\n https://msuspartans.com/calendar.aspx?game_id=20902&amp;sport_id=6
@@ -738,8 +759,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20903-msuspartans.com
 DTSTAMP:20260926T130450Z
-DTSTART:20261020T230000Z
-DTEND:20261021T010000Z
+DTSTART;TZID=America/New_York:20261020T190000
+DTEND;TZID=America/New_York:20261020T210000
 LOCATION:East Lansing\, Mich., Breslin Center
 SUMMARY:Michigan State University Men's Basketball vs UConn
 DESCRIPTION:Michigan State University Men's Basketball vs UConn\n https://msuspartans.com/calendar.aspx?game_id=20903&amp;sport_id=6
@@ -1373,7 +1394,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-fb-16506@purduesports.com
-DTSTAMP:20260926T131046Z
+DTSTAMP:20260926T131258Z
 DTSTART;VALUE=DATE:20260904
 DTEND;VALUE=DATE:20260905
 LOCATION:West Lafayette\, Ind.
@@ -1383,7 +1404,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-fb-16507@purduesports.com
-DTSTAMP:20260926T131046Z
+DTSTAMP:20260926T131258Z
 DTSTART;VALUE=DATE:20260912
 DTEND;VALUE=DATE:20260913
 LOCATION:West Lafayette\, Ind.
@@ -1393,7 +1414,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-fb-16509@purduesports.com
-DTSTAMP:20260926T131046Z
+DTSTAMP:20260926T131258Z
 DTSTART;VALUE=DATE:20260919
 DTEND;VALUE=DATE:20260920
 LOCATION:Pasadena\, Calif.
@@ -1403,9 +1424,9 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-fb-16510@purduesports.com
-DTSTAMP:20260926T131046Z
-DTSTART:20260926T180000Z
-DTEND:20260926T210000Z
+DTSTAMP:20260926T131258Z
+DTSTART;TZID=America/New_York:20260926T140000
+DTEND;TZID=America/New_York:20260926T170000
 LOCATION:West Lafayette\, Ind.
 SUMMARY:Purdue Football vs. Notre Dame (TV: NBCUniversal_Peacock_)
 URL:https://purduesports.com/sports/football/schedule
@@ -1413,9 +1434,9 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-fb-16512@purduesports.com
-DTSTAMP:20260926T131046Z
-DTSTART:20261003T201500Z
-DTEND:20261003T231500Z
+DTSTAMP:20260926T131258Z
+DTSTART;TZID=America/New_York:20261003T161500
+DTEND;TZID=America/New_York:20261003T191500
 LOCATION:Champaign\, Ill.
 SUMMARY:Purdue Football at Illinois (TV: BTN)
 URL:https://purduesports.com/sports/football/schedule
@@ -1423,7 +1444,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-fb-16514@purduesports.com
-DTSTAMP:20260926T131046Z
+DTSTAMP:20260926T131258Z
 DTSTART;VALUE=DATE:20261010
 DTEND;VALUE=DATE:20261011
 LOCATION:West Lafayette\, Ind.
@@ -1433,9 +1454,9 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-fb-16508@purduesports.com
-DTSTAMP:20260926T131046Z
-DTSTART:20261017T000000Z
-DTEND:20261017T030000Z
+DTSTAMP:20260926T131258Z
+DTSTART;TZID=America/New_York:20261016T200000
+DTEND;TZID=America/New_York:20261016T230000
 LOCATION:West Lafayette\, Ind.
 SUMMARY:Purdue Football vs. Washington (TV: FOX)
 URL:https://purduesports.com/sports/football/schedule
@@ -1443,7 +1464,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-fb-16511@purduesports.com
-DTSTAMP:20260926T131046Z
+DTSTAMP:20260926T131258Z
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261101
 LOCATION:University Park\, Pa.
@@ -1453,7 +1474,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-fb-16513@purduesports.com
-DTSTAMP:20260926T131046Z
+DTSTAMP:20260926T131258Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261108
 LOCATION:West Lafayette\, Ind.
@@ -1463,7 +1484,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-fb-16515@purduesports.com
-DTSTAMP:20260926T131046Z
+DTSTAMP:20260926T131258Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 LOCATION:Iowa City\, Iowa
@@ -1473,7 +1494,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-fb-16516@purduesports.com
-DTSTAMP:20260926T131046Z
+DTSTAMP:20260926T131258Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 LOCATION:West Lafayette\, Ind.
@@ -1483,7 +1504,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-fb-16517@purduesports.com
-DTSTAMP:20260926T131046Z
+DTSTAMP:20260926T131258Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 LOCATION:Bloomington\, Ind.
@@ -1493,7 +1514,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-16872@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20261018
 DTEND;VALUE=DATE:20261019
 LOCATION:West Lafayette\, Ind.
@@ -1503,7 +1524,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-16888@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 LOCATION:Fort Wayne\, Ind. / Allen County War Memorial Coliseum
@@ -1513,7 +1534,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-16868@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 LOCATION:To Be Announced
@@ -1523,9 +1544,9 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-16869@purduesports.com
-DTSTAMP:20260926T131049Z
-DTSTART:20261103T003000Z
-DTEND:20261103T033000Z
+DTSTAMP:20260926T131301Z
+DTSTART;TZID=America/New_York:20261102T193000
+DTEND;TZID=America/New_York:20261102T223000
 LOCATION:Las Vegas\, Nev. / T-Mobile Arena
 SUMMARY:Purdue Men's Basketball vs. Gonzaga
 URL:https://purduesports.com/sports/mens-basketball/schedule
@@ -1533,7 +1554,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-16870@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 LOCATION:West Lafayette\, Ind.
@@ -1543,7 +1564,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-16871@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
 LOCATION:West Lafayette\, Ind.
@@ -1553,7 +1574,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-16873@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 LOCATION:West Lafayette\, Ind.
@@ -1563,7 +1584,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-16874@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20261118
 LOCATION:West Lafayette\, Ind.
@@ -1573,7 +1594,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-16875@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 LOCATION:West Lafayette\, Ind.
@@ -1583,7 +1604,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-16876@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261125
 LOCATION:Fort Myers\, Fla. / Suncoast Credit Union Arena
@@ -1593,7 +1614,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-16877@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261127
 LOCATION:Fort Myers\, Fla. / Suncoast Credit Union Arena
@@ -1603,7 +1624,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17215@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 LOCATION:West Lafayette\, Ind.
@@ -1613,7 +1634,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-16878@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 LOCATION:Ames\, Iowa
@@ -1623,7 +1644,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17216@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20261208
 DTEND;VALUE=DATE:20261209
 LOCATION:Madison\, Wis.
@@ -1633,7 +1654,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-16879@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20261211
 DTEND;VALUE=DATE:20261212
 LOCATION:West Lafayette\, Ind.
@@ -1643,7 +1664,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-16995@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
 LOCATION:Indianapolis\, Ind.
@@ -1653,7 +1674,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-16880@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20261221
 DTEND;VALUE=DATE:20261222
 LOCATION:West Lafayette\, Ind.
@@ -1663,7 +1684,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17217@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20261230
 DTEND;VALUE=DATE:20261231
 LOCATION:West Lafayette\, Ind.
@@ -1673,7 +1694,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17218@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20270102
 DTEND;VALUE=DATE:20270103
 LOCATION:West Lafayette\, Ind.
@@ -1683,7 +1704,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17219@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20270105
 DTEND;VALUE=DATE:20270106
 LOCATION:Champaign\, Ill.
@@ -1693,7 +1714,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17220@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20270108
 DTEND;VALUE=DATE:20270109
 LOCATION:Ann Arbor\, Mich.
@@ -1703,7 +1724,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17221@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20270112
 DTEND;VALUE=DATE:20270113
 LOCATION:West Lafayette\, Ind.
@@ -1713,7 +1734,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17222@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20270117
 DTEND;VALUE=DATE:20270118
 LOCATION:Minneapolis\, Minn.
@@ -1723,7 +1744,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17223@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20270120
 DTEND;VALUE=DATE:20270121
 LOCATION:State College\, Pa.
@@ -1733,7 +1754,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17224@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20270123
 DTEND;VALUE=DATE:20270124
 LOCATION:West Lafayette\, Ind.
@@ -1743,7 +1764,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17225@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20270126
 DTEND;VALUE=DATE:20270127
 LOCATION:West Lafayette\, Ind.
@@ -1753,7 +1774,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17226@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20270130
 DTEND;VALUE=DATE:20270131
 LOCATION:East Lansing\, Mich.
@@ -1763,7 +1784,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17227@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20270203
 DTEND;VALUE=DATE:20270204
 LOCATION:Piscataway\, N.J.
@@ -1773,7 +1794,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17228@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20270206
 DTEND;VALUE=DATE:20270207
 LOCATION:West Lafayette\, Ind.
@@ -1783,7 +1804,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17229@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20270212
 DTEND;VALUE=DATE:20270213
 LOCATION:West Lafayette\, Ind.
@@ -1793,7 +1814,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17230@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20270216
 DTEND;VALUE=DATE:20270217
 LOCATION:Bloomington\, Ind.
@@ -1803,7 +1824,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17231@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20270221
 DTEND;VALUE=DATE:20270222
 LOCATION:West Lafayette\, Ind.
@@ -1813,7 +1834,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17232@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20270224
 DTEND;VALUE=DATE:20270225
 LOCATION:Eugene\, Ore.
@@ -1823,7 +1844,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17233@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20270227
 DTEND;VALUE=DATE:20270228
 LOCATION:Seattle\, Wash.
@@ -1833,7 +1854,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17234@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20270305
 DTEND;VALUE=DATE:20270306
 LOCATION:West Lafayette\, Ind.
@@ -1843,7 +1864,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17235@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20270309
 DTEND;VALUE=DATE:20270310
 LOCATION:Indianapolis\, Ind.
@@ -1853,7 +1874,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17236@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20270310
 DTEND;VALUE=DATE:20270311
 LOCATION:Indianapolis\, Ind.
@@ -1863,7 +1884,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17237@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20270311
 DTEND;VALUE=DATE:20270312
 LOCATION:Indianapolis\, Ind.
@@ -1873,7 +1894,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17238@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20270312
 DTEND;VALUE=DATE:20270313
 LOCATION:Indianapolis\, Ind.
@@ -1883,7 +1904,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17239@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20270313
 DTEND;VALUE=DATE:20270314
 LOCATION:Indianapolis\, Ind.
@@ -1893,7 +1914,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17240@purduesports.com
-DTSTAMP:20260926T131049Z
+DTSTAMP:20260926T131301Z
 DTSTART;VALUE=DATE:20270314
 DTEND;VALUE=DATE:20270315
 LOCATION:Indianapolis\, Ind.
