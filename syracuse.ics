@@ -26,7 +26,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:vcal_18831-cuse.com
-DTSTAMP:20261006T123404Z
+DTSTAMP:20261006T221000Z
 DTSTART;TZID=America/New_York:20260905T120000
 DTEND;TZID=America/New_York:20260905T150000
 LOCATION:Syracuse\, N.Y., JMA Wireless Dome
@@ -37,7 +37,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18832-cuse.com
-DTSTAMP:20261006T123404Z
+DTSTAMP:20261006T221000Z
 DTSTART;TZID=America/New_York:20260912T153000
 DTEND;TZID=America/New_York:20260912T183000
 LOCATION:Syracuse\, N.Y., JMA Wireless Dome
@@ -48,7 +48,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18833-cuse.com
-DTSTAMP:20261006T123404Z
+DTSTAMP:20261006T221000Z
 DTSTART;TZID=America/New_York:20260917T193000
 DTEND;TZID=America/New_York:20260917T223000
 LOCATION:Pittsburgh\, PA, Acrisure Stadium
@@ -59,7 +59,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18834-cuse.com
-DTSTAMP:20261006T123404Z
+DTSTAMP:20261006T221000Z
 DTSTART;TZID=America/New_York:20261003T120000
 DTEND;TZID=America/New_York:20261003T150000
 LOCATION:Storrs\, CT, Rentschler Field
@@ -70,7 +70,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18835-cuse.com
-DTSTAMP:20261006T123404Z
+DTSTAMP:20261006T221000Z
 DTSTART;TZID=America/New_York:20261010T193000
 DTEND;TZID=America/New_York:20261010T223000
 LOCATION:Charlottesville\, VA, Scott Stadium
@@ -81,7 +81,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18836-cuse.com
-DTSTAMP:20261006T123404Z
+DTSTAMP:20261006T221000Z
 DTSTART;TZID=America/New_York:20261017T193000
 DTEND;TZID=America/New_York:20261017T223000
 LOCATION:Syracuse\, N.Y., JMA Wireless Dome
@@ -92,7 +92,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18837-cuse.com
-DTSTAMP:20261006T123404Z
+DTSTAMP:20261006T221000Z
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261025
 LOCATION:Chapel Hill\, NC, Kenan Stadium
@@ -103,7 +103,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18838-cuse.com
-DTSTAMP:20261006T123404Z
+DTSTAMP:20261006T221000Z
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261101
 LOCATION:Syracuse\, N.Y., JMA Wireless Dome
@@ -114,7 +114,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18839-cuse.com
-DTSTAMP:20261006T123404Z
+DTSTAMP:20261006T221000Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261108
 LOCATION:Syracuse\, N.Y., JMA Wireless Dome
@@ -125,7 +125,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18840-cuse.com
-DTSTAMP:20261006T123404Z
+DTSTAMP:20261006T221000Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 LOCATION:Raleigh\, NC, Carter-Finley Stadium
@@ -136,7 +136,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18842-cuse.com
-DTSTAMP:20261006T123404Z
+DTSTAMP:20261006T221000Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 LOCATION:Chestnut Hill\, MA, Alumni Stadium
@@ -147,7 +147,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18841-cuse.com
-DTSTAMP:20261006T123404Z
+DTSTAMP:20261006T221000Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 LOCATION:Syracuse\, N.Y., JMA Wireless Dome
@@ -158,7 +158,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18893-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;TZID=America/New_York:20261013T190000
 DTEND;TZID=America/New_York:20261013T210000
 LOCATION:Uncasville\, Conn., Mohegan Sun Arena
@@ -169,7 +169,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19011-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;TZID=America/New_York:20261018T140000
 DTEND;TZID=America/New_York:20261018T160000
 LOCATION:Albany\, NY, MVP Arena
@@ -180,7 +180,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19004-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;TZID=America/New_York:20261024T150000
 DTEND;TZID=America/New_York:20261024T170000
 LOCATION:Buffalo\, N.Y., KeyBank Center
@@ -191,7 +191,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18966-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261103
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -202,7 +202,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18926-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -213,7 +213,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18888-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
 LOCATION:, Gainbridge Fieldhouse
@@ -224,7 +224,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19129-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;TZID=America/New_York:20261115T190000
 DTEND;TZID=America/New_York:20261115T210000
 LOCATION:New York\, NY, Madison Square Garden
@@ -235,7 +235,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19003-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20261118
 DTEND;VALUE=DATE:20261119
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -246,7 +246,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18988-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -257,7 +257,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19002-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -268,7 +268,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18891-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;TZID=America/New_York:20261201T210000
 DTEND;TZID=America/New_York:20261201T230000
 LOCATION:Norman\, OK, Lloyd Noble Center
@@ -279,7 +279,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18969-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20261208
 DTEND;VALUE=DATE:20261209
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -290,7 +290,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19001-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20261212
 DTEND;VALUE=DATE:20261213
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -301,7 +301,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18990-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -312,7 +312,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18889-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
 LOCATION:, TD Garden
@@ -323,7 +323,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18991-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20261222
 DTEND;VALUE=DATE:20261223
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -334,7 +334,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19044-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20261229
 DTEND;VALUE=DATE:20261230
 LOCATION:Tallahassee\, FL, Tucker Civic Center
@@ -345,7 +345,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19045-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20270102
 DTEND;VALUE=DATE:20270103
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -356,7 +356,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19046-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20270105
 DTEND;VALUE=DATE:20270106
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -367,7 +367,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19047-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20270109
 DTEND;VALUE=DATE:20270110
 LOCATION:Coral Gables\, FL, Watsco Center
@@ -378,7 +378,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19048-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20270112
 DTEND;VALUE=DATE:20270113
 LOCATION:Pittsburgh\, PA, Petersen Events Center
@@ -389,7 +389,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19049-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20270116
 DTEND;VALUE=DATE:20270117
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -400,7 +400,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19050-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20270119
 DTEND;VALUE=DATE:20270120
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -411,7 +411,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19051-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20270123
 DTEND;VALUE=DATE:20270124
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -422,7 +422,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19052-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20270127
 DTEND;VALUE=DATE:20270128
 LOCATION:Stanford\, CA, Maples Pavilion
@@ -433,7 +433,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19053-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20270130
 DTEND;VALUE=DATE:20270131
 LOCATION:Berkeley\, CA, Haas Pavilion
@@ -444,7 +444,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19054-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20270203
 DTEND;VALUE=DATE:20270204
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -455,7 +455,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19125-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20270206
 DTEND;VALUE=DATE:20270207
 LOCATION:Brooklyn\, N.Y., Barclays Center
@@ -466,7 +466,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19055-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20270210
 DTEND;VALUE=DATE:20270211
 LOCATION:Clemson\, SC, Littlejohn Coliseum
@@ -477,7 +477,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19056-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20270217
 DTEND;VALUE=DATE:20270218
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -488,7 +488,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19057-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20270220
 DTEND;VALUE=DATE:20270221
 LOCATION:Dallas\, TX, Moody Coliseum
@@ -499,7 +499,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19058-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20270223
 DTEND;VALUE=DATE:20270224
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -510,7 +510,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19059-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20270227
 DTEND;VALUE=DATE:20270228
 LOCATION:South Bend\, Ind., Purcell Pavilion
@@ -521,7 +521,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19060-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20270303
 DTEND;VALUE=DATE:20270304
 LOCATION:Blacksburg\, VA, Cassell Coliseum
@@ -532,7 +532,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19061-cuse.com
-DTSTAMP:20261006T122845Z
+DTSTAMP:20261006T220315Z
 DTSTART;VALUE=DATE:20270306
 DTEND;VALUE=DATE:20270307
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -543,7 +543,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18892-cuse.com
-DTSTAMP:20261006T122956Z
+DTSTAMP:20261006T221027Z
 DTSTART;TZID=America/New_York:20261012T183000
 DTEND;TZID=America/New_York:20261012T203000
 LOCATION:Uncasville\, Conn., Mohegan Sun Arena
@@ -554,51 +554,51 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19005-cuse.com
-DTSTAMP:20261006T122956Z
-DTSTART;VALUE=DATE:20261103
-DTEND;VALUE=DATE:20261104
+DTSTAMP:20261006T221027Z
+DTSTART;TZID=America/New_York:20261103T180000
+DTEND;TZID=America/New_York:20261103T200000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
-SUMMARY:Syracuse Women's Basketball vs Sacred Heart (time TBD)
-DESCRIPTION:Syracuse Women's Basketball vs Sacred Heart\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19005&amp;sport_id=7
+SUMMARY:Syracuse Women's Basketball vs Sacred Heart (TV: Watch ACCNX)
+DESCRIPTION:Syracuse Women's Basketball vs Sacred Heart\nTV: Watch ACCNX\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19005&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19005&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19007-cuse.com
-DTSTAMP:20261006T122956Z
-DTSTART;VALUE=DATE:20261108
-DTEND;VALUE=DATE:20261109
+DTSTAMP:20261006T221027Z
+DTSTART;TZID=America/New_York:20261108T140000
+DTEND;TZID=America/New_York:20261108T160000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
-SUMMARY:Syracuse Women's Basketball vs Cornell (time TBD)
-DESCRIPTION:Syracuse Women's Basketball vs Cornell\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19007&amp;sport_id=7
+SUMMARY:Syracuse Women's Basketball vs Cornell (TV: Watch ACCNX)
+DESCRIPTION:Syracuse Women's Basketball vs Cornell\nTV: Watch ACCNX\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19007&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19007&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19023-cuse.com
-DTSTAMP:20261006T122956Z
-DTSTART;VALUE=DATE:20261111
-DTEND;VALUE=DATE:20261112
+DTSTAMP:20261006T221027Z
+DTSTART;TZID=America/New_York:20261111T180000
+DTEND;TZID=America/New_York:20261111T200000
 LOCATION:syr, JMA Wireless Dome
-SUMMARY:Syracuse Women's Basketball vs Siena (time TBD)
-DESCRIPTION:Syracuse Women's Basketball vs Siena\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19023&amp;sport_id=7
+SUMMARY:Syracuse Women's Basketball vs Siena (TV: Watch ACCNX)
+DESCRIPTION:Syracuse Women's Basketball vs Siena\nTV: Watch ACCNX\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19023&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19023&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19006-cuse.com
-DTSTAMP:20261006T122956Z
-DTSTART;VALUE=DATE:20261115
-DTEND;VALUE=DATE:20261116
+DTSTAMP:20261006T221027Z
+DTSTART;TZID=America/New_York:20261115T190000
+DTEND;TZID=America/New_York:20261115T210000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
-SUMMARY:Syracuse Women's Basketball vs Canisius (time TBD)
-DESCRIPTION:Syracuse Women's Basketball vs Canisius\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19006&amp;sport_id=7
+SUMMARY:Syracuse Women's Basketball vs Canisius (TV: Watch ACCN)
+DESCRIPTION:Syracuse Women's Basketball vs Canisius\nTV: Watch ACCN\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19006&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19006&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19043-cuse.com
-DTSTAMP:20261006T122956Z
+DTSTAMP:20261006T221027Z
 DTSTART;TZID=America/New_York:20261118T170000
 DTEND;TZID=America/New_York:20261118T190000
 LOCATION:Cambridge\, MA
@@ -609,7 +609,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19008-cuse.com
-DTSTAMP:20261006T122956Z
+DTSTAMP:20261006T221027Z
 DTSTART;TZID=America/New_York:20261125T110000
 DTEND;TZID=America/New_York:20261125T130000
 LOCATION:San Juan\, Puerto Rico, Guillermo Angulo Coliseum
@@ -620,7 +620,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19009-cuse.com
-DTSTAMP:20261006T122956Z
+DTSTAMP:20261006T221027Z
 DTSTART;TZID=America/New_York:20261126T133000
 DTEND;TZID=America/New_York:20261126T153000
 LOCATION:San Juan\, Puerto Rico, Guillermo Angulo Coliseum
@@ -631,7 +631,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19010-cuse.com
-DTSTAMP:20261006T122956Z
+DTSTAMP:20261006T221027Z
 DTSTART;TZID=America/New_York:20261127T110000
 DTEND;TZID=America/New_York:20261127T130000
 LOCATION:San Juan\, Puerto Rico, Guillermo Angulo Coliseum
@@ -642,29 +642,29 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18890-cuse.com
-DTSTAMP:20261006T122956Z
-DTSTART;VALUE=DATE:20261203
-DTEND;VALUE=DATE:20261204
+DTSTAMP:20261006T221027Z
+DTSTART;TZID=America/New_York:20261203T190000
+DTEND;TZID=America/New_York:20261203T210000
 LOCATION:, JMA Wireless Dome
-SUMMARY:Syracuse Women's Basketball vs Oklahoma (time TBD)
-DESCRIPTION:Syracuse Women's Basketball vs Oklahoma\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=18890&amp;sport_id=7
+SUMMARY:Syracuse Women's Basketball vs Oklahoma (TV: Watch ESPNU)
+DESCRIPTION:Syracuse Women's Basketball vs Oklahoma\nTV: Watch ESPNU\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=18890&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=18890&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19025-cuse.com
-DTSTAMP:20261006T122956Z
-DTSTART;VALUE=DATE:20261206
-DTEND;VALUE=DATE:20261207
+DTSTAMP:20261006T221027Z
+DTSTART;TZID=America/New_York:20261206T140000
+DTEND;TZID=America/New_York:20261206T160000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
-SUMMARY:Syracuse Women's Basketball vs SMU (time TBD)
-DESCRIPTION:Syracuse Women's Basketball vs SMU\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19025&amp;sport_id=7
+SUMMARY:Syracuse Women's Basketball vs SMU (TV: Watch ACCNX)
+DESCRIPTION:Syracuse Women's Basketball vs SMU\nTV: Watch ACCNX\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19025&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19025&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18987-cuse.com
-DTSTAMP:20261006T122956Z
+DTSTAMP:20261006T221027Z
 DTSTART;TZID=America/New_York:20261216T180000
 DTEND;TZID=America/New_York:20261216T200000
 LOCATION:Syracuse\, NY
@@ -675,199 +675,199 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19097-cuse.com
-DTSTAMP:20261006T122956Z
+DTSTAMP:20261006T221027Z
 DTSTART;TZID=America/New_York:20261218T100000
 DTEND;TZID=America/New_York:20261218T120000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
-SUMMARY:Syracuse Women's Basketball vs Bucknell
-DESCRIPTION:Syracuse Women's Basketball vs Bucknell\nTickets: https://cuse.com/cuse.com/basketballtickets\n https://cuse.com/calendar.aspx?game_id=19097&amp;sport_id=7
+SUMMARY:Syracuse Women's Basketball vs Bucknell (TV: Watch ACCNX)
+DESCRIPTION:Syracuse Women's Basketball vs Bucknell\nTV: Watch ACCNX\n https://cuse.com/calendar.aspx?game_id=19097&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19097&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19026-cuse.com
-DTSTAMP:20261006T122956Z
-DTSTART;VALUE=DATE:20261228
-DTEND;VALUE=DATE:20261229
+DTSTAMP:20261006T221027Z
+DTSTART;TZID=America/New_York:20261228T180000
+DTEND;TZID=America/New_York:20261228T200000
 LOCATION:Durham\, NC, Cameron Indoor Stadium
-SUMMARY:Syracuse Women's Basketball at Duke (time TBD)
-DESCRIPTION:Syracuse Women's Basketball at Duke\n https://cuse.com/calendar.aspx?game_id=19026&amp;sport_id=7
+SUMMARY:Syracuse Women's Basketball at Duke (TV: Watch ACCN)
+DESCRIPTION:Syracuse Women's Basketball at Duke\nTV: Watch ACCN\n https://cuse.com/calendar.aspx?game_id=19026&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19026&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19027-cuse.com
-DTSTAMP:20261006T122956Z
-DTSTART;VALUE=DATE:20261231
-DTEND;VALUE=DATE:20270101
+DTSTAMP:20261006T221027Z
+DTSTART;TZID=America/New_York:20261231T180000
+DTEND;TZID=America/New_York:20261231T200000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
-SUMMARY:Syracuse Women's Basketball vs North Carolina (time TBD)
-DESCRIPTION:Syracuse Women's Basketball vs North Carolina\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19027&amp;sport_id=7
+SUMMARY:Syracuse Women's Basketball vs North Carolina (TV: Watch ACCN)
+DESCRIPTION:Syracuse Women's Basketball vs North Carolina\nTV: Watch ACCN\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19027&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19027&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19028-cuse.com
-DTSTAMP:20261006T122956Z
-DTSTART;VALUE=DATE:20270103
-DTEND;VALUE=DATE:20270104
+DTSTAMP:20261006T221027Z
+DTSTART;TZID=America/New_York:20270103T160000
+DTEND;TZID=America/New_York:20270103T180000
 LOCATION:Blacksburg\, VA, Cassell Coliseum
-SUMMARY:Syracuse Women's Basketball at Virginia Tech (time TBD)
-DESCRIPTION:Syracuse Women's Basketball at Virginia Tech\n https://cuse.com/calendar.aspx?game_id=19028&amp;sport_id=7
+SUMMARY:Syracuse Women's Basketball at Virginia Tech (TV: Watch ACCN)
+DESCRIPTION:Syracuse Women's Basketball at Virginia Tech\nTV: Watch ACCN\n https://cuse.com/calendar.aspx?game_id=19028&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19028&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19029-cuse.com
-DTSTAMP:20261006T122956Z
-DTSTART;VALUE=DATE:20270107
-DTEND;VALUE=DATE:20270108
+DTSTAMP:20261006T221027Z
+DTSTART;TZID=America/New_York:20270107T180000
+DTEND;TZID=America/New_York:20270107T200000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
-SUMMARY:Syracuse Women's Basketball vs Pittsburgh (time TBD)
-DESCRIPTION:Syracuse Women's Basketball vs Pittsburgh\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19029&amp;sport_id=7
+SUMMARY:Syracuse Women's Basketball vs Pittsburgh (TV: Watch ACCNX)
+DESCRIPTION:Syracuse Women's Basketball vs Pittsburgh\nTV: Watch ACCNX\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19029&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19029&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19030-cuse.com
-DTSTAMP:20261006T122956Z
-DTSTART;VALUE=DATE:20270110
-DTEND;VALUE=DATE:20270111
+DTSTAMP:20261006T221027Z
+DTSTART;TZID=America/New_York:20270110T120000
+DTEND;TZID=America/New_York:20270110T140000
 LOCATION:Tallahassee\, FL, Donald Tucker Center
-SUMMARY:Syracuse Women's Basketball at Florida State (time TBD)
-DESCRIPTION:Syracuse Women's Basketball at Florida State\n https://cuse.com/calendar.aspx?game_id=19030&amp;sport_id=7
+SUMMARY:Syracuse Women's Basketball at Florida State (TV: Watch ACCN)
+DESCRIPTION:Syracuse Women's Basketball at Florida State\nTV: Watch ACCN\n https://cuse.com/calendar.aspx?game_id=19030&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19030&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19031-cuse.com
-DTSTAMP:20261006T122956Z
-DTSTART;VALUE=DATE:20270114
-DTEND;VALUE=DATE:20270115
+DTSTAMP:20261006T221027Z
+DTSTART;TZID=America/New_York:20270114T180000
+DTEND;TZID=America/New_York:20270114T200000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
-SUMMARY:Syracuse Women's Basketball vs Boston College (time TBD)
-DESCRIPTION:Syracuse Women's Basketball vs Boston College\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19031&amp;sport_id=7
+SUMMARY:Syracuse Women's Basketball vs Boston College (TV: Watch ACCNX)
+DESCRIPTION:Syracuse Women's Basketball vs Boston College\nTV: Watch ACCNX\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19031&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19031&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19032-cuse.com
-DTSTAMP:20261006T122956Z
-DTSTART;VALUE=DATE:20270117
-DTEND;VALUE=DATE:20270118
+DTSTAMP:20261006T221027Z
+DTSTART;TZID=America/New_York:20270117T150000
+DTEND;TZID=America/New_York:20270117T170000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
-SUMMARY:Syracuse Women's Basketball vs University of Notre Dame (time TBD)
-DESCRIPTION:Syracuse Women's Basketball vs University of Notre Dame\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19032&amp;sport_id=7
+SUMMARY:Syracuse Women's Basketball vs University of Notre Dame (TV: Watch ACCN)
+DESCRIPTION:Syracuse Women's Basketball vs University of Notre Dame\nTV: Watch ACCN\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19032&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19032&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19033-cuse.com
-DTSTAMP:20261006T122956Z
-DTSTART;VALUE=DATE:20270121
-DTEND;VALUE=DATE:20270122
+DTSTAMP:20261006T221027Z
+DTSTART;TZID=America/New_York:20270121T220000
+DTEND;TZID=America/New_York:20270121T235959
 LOCATION:Stanford\, CA, Maples Pavilion
-SUMMARY:Syracuse Women's Basketball at Stanford (time TBD)
-DESCRIPTION:Syracuse Women's Basketball at Stanford\n https://cuse.com/calendar.aspx?game_id=19033&amp;sport_id=7
+SUMMARY:Syracuse Women's Basketball at Stanford (TV: Watch ACCNX)
+DESCRIPTION:Syracuse Women's Basketball at Stanford\nTV: Watch ACCNX\n https://cuse.com/calendar.aspx?game_id=19033&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19033&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19034-cuse.com
-DTSTAMP:20261006T122956Z
-DTSTART;VALUE=DATE:20270124
-DTEND;VALUE=DATE:20270125
+DTSTAMP:20261006T221027Z
+DTSTART;TZID=America/New_York:20270124T180000
+DTEND;TZID=America/New_York:20270124T200000
 LOCATION:Berkeley\, CA, Haas Pavilion
-SUMMARY:Syracuse Women's Basketball at California (time TBD)
-DESCRIPTION:Syracuse Women's Basketball at California\n https://cuse.com/calendar.aspx?game_id=19034&amp;sport_id=7
+SUMMARY:Syracuse Women's Basketball at California (TV: Watch ACCN)
+DESCRIPTION:Syracuse Women's Basketball at California\nTV: Watch ACCN\n https://cuse.com/calendar.aspx?game_id=19034&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19034&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19035-cuse.com
-DTSTAMP:20261006T122956Z
-DTSTART;VALUE=DATE:20270128
-DTEND;VALUE=DATE:20270129
+DTSTAMP:20261006T221027Z
+DTSTART;TZID=America/New_York:20270128T180000
+DTEND;TZID=America/New_York:20270128T200000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
-SUMMARY:Syracuse Women's Basketball vs Miami (time TBD)
-DESCRIPTION:Syracuse Women's Basketball vs Miami\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19035&amp;sport_id=7
+SUMMARY:Syracuse Women's Basketball vs Miami (TV: Watch ACCNX)
+DESCRIPTION:Syracuse Women's Basketball vs Miami\nTV: Watch ACCNX\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19035&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19035&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19036-cuse.com
-DTSTAMP:20261006T122956Z
-DTSTART;VALUE=DATE:20270131
-DTEND;VALUE=DATE:20270201
+DTSTAMP:20261006T221027Z
+DTSTART;TZID=America/New_York:20270131T180000
+DTEND;TZID=America/New_York:20270131T200000
 LOCATION:Atlanta\, Ga., McCamish Pavilion
-SUMMARY:Syracuse Women's Basketball at Georgia Tech (time TBD)
-DESCRIPTION:Syracuse Women's Basketball at Georgia Tech\n https://cuse.com/calendar.aspx?game_id=19036&amp;sport_id=7
+SUMMARY:Syracuse Women's Basketball at Georgia Tech (TV: Watch ACCN)
+DESCRIPTION:Syracuse Women's Basketball at Georgia Tech\nTV: Watch ACCN\n https://cuse.com/calendar.aspx?game_id=19036&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19036&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19037-cuse.com
-DTSTAMP:20261006T122956Z
-DTSTART;VALUE=DATE:20270207
-DTEND;VALUE=DATE:20270208
+DTSTAMP:20261006T221027Z
+DTSTART;TZID=America/New_York:20270207T120000
+DTEND;TZID=America/New_York:20270207T140000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
-SUMMARY:Syracuse Women's Basketball vs NC State (time TBD)
-DESCRIPTION:Syracuse Women's Basketball vs NC State\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19037&amp;sport_id=7
+SUMMARY:Syracuse Women's Basketball vs NC State (TV: Watch ACCN)
+DESCRIPTION:Syracuse Women's Basketball vs NC State\nTV: Watch ACCN\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19037&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19037&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19038-cuse.com
-DTSTAMP:20261006T122956Z
-DTSTART;VALUE=DATE:20270211
-DTEND;VALUE=DATE:20270212
+DTSTAMP:20261006T221027Z
+DTSTART;TZID=America/New_York:20270211T180000
+DTEND;TZID=America/New_York:20270211T200000
 LOCATION:Louisville\, KY, KFC Yum! Center
-SUMMARY:Syracuse Women's Basketball at Louisville (time TBD)
-DESCRIPTION:Syracuse Women's Basketball at Louisville\n https://cuse.com/calendar.aspx?game_id=19038&amp;sport_id=7
+SUMMARY:Syracuse Women's Basketball at Louisville (TV: Watch ACCN)
+DESCRIPTION:Syracuse Women's Basketball at Louisville\nTV: Watch ACCN\n https://cuse.com/calendar.aspx?game_id=19038&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19038&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19039-cuse.com
-DTSTAMP:20261006T122956Z
-DTSTART;VALUE=DATE:20270214
-DTEND;VALUE=DATE:20270215
+DTSTAMP:20261006T221027Z
+DTSTART;TZID=America/New_York:20270214T140000
+DTEND;TZID=America/New_York:20270214T160000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
-SUMMARY:Syracuse Women's Basketball vs Virginia (time TBD)
-DESCRIPTION:Syracuse Women's Basketball vs Virginia\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19039&amp;sport_id=7
+SUMMARY:Syracuse Women's Basketball vs Virginia (TV: Watch ACCNX)
+DESCRIPTION:Syracuse Women's Basketball vs Virginia\nTV: Watch ACCNX\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19039&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19039&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19040-cuse.com
-DTSTAMP:20261006T122956Z
-DTSTART;VALUE=DATE:20270218
-DTEND;VALUE=DATE:20270219
+DTSTAMP:20261006T221027Z
+DTSTART;TZID=America/New_York:20270218T180000
+DTEND;TZID=America/New_York:20270218T200000
 LOCATION:Chestnut Hill\, MA, Conte Forum
-SUMMARY:Syracuse Women's Basketball at Boston College (time TBD)
-DESCRIPTION:Syracuse Women's Basketball at Boston College\n https://cuse.com/calendar.aspx?game_id=19040&amp;sport_id=7
+SUMMARY:Syracuse Women's Basketball at Boston College (TV: Watch ACCNX)
+DESCRIPTION:Syracuse Women's Basketball at Boston College\nTV: Watch ACCNX\n https://cuse.com/calendar.aspx?game_id=19040&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19040&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19041-cuse.com
-DTSTAMP:20261006T122956Z
-DTSTART;VALUE=DATE:20270222
-DTEND;VALUE=DATE:20270223
+DTSTAMP:20261006T221027Z
+DTSTART;TZID=America/New_York:20270222T180000
+DTEND;TZID=America/New_York:20270222T200000
 LOCATION:Clemson\, SC, Littlejohn Coliseum
-SUMMARY:Syracuse Women's Basketball at Clemson (time TBD)
-DESCRIPTION:Syracuse Women's Basketball at Clemson\n https://cuse.com/calendar.aspx?game_id=19041&amp;sport_id=7
+SUMMARY:Syracuse Women's Basketball at Clemson (TV: Watch ESPN2)
+DESCRIPTION:Syracuse Women's Basketball at Clemson\nTV: Watch ESPN2\n https://cuse.com/calendar.aspx?game_id=19041&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19041&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19042-cuse.com
-DTSTAMP:20261006T122956Z
-DTSTART;VALUE=DATE:20270228
-DTEND;VALUE=DATE:20270301
+DTSTAMP:20261006T221027Z
+DTSTART;TZID=America/New_York:20270228T120000
+DTEND;TZID=America/New_York:20270228T140000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
-SUMMARY:Syracuse Women's Basketball vs Wake Forest  (time TBD)
-DESCRIPTION:Syracuse Women's Basketball vs Wake Forest \nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19042&amp;sport_id=7
+SUMMARY:Syracuse Women's Basketball vs Wake Forest  (TV: Watch ACCN)
+DESCRIPTION:Syracuse Women's Basketball vs Wake Forest \nTV: Watch ACCN\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19042&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19042&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
