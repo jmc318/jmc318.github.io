@@ -26,7 +26,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:vcal_18831-cuse.com
-DTSTAMP:20261007T122752Z
+DTSTAMP:20261007T223315Z
 DTSTART;TZID=America/New_York:20260905T120000
 DTEND;TZID=America/New_York:20260905T150000
 LOCATION:Syracuse\, N.Y., JMA Wireless Dome
@@ -37,7 +37,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18832-cuse.com
-DTSTAMP:20261007T122752Z
+DTSTAMP:20261007T223315Z
 DTSTART;TZID=America/New_York:20260912T153000
 DTEND;TZID=America/New_York:20260912T183000
 LOCATION:Syracuse\, N.Y., JMA Wireless Dome
@@ -48,7 +48,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18833-cuse.com
-DTSTAMP:20261007T122752Z
+DTSTAMP:20261007T223315Z
 DTSTART;TZID=America/New_York:20260917T193000
 DTEND;TZID=America/New_York:20260917T223000
 LOCATION:Pittsburgh\, PA, Acrisure Stadium
@@ -59,7 +59,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18834-cuse.com
-DTSTAMP:20261007T122752Z
+DTSTAMP:20261007T223315Z
 DTSTART;TZID=America/New_York:20261003T120000
 DTEND;TZID=America/New_York:20261003T150000
 LOCATION:Storrs\, CT, Rentschler Field
@@ -70,18 +70,18 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18835-cuse.com
-DTSTAMP:20261007T122752Z
+DTSTAMP:20261007T223315Z
 DTSTART;TZID=America/New_York:20261010T193000
 DTEND;TZID=America/New_York:20261010T223000
 LOCATION:Charlottesville\, VA, Scott Stadium
 SUMMARY:Syracuse Football at Virginia (TV: ACCN)
-DESCRIPTION:Syracuse Football at Virginia\nTV: ACCN\nRadio: Syracuse Sports Network\nStreaming Audio: https://cuse.com/showcase?Live=8506\n https://cuse.com/calendar.aspx?game_id=18835&amp;sport_id=8
+DESCRIPTION:Syracuse Football at Virginia\nTV: ACCN\nRadio: Syracuse Sports Network\nStreaming Video: https://www.espn.com/watch/player/_/id/c3059c58-433c-4a57-a54c-f4f08971e6da\nStreaming Audio: https://cuse.com/showcase?Live=8506\n https://cuse.com/calendar.aspx?game_id=18835&amp;sport_id=8
 URL:https://cuse.com/calendar.aspx?game_id=18835&amp;sport_id=8
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18836-cuse.com
-DTSTAMP:20261007T122752Z
+DTSTAMP:20261007T223315Z
 DTSTART;TZID=America/New_York:20261017T193000
 DTEND;TZID=America/New_York:20261017T223000
 LOCATION:Syracuse\, N.Y., JMA Wireless Dome
@@ -92,7 +92,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18837-cuse.com
-DTSTAMP:20261007T122752Z
+DTSTAMP:20261007T223315Z
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261025
 LOCATION:Chapel Hill\, NC, Kenan Stadium
@@ -103,7 +103,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18838-cuse.com
-DTSTAMP:20261007T122752Z
+DTSTAMP:20261007T223315Z
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261101
 LOCATION:Syracuse\, N.Y., JMA Wireless Dome
@@ -114,7 +114,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18839-cuse.com
-DTSTAMP:20261007T122752Z
+DTSTAMP:20261007T223315Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261108
 LOCATION:Syracuse\, N.Y., JMA Wireless Dome
@@ -125,7 +125,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18840-cuse.com
-DTSTAMP:20261007T122752Z
+DTSTAMP:20261007T223315Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 LOCATION:Raleigh\, NC, Carter-Finley Stadium
@@ -136,7 +136,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18842-cuse.com
-DTSTAMP:20261007T122752Z
+DTSTAMP:20261007T223315Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 LOCATION:Chestnut Hill\, MA, Alumni Stadium
@@ -147,7 +147,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18841-cuse.com
-DTSTAMP:20261007T122752Z
+DTSTAMP:20261007T223315Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 LOCATION:Syracuse\, N.Y., JMA Wireless Dome
@@ -158,7 +158,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18893-cuse.com
-DTSTAMP:20261007T123023Z
+DTSTAMP:20261007T222525Z
 DTSTART;TZID=America/New_York:20261013T190000
 DTEND;TZID=America/New_York:20261013T210000
 LOCATION:Uncasville\, Conn., Mohegan Sun Arena
@@ -169,7 +169,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19011-cuse.com
-DTSTAMP:20261007T123023Z
+DTSTAMP:20261007T222525Z
 DTSTART;TZID=America/New_York:20261018T140000
 DTEND;TZID=America/New_York:20261018T160000
 LOCATION:Albany\, NY, MVP Arena
@@ -180,7 +180,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19004-cuse.com
-DTSTAMP:20261007T123023Z
+DTSTAMP:20261007T222525Z
 DTSTART;TZID=America/New_York:20261024T150000
 DTEND;TZID=America/New_York:20261024T170000
 LOCATION:Buffalo\, N.Y., KeyBank Center
@@ -191,7 +191,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18966-cuse.com
-DTSTAMP:20261007T123023Z
+DTSTAMP:20261007T222525Z
 DTSTART;VALUE=DATE:20261102
 DTEND;VALUE=DATE:20261103
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -202,7 +202,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18926-cuse.com
-DTSTAMP:20261007T123023Z
+DTSTAMP:20261007T222525Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -213,7 +213,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18888-cuse.com
-DTSTAMP:20261007T123023Z
+DTSTAMP:20261007T222525Z
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
 LOCATION:, Gainbridge Fieldhouse
@@ -224,7 +224,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19129-cuse.com
-DTSTAMP:20261007T123023Z
+DTSTAMP:20261007T222525Z
 DTSTART;TZID=America/New_York:20261115T190000
 DTEND;TZID=America/New_York:20261115T210000
 LOCATION:New York\, NY, Madison Square Garden
@@ -235,18 +235,18 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19003-cuse.com
-DTSTAMP:20261007T123023Z
-DTSTART;VALUE=DATE:20261118
-DTEND;VALUE=DATE:20261119
+DTSTAMP:20261007T222525Z
+DTSTART;TZID=America/New_York:20261118T200000
+DTEND;TZID=America/New_York:20261118T220000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
-SUMMARY:Syracuse Men's Basketball vs Cornell (time TBD)
+SUMMARY:Syracuse Men's Basketball vs Cornell
 DESCRIPTION:Syracuse Men's Basketball vs Cornell\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19003&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19003&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18988-cuse.com
-DTSTAMP:20261007T123023Z
+DTSTAMP:20261007T222525Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -257,7 +257,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19002-cuse.com
-DTSTAMP:20261007T123023Z
+DTSTAMP:20261007T222525Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -268,7 +268,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18891-cuse.com
-DTSTAMP:20261007T123023Z
+DTSTAMP:20261007T222525Z
 DTSTART;TZID=America/New_York:20261201T210000
 DTEND;TZID=America/New_York:20261201T230000
 LOCATION:Norman\, OK, Lloyd Noble Center
@@ -279,7 +279,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18969-cuse.com
-DTSTAMP:20261007T123023Z
+DTSTAMP:20261007T222525Z
 DTSTART;VALUE=DATE:20261208
 DTEND;VALUE=DATE:20261209
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -290,18 +290,18 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19001-cuse.com
-DTSTAMP:20261007T123023Z
-DTSTART;VALUE=DATE:20261212
-DTEND;VALUE=DATE:20261213
+DTSTAMP:20261007T222525Z
+DTSTART;TZID=America/New_York:20261212T170000
+DTEND;TZID=America/New_York:20261212T190000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
-SUMMARY:Syracuse Men's Basketball vs Mercyhurst (time TBD)
+SUMMARY:Syracuse Men's Basketball vs Mercyhurst
 DESCRIPTION:Syracuse Men's Basketball vs Mercyhurst\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19001&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19001&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18990-cuse.com
-DTSTAMP:20261007T123023Z
+DTSTAMP:20261007T222525Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -312,7 +312,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18889-cuse.com
-DTSTAMP:20261007T123023Z
+DTSTAMP:20261007T222525Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20261220
 LOCATION:, TD Garden
@@ -323,227 +323,227 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18991-cuse.com
-DTSTAMP:20261007T123023Z
-DTSTART;VALUE=DATE:20261222
-DTEND;VALUE=DATE:20261223
+DTSTAMP:20261007T222525Z
+DTSTART;TZID=America/New_York:20261222T160000
+DTEND;TZID=America/New_York:20261222T180000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
-SUMMARY:Syracuse Men's Basketball vs Binghamton (time TBD)
+SUMMARY:Syracuse Men's Basketball vs Binghamton
 DESCRIPTION:Syracuse Men's Basketball vs Binghamton\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=18991&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=18991&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19044-cuse.com
-DTSTAMP:20261007T123023Z
-DTSTART;VALUE=DATE:20261229
-DTEND;VALUE=DATE:20261230
+DTSTAMP:20261007T222525Z
+DTSTART;TZID=America/New_York:20261229T180000
+DTEND;TZID=America/New_York:20261229T200000
 LOCATION:Tallahassee\, FL, Tucker Civic Center
-SUMMARY:Syracuse Men's Basketball at Florida State  (time TBD)
+SUMMARY:Syracuse Men's Basketball at Florida State 
 DESCRIPTION:Syracuse Men's Basketball at Florida State \n https://cuse.com/calendar.aspx?game_id=19044&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19044&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19045-cuse.com
-DTSTAMP:20261007T123023Z
-DTSTART;VALUE=DATE:20270102
-DTEND;VALUE=DATE:20270103
+DTSTAMP:20261007T222525Z
+DTSTART;TZID=America/New_York:20270102T120000
+DTEND;TZID=America/New_York:20270102T140000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
-SUMMARY:Syracuse Men's Basketball vs Georgia Tech (time TBD)
+SUMMARY:Syracuse Men's Basketball vs Georgia Tech
 DESCRIPTION:Syracuse Men's Basketball vs Georgia Tech\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19045&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19045&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19046-cuse.com
-DTSTAMP:20261007T123023Z
-DTSTART;VALUE=DATE:20270105
-DTEND;VALUE=DATE:20270106
+DTSTAMP:20261007T222525Z
+DTSTART;TZID=America/New_York:20270105T190000
+DTEND;TZID=America/New_York:20270105T210000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
-SUMMARY:Syracuse Men's Basketball vs Duke  (time TBD)
-DESCRIPTION:Syracuse Men's Basketball vs Duke \nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19046&amp;sport_id=6
+SUMMARY:Syracuse Men's Basketball vs Duke  (TV: ESPN/ESPN2)
+DESCRIPTION:Syracuse Men's Basketball vs Duke \nTV: ESPN/ESPN2\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19046&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19046&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19047-cuse.com
-DTSTAMP:20261007T123023Z
-DTSTART;VALUE=DATE:20270109
-DTEND;VALUE=DATE:20270110
+DTSTAMP:20261007T222525Z
+DTSTART;TZID=America/New_York:20270109T150000
+DTEND;TZID=America/New_York:20270109T170000
 LOCATION:Coral Gables\, FL, Watsco Center
-SUMMARY:Syracuse Men's Basketball at Miami (time TBD)
+SUMMARY:Syracuse Men's Basketball at Miami
 DESCRIPTION:Syracuse Men's Basketball at Miami\n https://cuse.com/calendar.aspx?game_id=19047&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19047&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19048-cuse.com
-DTSTAMP:20261007T123023Z
-DTSTART;VALUE=DATE:20270112
-DTEND;VALUE=DATE:20270113
+DTSTAMP:20261007T222525Z
+DTSTART;TZID=America/New_York:20270112T190000
+DTEND;TZID=America/New_York:20270112T210000
 LOCATION:Pittsburgh\, PA, Petersen Events Center
-SUMMARY:Syracuse Men's Basketball at Pittsburgh (time TBD)
-DESCRIPTION:Syracuse Men's Basketball at Pittsburgh\n https://cuse.com/calendar.aspx?game_id=19048&amp;sport_id=6
+SUMMARY:Syracuse Men's Basketball at Pittsburgh (TV: ESPN2/ESPNU)
+DESCRIPTION:Syracuse Men's Basketball at Pittsburgh\nTV: ESPN2/ESPNU\n https://cuse.com/calendar.aspx?game_id=19048&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19048&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19049-cuse.com
-DTSTAMP:20261007T123023Z
-DTSTART;VALUE=DATE:20270116
-DTEND;VALUE=DATE:20270117
+DTSTAMP:20261007T222525Z
+DTSTART;TZID=America/New_York:20270116T140000
+DTEND;TZID=America/New_York:20270116T160000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
-SUMMARY:Syracuse Men's Basketball vs Louisville (time TBD)
-DESCRIPTION:Syracuse Men's Basketball vs Louisville\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19049&amp;sport_id=6
+SUMMARY:Syracuse Men's Basketball vs Louisville (TV: ESPN/ESPN2/ESPNU)
+DESCRIPTION:Syracuse Men's Basketball vs Louisville\nTV: ESPN/ESPN2/ESPNU\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19049&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19049&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19050-cuse.com
-DTSTAMP:20261007T123023Z
-DTSTART;VALUE=DATE:20270119
-DTEND;VALUE=DATE:20270120
+DTSTAMP:20261007T222525Z
+DTSTART;TZID=America/New_York:20270119T190000
+DTEND;TZID=America/New_York:20270119T210000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
-SUMMARY:Syracuse Men's Basketball vs Boston College (time TBD)
+SUMMARY:Syracuse Men's Basketball vs Boston College
 DESCRIPTION:Syracuse Men's Basketball vs Boston College\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19050&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19050&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19051-cuse.com
-DTSTAMP:20261007T123023Z
-DTSTART;VALUE=DATE:20270123
-DTEND;VALUE=DATE:20270124
+DTSTAMP:20261007T222525Z
+DTSTART;TZID=America/New_York:20270123T120000
+DTEND;TZID=America/New_York:20270123T140000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
-SUMMARY:Syracuse Men's Basketball vs North Carolina (time TBD)
-DESCRIPTION:Syracuse Men's Basketball vs North Carolina\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19051&amp;sport_id=6
+SUMMARY:Syracuse Men's Basketball vs North Carolina (TV: ESPN/ESPN2/ESPNU)
+DESCRIPTION:Syracuse Men's Basketball vs North Carolina\nTV: ESPN/ESPN2/ESPNU\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19051&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19051&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19052-cuse.com
-DTSTAMP:20261007T123023Z
-DTSTART;VALUE=DATE:20270127
-DTEND;VALUE=DATE:20270128
+DTSTAMP:20261007T222525Z
+DTSTART;TZID=America/New_York:20270127T230000
+DTEND;TZID=America/New_York:20270128T010000
 LOCATION:Stanford\, CA, Maples Pavilion
-SUMMARY:Syracuse Men's Basketball at Stanford  (time TBD)
-DESCRIPTION:Syracuse Men's Basketball at Stanford \n https://cuse.com/calendar.aspx?game_id=19052&amp;sport_id=6
+SUMMARY:Syracuse Men's Basketball at Stanford  (TV: ESPN2/ESPNU)
+DESCRIPTION:Syracuse Men's Basketball at Stanford \nTV: ESPN2/ESPNU\n https://cuse.com/calendar.aspx?game_id=19052&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19052&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19053-cuse.com
-DTSTAMP:20261007T123023Z
-DTSTART;VALUE=DATE:20270130
-DTEND;VALUE=DATE:20270131
+DTSTAMP:20261007T222525Z
+DTSTART;TZID=America/New_York:20270130T173000
+DTEND;TZID=America/New_York:20270130T193000
 LOCATION:Berkeley\, CA, Haas Pavilion
-SUMMARY:Syracuse Men's Basketball at California (time TBD)
+SUMMARY:Syracuse Men's Basketball at California
 DESCRIPTION:Syracuse Men's Basketball at California\n https://cuse.com/calendar.aspx?game_id=19053&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19053&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19054-cuse.com
-DTSTAMP:20261007T123023Z
-DTSTART;VALUE=DATE:20270203
-DTEND;VALUE=DATE:20270204
+DTSTAMP:20261007T222525Z
+DTSTART;TZID=America/New_York:20270203T210000
+DTEND;TZID=America/New_York:20270203T230000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
-SUMMARY:Syracuse Men's Basketball vs Virginia (time TBD)
+SUMMARY:Syracuse Men's Basketball vs Virginia
 DESCRIPTION:Syracuse Men's Basketball vs Virginia\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19054&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19054&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19125-cuse.com
-DTSTAMP:20261007T123023Z
-DTSTART;VALUE=DATE:20270206
-DTEND;VALUE=DATE:20270207
+DTSTAMP:20261007T222525Z
+DTSTART;TZID=America/New_York:20270206T110000
+DTEND;TZID=America/New_York:20270206T130000
 LOCATION:Brooklyn\, N.Y., Barclays Center
-SUMMARY:Syracuse Men's Basketball vs Rutgers  (time TBD)
+SUMMARY:Syracuse Men's Basketball vs Rutgers 
 DESCRIPTION:Syracuse Men's Basketball vs Rutgers \n https://cuse.com/calendar.aspx?game_id=19125&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19125&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19055-cuse.com
-DTSTAMP:20261007T123023Z
-DTSTART;VALUE=DATE:20270210
-DTEND;VALUE=DATE:20270211
+DTSTAMP:20261007T222525Z
+DTSTART;TZID=America/New_York:20270210T190000
+DTEND;TZID=America/New_York:20270210T210000
 LOCATION:Clemson\, SC, Littlejohn Coliseum
-SUMMARY:Syracuse Men's Basketball at Clemson (time TBD)
-DESCRIPTION:Syracuse Men's Basketball at Clemson\n https://cuse.com/calendar.aspx?game_id=19055&amp;sport_id=6
+SUMMARY:Syracuse Men's Basketball at Clemson (TV: ESPN2/ESPNU)
+DESCRIPTION:Syracuse Men's Basketball at Clemson\nTV: ESPN2/ESPNU\n https://cuse.com/calendar.aspx?game_id=19055&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19055&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19056-cuse.com
-DTSTAMP:20261007T123023Z
-DTSTART;VALUE=DATE:20270217
-DTEND;VALUE=DATE:20270218
+DTSTAMP:20261007T222525Z
+DTSTART;TZID=America/New_York:20270217T210000
+DTEND;TZID=America/New_York:20270217T230000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
-SUMMARY:Syracuse Men's Basketball vs Stanford  (time TBD)
-DESCRIPTION:Syracuse Men's Basketball vs Stanford \nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19056&amp;sport_id=6
+SUMMARY:Syracuse Men's Basketball vs Stanford  (TV: ESPN2/ESPNU)
+DESCRIPTION:Syracuse Men's Basketball vs Stanford \nTV: ESPN2/ESPNU\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19056&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19056&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19057-cuse.com
-DTSTAMP:20261007T123023Z
-DTSTART;VALUE=DATE:20270220
-DTEND;VALUE=DATE:20270221
+DTSTAMP:20261007T222525Z
+DTSTART;TZID=America/New_York:20270220T141500
+DTEND;TZID=America/New_York:20270220T161500
 LOCATION:Dallas\, TX, Moody Coliseum
-SUMMARY:Syracuse Men's Basketball at Southern Methodist  (time TBD)
+SUMMARY:Syracuse Men's Basketball at Southern Methodist 
 DESCRIPTION:Syracuse Men's Basketball at Southern Methodist \n https://cuse.com/calendar.aspx?game_id=19057&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19057&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19058-cuse.com
-DTSTAMP:20261007T123023Z
-DTSTART;VALUE=DATE:20270223
-DTEND;VALUE=DATE:20270224
+DTSTAMP:20261007T222525Z
+DTSTART;TZID=America/New_York:20270223T200000
+DTEND;TZID=America/New_York:20270223T220000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
-SUMMARY:Syracuse Men's Basketball vs Pittsburgh (time TBD)
+SUMMARY:Syracuse Men's Basketball vs Pittsburgh
 DESCRIPTION:Syracuse Men's Basketball vs Pittsburgh\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19058&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19058&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19059-cuse.com
-DTSTAMP:20261007T123023Z
-DTSTART;VALUE=DATE:20270227
-DTEND;VALUE=DATE:20270228
+DTSTAMP:20261007T222525Z
+DTSTART;TZID=America/New_York:20270227T200000
+DTEND;TZID=America/New_York:20270227T220000
 LOCATION:South Bend\, Ind., Purcell Pavilion
-SUMMARY:Syracuse Men's Basketball at Notre Dame (time TBD)
+SUMMARY:Syracuse Men's Basketball at Notre Dame
 DESCRIPTION:Syracuse Men's Basketball at Notre Dame\n https://cuse.com/calendar.aspx?game_id=19059&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19059&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19060-cuse.com
-DTSTAMP:20261007T123023Z
-DTSTART;VALUE=DATE:20270303
-DTEND;VALUE=DATE:20270304
+DTSTAMP:20261007T222525Z
+DTSTART;TZID=America/New_York:20270303T210000
+DTEND;TZID=America/New_York:20270303T230000
 LOCATION:Blacksburg\, VA, Cassell Coliseum
-SUMMARY:Syracuse Men's Basketball at Virginia Tech (time TBD)
-DESCRIPTION:Syracuse Men's Basketball at Virginia Tech\n https://cuse.com/calendar.aspx?game_id=19060&amp;sport_id=6
+SUMMARY:Syracuse Men's Basketball at Virginia Tech (TV: ESPN2/ESPNU)
+DESCRIPTION:Syracuse Men's Basketball at Virginia Tech\nTV: ESPN2/ESPNU\n https://cuse.com/calendar.aspx?game_id=19060&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19060&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19061-cuse.com
-DTSTAMP:20261007T123023Z
-DTSTART;VALUE=DATE:20270306
-DTEND;VALUE=DATE:20270307
+DTSTAMP:20261007T222525Z
+DTSTART;TZID=America/New_York:20270306T173000
+DTEND;TZID=America/New_York:20270306T193000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
-SUMMARY:Syracuse Men's Basketball vs Wake Forest  (time TBD)
+SUMMARY:Syracuse Men's Basketball vs Wake Forest 
 DESCRIPTION:Syracuse Men's Basketball vs Wake Forest \nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19061&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19061&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18892-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20261012T183000
 DTEND;TZID=America/New_York:20261012T203000
 LOCATION:Uncasville\, Conn., Mohegan Sun Arena
@@ -554,7 +554,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19005-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20261103T180000
 DTEND;TZID=America/New_York:20261103T200000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -565,7 +565,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19007-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20261108T140000
 DTEND;TZID=America/New_York:20261108T160000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -576,7 +576,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19023-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20261111T180000
 DTEND;TZID=America/New_York:20261111T200000
 LOCATION:syr, JMA Wireless Dome
@@ -587,7 +587,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19006-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20261115T190000
 DTEND;TZID=America/New_York:20261115T210000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -598,7 +598,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19043-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20261118T170000
 DTEND;TZID=America/New_York:20261118T190000
 LOCATION:Cambridge\, MA
@@ -609,7 +609,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19008-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20261125T110000
 DTEND;TZID=America/New_York:20261125T130000
 LOCATION:San Juan\, Puerto Rico, Guillermo Angulo Coliseum
@@ -620,7 +620,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19009-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20261126T133000
 DTEND;TZID=America/New_York:20261126T153000
 LOCATION:San Juan\, Puerto Rico, Guillermo Angulo Coliseum
@@ -631,7 +631,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19010-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20261127T110000
 DTEND;TZID=America/New_York:20261127T130000
 LOCATION:San Juan\, Puerto Rico, Guillermo Angulo Coliseum
@@ -642,7 +642,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18890-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20261203T190000
 DTEND;TZID=America/New_York:20261203T210000
 LOCATION:, JMA Wireless Dome
@@ -653,7 +653,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19025-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20261206T140000
 DTEND;TZID=America/New_York:20261206T160000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -664,7 +664,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18987-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20261216T180000
 DTEND;TZID=America/New_York:20261216T200000
 LOCATION:Syracuse\, NY
@@ -675,7 +675,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19097-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20261218T100000
 DTEND;TZID=America/New_York:20261218T120000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -686,7 +686,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19026-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20261228T180000
 DTEND;TZID=America/New_York:20261228T200000
 LOCATION:Durham\, NC, Cameron Indoor Stadium
@@ -697,7 +697,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19027-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20261231T180000
 DTEND;TZID=America/New_York:20261231T200000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -708,7 +708,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19028-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20270103T160000
 DTEND;TZID=America/New_York:20270103T180000
 LOCATION:Blacksburg\, VA, Cassell Coliseum
@@ -719,7 +719,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19029-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20270107T180000
 DTEND;TZID=America/New_York:20270107T200000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -730,7 +730,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19030-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20270110T120000
 DTEND;TZID=America/New_York:20270110T140000
 LOCATION:Tallahassee\, FL, Donald Tucker Center
@@ -741,7 +741,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19031-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20270114T180000
 DTEND;TZID=America/New_York:20270114T200000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -752,7 +752,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19032-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20270117T150000
 DTEND;TZID=America/New_York:20270117T170000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -763,7 +763,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19033-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20270121T220000
 DTEND;TZID=America/New_York:20270121T235959
 LOCATION:Stanford\, CA, Maples Pavilion
@@ -774,7 +774,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19034-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20270124T180000
 DTEND;TZID=America/New_York:20270124T200000
 LOCATION:Berkeley\, CA, Haas Pavilion
@@ -785,7 +785,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19035-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20270128T180000
 DTEND;TZID=America/New_York:20270128T200000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -796,7 +796,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19036-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20270131T180000
 DTEND;TZID=America/New_York:20270131T200000
 LOCATION:Atlanta\, Ga., McCamish Pavilion
@@ -807,7 +807,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19037-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20270207T120000
 DTEND;TZID=America/New_York:20270207T140000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -818,7 +818,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19038-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20270211T180000
 DTEND;TZID=America/New_York:20270211T200000
 LOCATION:Louisville\, KY, KFC Yum! Center
@@ -829,7 +829,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19039-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20270214T140000
 DTEND;TZID=America/New_York:20270214T160000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -840,7 +840,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19040-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20270218T180000
 DTEND;TZID=America/New_York:20270218T200000
 LOCATION:Chestnut Hill\, MA, Conte Forum
@@ -851,7 +851,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19041-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20270222T180000
 DTEND;TZID=America/New_York:20270222T200000
 LOCATION:Clemson\, SC, Littlejohn Coliseum
@@ -862,7 +862,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19042-cuse.com
-DTSTAMP:20261007T122638Z
+DTSTAMP:20261007T222655Z
 DTSTART;TZID=America/New_York:20270228T120000
 DTEND;TZID=America/New_York:20270228T140000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
