@@ -452,11 +452,7 @@ def main():
     # Normalize every line ending to CRLF (events recovered/carried forward
     # from a previous file can arrive with bare LFs, which strict ICS parsers
     # reject), then publish the same content at both URLs.
-    full = (header + body + footer).replace("
-", "
-").replace("
-", "
-")
+    full = (header + body + footer).replace("\r\n", "\n").replace("\n", "\r\n")
     for out_path in (OUTPUT_FILE, MIRROR_FILE):
         with open(out_path, "w", newline="") as f:
             f.write(full)
