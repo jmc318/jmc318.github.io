@@ -73,6 +73,9 @@ HEADERS = {
 
 CALNAME = "Wisconsin, Purdue & Michigan State Football/Basketball"
 OUTPUT_FILE = "sports.ics"
+# Same content, second address. Outlook.com subscriptions are fetched/cached by
+# Microsoft's servers; a fresh URL forces a fresh fetch (2026-10-15).
+MIRROR_FILE = "sports-calendar.ics"
 EASTERN = ZoneInfo("America/New_York")
 UTC = ZoneInfo("UTC")
 
@@ -446,8 +449,17 @@ def main():
         body_parts.extend(mark_time_tbd(utc_to_eastern_tzid(e)) for e in events)
     body = "\r\n".join(body_parts) + "\r\n"
 
-    with open(OUTPUT_FILE, "w", newline="") as f:
-        f.write(header + body + footer)
+    # Normalize every line ending to CRLF (events recovered/carried forward
+    # from a previous file can arrive with bare LFs, which strict ICS parsers
+    # reject), then publish the same content at both URLs.
+    full = (header + body + footer).replace("
+", "
+").replace("
+", "
+")
+    for out_path in (OUTPUT_FILE, MIRROR_FILE):
+        with open(out_path, "w", newline="") as f:
+            f.write(full)
 
     total = sum(len(events) for _, events in all_events)
     print(f"Wrote {OUTPUT_FILE} with {total} total events")
