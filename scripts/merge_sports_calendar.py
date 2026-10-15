@@ -300,6 +300,27 @@ def try_purdue_official_feed(label, category, sport_keyword):
     return None
 
 
+def keep_known_times(events, previous_ics):
+    """Purdue's schedule page drops a game's clock time once the game has been
+    played (the same label holds the result instead), so a finished game would
+    otherwise flip from timed to all-day on the next run (confirmed 2026-10-15).
+    If a scraped event is all-day but the last-published file has the same UID
+    as a timed event, keep the published (timed) version. Games that were
+    never timed (genuine TBA) are untouched. Returns (events, count_kept)."""
+    out, kept = [], 0
+    for ev in events:
+        if "DTSTART;VALUE=DATE:" in ev:
+            m = re.search(r"^UID:(.*?)\r?$", ev, flags=re.MULTILINE)
+            if m:
+                prev = extract_vevents_by_uid_prefix(previous_ics, m.group(1).strip())
+                if prev and re.search(r"^DTSTART(;TZID=[^:]+)?:\d{8}T\d{6}", prev[0], flags=re.MULTILINE):
+                    out.append(prev[0])
+                    kept += 1
+                    continue
+        out.append(ev)
+    return out, kept
+
+
 def mark_time_tbd(event):
     """Append ' (time TBD)' to the SUMMARY of an all-day event (DTSTART with
     VALUE=DATE, i.e. the school hasn't posted a game time yet), so an all-day
@@ -395,6 +416,9 @@ def main():
             events = scrape_purdue_schedule(label, category, uid_tag, url)
             if not events:
                 raise ValueError("scrape returned 0 events")
+            events, kept = keep_known_times(events, load_previous_sports_ics())
+            if kept:
+                print(f"{label}: kept previously-published game times for {kept} finished game(s)")
             print(f"{label}: {len(events)} events (category: {category})")
         except Exception as e:
             print(f"WARNING: {label} scrape failed ({e}); keeping last-published events for this sport instead", file=sys.stderr)
