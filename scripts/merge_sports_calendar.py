@@ -76,6 +76,10 @@ OUTPUT_FILE = "sports.ics"
 # Same content, second address. Outlook.com subscriptions are fetched/cached by
 # Microsoft's servers; a fresh URL forces a fresh fetch (2026-10-15).
 MIRROR_FILE = "sports-calendar.ics"
+# Third address (2026-10-23): Outlook.com was again holding stale TBD copies, so
+# a new filename forces a fresh fetch. Add further names here the same way.
+EXTRA_FILES = ["sports-games.ics"]
+NTFY_URL = "https://ntfy.sh/jeff-claude-3001"
 EASTERN = ZoneInfo("America/New_York")
 UTC = ZoneInfo("UTC")
 
@@ -381,6 +385,37 @@ def load_previous_sports_ics():
         return ""
 
 
+def _events_by_uid(ics_text):
+    text = ics_text.replace("\r\n ", "").replace("\r\n", "\n")
+    out = {}
+    for block in re.findall(r"BEGIN:VEVENT.*?END:VEVENT", text, re.S):
+        uid = re.search(r"^UID:(.*)$", block, re.M)
+        start = re.search(r"^DTSTART([^:\n]*):(\S+)", block, re.M)
+        summ = re.search(r"^SUMMARY:(.*)$", block, re.M)
+        if uid and start and summ:
+            out[uid.group(1).strip()] = ("VALUE=DATE" in start.group(1), summ.group(1).strip())
+    return out
+
+
+def notify_newly_timed(previous_ics, new_ics):
+    """ntfy Jeff when a game flips from all-day (TBD) to a real time, since
+    Outlook.com may keep showing the old TBD copy for a day or more."""
+    old, new = _events_by_uid(previous_ics), _events_by_uid(new_ics)
+    changed = [new[u][1] for u, (allday, _) in old.items()
+               if allday and u in new and not new[u][0]]
+    if not changed:
+        return
+    names = [re.sub(r" \(time TBD\)", "", c) for c in changed]
+    body = "Game time announced:\n" + "\n".join(names[:10]) + "\nIf Outlook still shows TBD, re-subscribe."
+    try:
+        req = urllib.request.Request(NTFY_URL, data=body.encode("utf-8"),
+                                     headers={"Title": "Sports calendar: times set"})
+        urllib.request.urlopen(req, timeout=15)
+        print(f"ntfy sent for {len(changed)} newly-timed game(s)")
+    except Exception as e:
+        print(f"WARNING: ntfy failed ({e})", file=sys.stderr)
+
+
 def main():
     all_events = []
     degraded_labels = []
@@ -440,7 +475,8 @@ def main():
         "METHOD:PUBLISH\r\n"
         f"X-WR-CALNAME:{CALNAME}\r\n"
         "X-WR-TIMEZONE:America/New_York\r\n"
-        "X-PUBLISHED-TTL:PT120M\r\n"
+        "X-PUBLISHED-TTL:PT60M\r\n"
+        "REFRESH-INTERVAL;VALUE=DURATION:PT1H\r\n"
         + VTIMEZONE_EASTERN
     )
     footer = "END:VCALENDAR\r\n"
@@ -453,7 +489,8 @@ def main():
     # from a previous file can arrive with bare LFs, which strict ICS parsers
     # reject), then publish the same content at both URLs.
     full = (header + body + footer).replace("\r\n", "\n").replace("\n", "\r\n")
-    for out_path in (OUTPUT_FILE, MIRROR_FILE):
+    notify_newly_timed(load_previous_sports_ics(), full)
+    for out_path in (OUTPUT_FILE, MIRROR_FILE, *EXTRA_FILES):
         with open(out_path, "w", newline="") as f:
             f.write(full)
 
