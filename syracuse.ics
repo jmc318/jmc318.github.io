@@ -26,7 +26,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:vcal_18831-cuse.com
-DTSTAMP:20261023T161857Z
+DTSTAMP:20261023T205046Z
 DTSTART;TZID=America/New_York:20260905T120000
 DTEND;TZID=America/New_York:20260905T150000
 LOCATION:Syracuse\, N.Y., JMA Wireless Dome
@@ -37,7 +37,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18832-cuse.com
-DTSTAMP:20261023T161857Z
+DTSTAMP:20261023T205046Z
 DTSTART;TZID=America/New_York:20260912T153000
 DTEND;TZID=America/New_York:20260912T183000
 LOCATION:Syracuse\, N.Y., JMA Wireless Dome
@@ -48,7 +48,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18833-cuse.com
-DTSTAMP:20261023T161857Z
+DTSTAMP:20261023T205046Z
 DTSTART;TZID=America/New_York:20260917T193000
 DTEND;TZID=America/New_York:20260917T223000
 LOCATION:Pittsburgh\, PA, Acrisure Stadium
@@ -59,7 +59,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18834-cuse.com
-DTSTAMP:20261023T161857Z
+DTSTAMP:20261023T205046Z
 DTSTART;TZID=America/New_York:20261003T120000
 DTEND;TZID=America/New_York:20261003T150000
 LOCATION:Storrs\, CT, Rentschler Field
@@ -70,7 +70,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18835-cuse.com
-DTSTAMP:20261023T161857Z
+DTSTAMP:20261023T205046Z
 DTSTART;TZID=America/New_York:20261010T193000
 DTEND;TZID=America/New_York:20261010T223000
 LOCATION:Charlottesville\, VA, Scott Stadium
@@ -81,7 +81,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18836-cuse.com
-DTSTAMP:20261023T161857Z
+DTSTAMP:20261023T205046Z
 DTSTART;TZID=America/New_York:20261017T193000
 DTEND;TZID=America/New_York:20261017T223000
 LOCATION:Syracuse\, N.Y., JMA Wireless Dome
@@ -92,7 +92,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18837-cuse.com
-DTSTAMP:20261023T161857Z
+DTSTAMP:20261023T205046Z
 DTSTART;TZID=America/New_York:20261024T193000
 DTEND;TZID=America/New_York:20261024T223000
 LOCATION:Chapel Hill\, NC, Kenan Stadium
@@ -103,7 +103,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18838-cuse.com
-DTSTAMP:20261023T161857Z
+DTSTAMP:20261023T205046Z
 DTSTART;TZID=America/New_York:20261031T120000
 DTEND;TZID=America/New_York:20261031T150000
 LOCATION:Syracuse\, N.Y., JMA Wireless Dome
@@ -114,7 +114,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18839-cuse.com
-DTSTAMP:20261023T161857Z
+DTSTAMP:20261023T205046Z
 DTSTART;VALUE=DATE:20261107
 DTEND;VALUE=DATE:20261108
 LOCATION:Syracuse\, N.Y., JMA Wireless Dome
@@ -125,7 +125,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18840-cuse.com
-DTSTAMP:20261023T161857Z
+DTSTAMP:20261023T205046Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 LOCATION:Raleigh\, NC, Carter-Finley Stadium
@@ -136,7 +136,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18842-cuse.com
-DTSTAMP:20261023T161857Z
+DTSTAMP:20261023T205046Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 LOCATION:Chestnut Hill\, MA, Alumni Stadium
@@ -147,7 +147,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18841-cuse.com
-DTSTAMP:20261023T161857Z
+DTSTAMP:20261023T205046Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 LOCATION:Syracuse\, N.Y., JMA Wireless Dome
@@ -158,7 +158,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18893-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20261013T190000
 DTEND;TZID=America/New_York:20261013T210000
 LOCATION:Uncasville\, Conn., Mohegan Sun Arena
@@ -169,7 +169,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19011-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20261018T140000
 DTEND;TZID=America/New_York:20261018T160000
 LOCATION:Albany\, NY, MVP Arena
@@ -180,7 +180,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19004-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20261024T150000
 DTEND;TZID=America/New_York:20261024T170000
 LOCATION:Buffalo\, N.Y., KeyBank Center
@@ -191,249 +191,249 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18966-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20261102T190000
 DTEND;TZID=America/New_York:20261102T210000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Men's Basketball vs New Haven (TV: ACCNX)
-DESCRIPTION:Syracuse Men's Basketball vs New Haven\nTV: ACCNX\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=18966&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball vs New Haven\nTV: ACCNX\nStreaming Audio: https://cuse.com/showcase?Live=8583\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=18966&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=18966&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18926-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20261105T190000
 DTEND;TZID=America/New_York:20261105T210000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Men's Basketball vs Central Connecticut State  (TV: ACCNX)
-DESCRIPTION:Syracuse Men's Basketball vs Central Connecticut State \nTV: ACCNX\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=18926&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball vs Central Connecticut State \nTV: ACCNX\nStreaming Audio: https://cuse.com/showcase?Live=8585\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=18926&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=18926&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18888-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20261109T183000
 DTEND;TZID=America/New_York:20261109T203000
 LOCATION:, Gainbridge Fieldhouse
 SUMMARY:Syracuse Men's Basketball vs Indiana (TV: Fox Sports 1)
-DESCRIPTION:Syracuse Men's Basketball vs Indiana\nTV: Fox Sports 1\nTickets: https://www.ticketmaster.com/event/0500646AE9AEDEEA?did=26syracusembbgf\n https://cuse.com/calendar.aspx?game_id=18888&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball vs Indiana\nTV: Fox Sports 1\nStreaming Audio: https://cuse.com/showcase?Live=8586\nTickets: https://www.ticketmaster.com/event/0500646AE9AEDEEA?did=26syracusembbgf\n https://cuse.com/calendar.aspx?game_id=18888&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=18888&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19129-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20261115T190000
 DTEND;TZID=America/New_York:20261115T210000
 LOCATION:New York\, NY, Madison Square Garden
 SUMMARY:Syracuse Men's Basketball at St. John's University (TV: peacock)
-DESCRIPTION:Syracuse Men's Basketball at St. John's University\nTV: peacock\n https://cuse.com/calendar.aspx?game_id=19129&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball at St. John's University\nTV: peacock\nStreaming Audio: https://cuse.com/showcase?Live=8587\n https://cuse.com/calendar.aspx?game_id=19129&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19129&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19003-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20261118T200000
 DTEND;TZID=America/New_York:20261118T220000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Men's Basketball vs Cornell
-DESCRIPTION:Syracuse Men's Basketball vs Cornell\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19003&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball vs Cornell\nStreaming Audio: https://cuse.com/showcase?Live=8588\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19003&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19003&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18988-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20261121T140000
 DTEND;TZID=America/New_York:20261121T160000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Men's Basketball vs Lafayette (TV: ACCNX)
-DESCRIPTION:Syracuse Men's Basketball vs Lafayette\nTV: ACCNX\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=18988&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball vs Lafayette\nTV: ACCNX\nStreaming Audio: https://cuse.com/showcase?Live=8589\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=18988&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=18988&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19002-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20261125T180000
 DTEND;TZID=America/New_York:20261125T200000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Men's Basketball vs Albany (TV: ACCNX)
-DESCRIPTION:Syracuse Men's Basketball vs Albany\nTV: ACCNX\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19002&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball vs Albany\nTV: ACCNX\nStreaming Audio: https://cuse.com/showcase?Live=8590\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19002&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19002&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18891-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20261201T210000
 DTEND;TZID=America/New_York:20261201T230000
 LOCATION:Norman\, OK, Lloyd Noble Center
 SUMMARY:Syracuse Men's Basketball at Oklahoma (TV: ESPNU)
-DESCRIPTION:Syracuse Men's Basketball at Oklahoma\nTV: ESPNU\n https://cuse.com/calendar.aspx?game_id=18891&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball at Oklahoma\nTV: ESPNU\nStreaming Audio: https://cuse.com/showcase?Live=8591\n https://cuse.com/calendar.aspx?game_id=18891&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=18891&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18969-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20261208T190000
 DTEND;TZID=America/New_York:20261208T210000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Men's Basketball vs Colgate  (TV: ACCNX)
-DESCRIPTION:Syracuse Men's Basketball vs Colgate \nTV: ACCNX\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=18969&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball vs Colgate \nTV: ACCNX\nStreaming Audio: https://cuse.com/showcase?Live=8592\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=18969&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=18969&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19001-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20261212T170000
 DTEND;TZID=America/New_York:20261212T190000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Men's Basketball vs Mercyhurst (TV: ACCN)
-DESCRIPTION:Syracuse Men's Basketball vs Mercyhurst\nTV: ACCN\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19001&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball vs Mercyhurst\nTV: ACCN\nStreaming Audio: https://cuse.com/showcase?Live=8593\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19001&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19001&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18990-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20261216T190000
 DTEND;TZID=America/New_York:20261216T210000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Men's Basketball vs Canisius (TV: ACCNX)
-DESCRIPTION:Syracuse Men's Basketball vs Canisius\nTV: ACCNX\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=18990&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball vs Canisius\nTV: ACCNX\nStreaming Audio: https://cuse.com/showcase?Live=8594\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=18990&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=18990&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18889-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20261219T120000
 DTEND;TZID=America/New_York:20261219T140000
 LOCATION:, TD Garden
 SUMMARY:Syracuse Men's Basketball vs Providence (TV: FOX)
-DESCRIPTION:Syracuse Men's Basketball vs Providence\nTV: FOX \nTickets: https://www.ticketmaster.com/event/010064BBBF89C611\n https://cuse.com/calendar.aspx?game_id=18889&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball vs Providence\nTV: FOX \nStreaming Audio: https://cuse.com/showcase?Live=8595\nTickets: https://www.ticketmaster.com/event/010064BBBF89C611\n https://cuse.com/calendar.aspx?game_id=18889&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=18889&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18991-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20261222T160000
 DTEND;TZID=America/New_York:20261222T180000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Men's Basketball vs Binghamton
-DESCRIPTION:Syracuse Men's Basketball vs Binghamton\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=18991&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball vs Binghamton\nStreaming Audio: https://cuse.com/showcase?Live=8596\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=18991&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=18991&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19044-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20261229T180000
 DTEND;TZID=America/New_York:20261229T200000
 LOCATION:Tallahassee\, FL, Tucker Civic Center
 SUMMARY:Syracuse Men's Basketball at Florida State 
-DESCRIPTION:Syracuse Men's Basketball at Florida State \n https://cuse.com/calendar.aspx?game_id=19044&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball at Florida State \nStreaming Audio: https://cuse.com/showcase?Live=8597\n https://cuse.com/calendar.aspx?game_id=19044&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19044&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19045-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20270102T120000
 DTEND;TZID=America/New_York:20270102T140000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Men's Basketball vs Georgia Tech
-DESCRIPTION:Syracuse Men's Basketball vs Georgia Tech\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19045&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball vs Georgia Tech\nStreaming Audio: https://cuse.com/showcase?Live=8598\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19045&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19045&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19046-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20270105T190000
 DTEND;TZID=America/New_York:20270105T210000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Men's Basketball vs Duke  (TV: ESPN/ESPN2)
-DESCRIPTION:Syracuse Men's Basketball vs Duke \nTV: ESPN/ESPN2\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19046&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball vs Duke \nTV: ESPN/ESPN2\nStreaming Audio: https://cuse.com/showcase?Live=8599\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19046&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19046&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19047-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20270109T150000
 DTEND;TZID=America/New_York:20270109T170000
 LOCATION:Coral Gables\, FL, Watsco Center
 SUMMARY:Syracuse Men's Basketball at Miami
-DESCRIPTION:Syracuse Men's Basketball at Miami\n https://cuse.com/calendar.aspx?game_id=19047&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball at Miami\nStreaming Audio: https://cuse.com/showcase?Live=8600\n https://cuse.com/calendar.aspx?game_id=19047&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19047&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19048-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20270112T190000
 DTEND;TZID=America/New_York:20270112T210000
 LOCATION:Pittsburgh\, PA, Petersen Events Center
 SUMMARY:Syracuse Men's Basketball at Pittsburgh (TV: ESPN2/ESPNU)
-DESCRIPTION:Syracuse Men's Basketball at Pittsburgh\nTV: ESPN2/ESPNU\n https://cuse.com/calendar.aspx?game_id=19048&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball at Pittsburgh\nTV: ESPN2/ESPNU\nStreaming Audio: https://cuse.com/showcase?Live=8601\n https://cuse.com/calendar.aspx?game_id=19048&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19048&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19049-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20270116T140000
 DTEND;TZID=America/New_York:20270116T160000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Men's Basketball vs Louisville (TV: ESPN/ESPN2/ESPNU)
-DESCRIPTION:Syracuse Men's Basketball vs Louisville\nTV: ESPN/ESPN2/ESPNU\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19049&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball vs Louisville\nTV: ESPN/ESPN2/ESPNU\nStreaming Audio: https://cuse.com/showcase?Live=8602\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19049&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19049&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19050-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20270119T190000
 DTEND;TZID=America/New_York:20270119T210000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Men's Basketball vs Boston College
-DESCRIPTION:Syracuse Men's Basketball vs Boston College\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19050&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball vs Boston College\nStreaming Audio: https://cuse.com/showcase?Live=8603\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19050&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19050&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19051-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20270123T120000
 DTEND;TZID=America/New_York:20270123T140000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Men's Basketball vs North Carolina (TV: ESPN/ESPN2/ESPNU)
-DESCRIPTION:Syracuse Men's Basketball vs North Carolina\nTV: ESPN/ESPN2/ESPNU\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19051&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball vs North Carolina\nTV: ESPN/ESPN2/ESPNU\nStreaming Audio: https://cuse.com/showcase?Live=8604\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19051&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19051&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19052-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20270127T230000
 DTEND;TZID=America/New_York:20270128T010000
 LOCATION:Stanford\, CA, Maples Pavilion
 SUMMARY:Syracuse Men's Basketball at Stanford  (TV: ESPN2/ESPNU)
-DESCRIPTION:Syracuse Men's Basketball at Stanford \nTV: ESPN2/ESPNU\n https://cuse.com/calendar.aspx?game_id=19052&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball at Stanford \nTV: ESPN2/ESPNU\nStreaming Audio: https://cuse.com/showcase?Live=8605\n https://cuse.com/calendar.aspx?game_id=19052&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19052&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19053-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20270130T173000
 DTEND;TZID=America/New_York:20270130T193000
 LOCATION:Berkeley\, CA, Haas Pavilion
@@ -444,51 +444,51 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19054-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20270203T210000
 DTEND;TZID=America/New_York:20270203T230000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Men's Basketball vs Virginia
-DESCRIPTION:Syracuse Men's Basketball vs Virginia\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19054&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball vs Virginia\nStreaming Audio: https://cuse.com/showcase?Live=8607\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19054&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19054&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19125-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20270206T110000
 DTEND;TZID=America/New_York:20270206T130000
 LOCATION:Brooklyn\, N.Y., Barclays Center
 SUMMARY:Syracuse Men's Basketball vs Rutgers 
-DESCRIPTION:Syracuse Men's Basketball vs Rutgers \n https://cuse.com/calendar.aspx?game_id=19125&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball vs Rutgers \nStreaming Audio: https://cuse.com/showcase?Live=8608\n https://cuse.com/calendar.aspx?game_id=19125&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19125&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19055-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20270210T190000
 DTEND;TZID=America/New_York:20270210T210000
 LOCATION:Clemson\, SC, Littlejohn Coliseum
 SUMMARY:Syracuse Men's Basketball at Clemson (TV: ESPN2/ESPNU)
-DESCRIPTION:Syracuse Men's Basketball at Clemson\nTV: ESPN2/ESPNU\n https://cuse.com/calendar.aspx?game_id=19055&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball at Clemson\nTV: ESPN2/ESPNU\nStreaming Audio: https://cuse.com/showcase?Live=8609\n https://cuse.com/calendar.aspx?game_id=19055&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19055&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19056-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20270217T210000
 DTEND;TZID=America/New_York:20270217T230000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Men's Basketball vs Stanford  (TV: ESPN2/ESPNU)
-DESCRIPTION:Syracuse Men's Basketball vs Stanford \nTV: ESPN2/ESPNU\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19056&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball vs Stanford \nTV: ESPN2/ESPNU\nStreaming Audio: https://cuse.com/showcase?Live=8610\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19056&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19056&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19057-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20270220T141500
 DTEND;TZID=America/New_York:20270220T161500
 LOCATION:Dallas\, TX, Moody Coliseum
@@ -499,40 +499,40 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19058-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20270223T200000
 DTEND;TZID=America/New_York:20270223T220000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Men's Basketball vs Pittsburgh
-DESCRIPTION:Syracuse Men's Basketball vs Pittsburgh\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19058&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball vs Pittsburgh\nStreaming Audio: https://cuse.com/showcase?Live=8612\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19058&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19058&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19059-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20270227T200000
 DTEND;TZID=America/New_York:20270227T220000
 LOCATION:South Bend\, Ind., Purcell Pavilion
 SUMMARY:Syracuse Men's Basketball at Notre Dame
-DESCRIPTION:Syracuse Men's Basketball at Notre Dame\n https://cuse.com/calendar.aspx?game_id=19059&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball at Notre Dame\nStreaming Audio: https://cuse.com/showcase?Live=8613\n https://cuse.com/calendar.aspx?game_id=19059&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19059&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19060-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20270303T210000
 DTEND;TZID=America/New_York:20270303T230000
 LOCATION:Blacksburg\, VA, Cassell Coliseum
 SUMMARY:Syracuse Men's Basketball at Virginia Tech (TV: ESPN2/ESPNU)
-DESCRIPTION:Syracuse Men's Basketball at Virginia Tech\nTV: ESPN2/ESPNU\n https://cuse.com/calendar.aspx?game_id=19060&amp;sport_id=6
+DESCRIPTION:Syracuse Men's Basketball at Virginia Tech\nTV: ESPN2/ESPNU\nStreaming Audio: https://cuse.com/showcase?Live=8614\n https://cuse.com/calendar.aspx?game_id=19060&amp;sport_id=6
 URL:https://cuse.com/calendar.aspx?game_id=19060&amp;sport_id=6
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19061-cuse.com
-DTSTAMP:20261023T161704Z
+DTSTAMP:20261023T204856Z
 DTSTART;TZID=America/New_York:20270306T173000
 DTEND;TZID=America/New_York:20270306T193000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
@@ -543,7 +543,7 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18892-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20261012T183000
 DTEND;TZID=America/New_York:20261012T203000
 LOCATION:Uncasville\, Conn., Mohegan Sun Arena
@@ -554,320 +554,320 @@ PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19005-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20261103T180000
 DTEND;TZID=America/New_York:20261103T200000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Women's Basketball vs Sacred Heart (TV: Watch ACCNX)
-DESCRIPTION:Syracuse Women's Basketball vs Sacred Heart\nTV: Watch ACCNX\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19005&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball vs Sacred Heart\nTV: Watch ACCNX\nStreaming Audio: https://cuse.com/showcase?Live=8584\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19005&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19005&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19007-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20261108T140000
 DTEND;TZID=America/New_York:20261108T160000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Women's Basketball vs Cornell (TV: Watch ACCNX)
-DESCRIPTION:Syracuse Women's Basketball vs Cornell\nTV: Watch ACCNX\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19007&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball vs Cornell\nTV: Watch ACCNX\nStreaming Audio: https://cuse.com/showcase?Live=8616\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19007&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19007&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19023-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20261111T180000
 DTEND;TZID=America/New_York:20261111T200000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Women's Basketball vs Siena (TV: Watch ACCNX)
-DESCRIPTION:Syracuse Women's Basketball vs Siena\nTV: Watch ACCNX\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19023&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball vs Siena\nTV: Watch ACCNX\nStreaming Audio: https://cuse.com/showcase?Live=8617\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19023&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19023&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19006-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20261115T190000
 DTEND;TZID=America/New_York:20261115T210000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Women's Basketball vs Canisius (TV: Watch ACCN)
-DESCRIPTION:Syracuse Women's Basketball vs Canisius\nTV: Watch ACCN\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19006&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball vs Canisius\nTV: Watch ACCN\nStreaming Audio: https://cuse.com/showcase?Live=8618\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19006&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19006&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19043-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20261118T170000
 DTEND;TZID=America/New_York:20261118T190000
 LOCATION:Cambridge\, MA
 SUMMARY:Syracuse Women's Basketball at Harvard
-DESCRIPTION:Syracuse Women's Basketball at Harvard\n https://cuse.com/calendar.aspx?game_id=19043&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball at Harvard\nStreaming Audio: https://cuse.com/showcase?Live=8619\n https://cuse.com/calendar.aspx?game_id=19043&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19043&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19008-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20261125T110000
 DTEND;TZID=America/New_York:20261125T130000
 LOCATION:San Juan\, Puerto Rico, Guillermo Angulo Coliseum
 SUMMARY:Syracuse Women's Basketball vs Southern
-DESCRIPTION:Syracuse Women's Basketball vs Southern\n https://cuse.com/calendar.aspx?game_id=19008&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball vs Southern\nStreaming Audio: https://cuse.com/showcase?Live=8620\n https://cuse.com/calendar.aspx?game_id=19008&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19008&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19009-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20261126T133000
 DTEND;TZID=America/New_York:20261126T153000
 LOCATION:San Juan\, Puerto Rico, Guillermo Angulo Coliseum
 SUMMARY:Syracuse Women's Basketball vs Wisconsin
-DESCRIPTION:Syracuse Women's Basketball vs Wisconsin\n https://cuse.com/calendar.aspx?game_id=19009&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball vs Wisconsin\nStreaming Audio: https://cuse.com/showcase?Live=8621\n https://cuse.com/calendar.aspx?game_id=19009&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19009&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19010-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20261127T110000
 DTEND;TZID=America/New_York:20261127T130000
 LOCATION:San Juan\, Puerto Rico, Guillermo Angulo Coliseum
 SUMMARY:Syracuse Women's Basketball vs Auburn
-DESCRIPTION:Syracuse Women's Basketball vs Auburn\n https://cuse.com/calendar.aspx?game_id=19010&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball vs Auburn\nStreaming Audio: https://cuse.com/showcase?Live=8622\n https://cuse.com/calendar.aspx?game_id=19010&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19010&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18890-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20261203T190000
 DTEND;TZID=America/New_York:20261203T210000
 LOCATION:, JMA Wireless Dome
 SUMMARY:Syracuse Women's Basketball vs Oklahoma (TV: Watch ESPNU)
-DESCRIPTION:Syracuse Women's Basketball vs Oklahoma\nTV: Watch ESPNU\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=18890&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball vs Oklahoma\nTV: Watch ESPNU\nStreaming Audio: https://cuse.com/showcase?Live=8623\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=18890&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=18890&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19025-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20261206T140000
 DTEND;TZID=America/New_York:20261206T160000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Women's Basketball vs SMU (TV: Watch ACCNX)
-DESCRIPTION:Syracuse Women's Basketball vs SMU\nTV: Watch ACCNX\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19025&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball vs SMU\nTV: Watch ACCNX\nStreaming Audio: https://cuse.com/showcase?Live=8624\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19025&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19025&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_18987-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20261216T180000
 DTEND;TZID=America/New_York:20261216T200000
 LOCATION:Syracuse\, NY
 SUMMARY:Syracuse Women's Basketball at Le Moyne
-DESCRIPTION:Syracuse Women's Basketball at Le Moyne\n https://cuse.com/calendar.aspx?game_id=18987&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball at Le Moyne\nStreaming Audio: https://cuse.com/showcase?Live=8625\n https://cuse.com/calendar.aspx?game_id=18987&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=18987&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19097-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20261218T100000
 DTEND;TZID=America/New_York:20261218T120000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Women's Basketball vs Bucknell (TV: Watch ACCNX)
-DESCRIPTION:Syracuse Women's Basketball vs Bucknell\nTV: Watch ACCNX\n https://cuse.com/calendar.aspx?game_id=19097&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball vs Bucknell\nTV: Watch ACCNX\nStreaming Audio: https://cuse.com/showcase?Live=8626\n https://cuse.com/calendar.aspx?game_id=19097&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19097&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19026-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20261228T180000
 DTEND;TZID=America/New_York:20261228T200000
 LOCATION:Durham\, NC, Cameron Indoor Stadium
 SUMMARY:Syracuse Women's Basketball at Duke (TV: Watch ACCN)
-DESCRIPTION:Syracuse Women's Basketball at Duke\nTV: Watch ACCN\n https://cuse.com/calendar.aspx?game_id=19026&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball at Duke\nTV: Watch ACCN\nStreaming Audio: https://cuse.com/showcase?Live=8627\n https://cuse.com/calendar.aspx?game_id=19026&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19026&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19027-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20261231T180000
 DTEND;TZID=America/New_York:20261231T200000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Women's Basketball vs North Carolina (TV: Watch ACCN)
-DESCRIPTION:Syracuse Women's Basketball vs North Carolina\nTV: Watch ACCN\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19027&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball vs North Carolina\nTV: Watch ACCN\nStreaming Audio: https://cuse.com/showcase?Live=8628\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19027&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19027&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19028-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20270103T160000
 DTEND;TZID=America/New_York:20270103T180000
 LOCATION:Blacksburg\, VA, Cassell Coliseum
 SUMMARY:Syracuse Women's Basketball at Virginia Tech (TV: Watch ACCN)
-DESCRIPTION:Syracuse Women's Basketball at Virginia Tech\nTV: Watch ACCN\n https://cuse.com/calendar.aspx?game_id=19028&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball at Virginia Tech\nTV: Watch ACCN\nStreaming Audio: https://cuse.com/showcase?Live=8629\n https://cuse.com/calendar.aspx?game_id=19028&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19028&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19029-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20270107T180000
 DTEND;TZID=America/New_York:20270107T200000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Women's Basketball vs Pittsburgh (TV: Watch ACCNX)
-DESCRIPTION:Syracuse Women's Basketball vs Pittsburgh\nTV: Watch ACCNX\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19029&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball vs Pittsburgh\nTV: Watch ACCNX\nStreaming Audio: https://cuse.com/showcase?Live=8630\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19029&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19029&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19030-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20270110T120000
 DTEND;TZID=America/New_York:20270110T140000
 LOCATION:Tallahassee\, FL, Donald Tucker Center
 SUMMARY:Syracuse Women's Basketball at Florida State (TV: Watch ACCN)
-DESCRIPTION:Syracuse Women's Basketball at Florida State\nTV: Watch ACCN\n https://cuse.com/calendar.aspx?game_id=19030&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball at Florida State\nTV: Watch ACCN\nStreaming Audio: https://cuse.com/showcase?Live=8631\n https://cuse.com/calendar.aspx?game_id=19030&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19030&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19031-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20270114T180000
 DTEND;TZID=America/New_York:20270114T200000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Women's Basketball vs Boston College (TV: Watch ACCNX)
-DESCRIPTION:Syracuse Women's Basketball vs Boston College\nTV: Watch ACCNX\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19031&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball vs Boston College\nTV: Watch ACCNX\nStreaming Audio: https://cuse.com/showcase?Live=8632\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19031&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19031&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19032-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20270117T150000
 DTEND;TZID=America/New_York:20270117T170000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Women's Basketball vs Notre Dame (TV: Watch ACCN)
-DESCRIPTION:Syracuse Women's Basketball vs Notre Dame\nTV: Watch ACCN\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19032&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball vs Notre Dame\nTV: Watch ACCN\nStreaming Audio: https://cuse.com/showcase?Live=8633\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19032&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19032&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19033-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20270121T220000
 DTEND;TZID=America/New_York:20270121T235959
 LOCATION:Stanford\, CA, Maples Pavilion
 SUMMARY:Syracuse Women's Basketball at Stanford (TV: Watch ACCNX)
-DESCRIPTION:Syracuse Women's Basketball at Stanford\nTV: Watch ACCNX\n https://cuse.com/calendar.aspx?game_id=19033&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball at Stanford\nTV: Watch ACCNX\nStreaming Audio: https://cuse.com/showcase?Live=8634\n https://cuse.com/calendar.aspx?game_id=19033&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19033&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19034-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20270124T180000
 DTEND;TZID=America/New_York:20270124T200000
 LOCATION:Berkeley\, CA, Haas Pavilion
 SUMMARY:Syracuse Women's Basketball at California (TV: Watch ACCN)
-DESCRIPTION:Syracuse Women's Basketball at California\nTV: Watch ACCN\n https://cuse.com/calendar.aspx?game_id=19034&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball at California\nTV: Watch ACCN\nStreaming Audio: https://cuse.com/showcase?Live=8635\n https://cuse.com/calendar.aspx?game_id=19034&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19034&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19035-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20270128T180000
 DTEND;TZID=America/New_York:20270128T200000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Women's Basketball vs Miami (TV: Watch ACCNX)
-DESCRIPTION:Syracuse Women's Basketball vs Miami\nTV: Watch ACCNX\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19035&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball vs Miami\nTV: Watch ACCNX\nStreaming Audio: https://cuse.com/showcase?Live=8636\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19035&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19035&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19036-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20270131T180000
 DTEND;TZID=America/New_York:20270131T200000
 LOCATION:Atlanta\, Ga., McCamish Pavilion
 SUMMARY:Syracuse Women's Basketball at Georgia Tech (TV: Watch ACCN)
-DESCRIPTION:Syracuse Women's Basketball at Georgia Tech\nTV: Watch ACCN\n https://cuse.com/calendar.aspx?game_id=19036&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball at Georgia Tech\nTV: Watch ACCN\nStreaming Audio: https://cuse.com/showcase?Live=8637\n https://cuse.com/calendar.aspx?game_id=19036&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19036&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19037-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20270207T120000
 DTEND;TZID=America/New_York:20270207T140000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Women's Basketball vs NC State (TV: Watch ACCN)
-DESCRIPTION:Syracuse Women's Basketball vs NC State\nTV: Watch ACCN\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19037&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball vs NC State\nTV: Watch ACCN\nStreaming Audio: https://cuse.com/showcase?Live=8638\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19037&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19037&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19038-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20270211T180000
 DTEND;TZID=America/New_York:20270211T200000
 LOCATION:Louisville\, KY, KFC Yum! Center
 SUMMARY:Syracuse Women's Basketball at Louisville (TV: Watch ACCN)
-DESCRIPTION:Syracuse Women's Basketball at Louisville\nTV: Watch ACCN\n https://cuse.com/calendar.aspx?game_id=19038&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball at Louisville\nTV: Watch ACCN\nStreaming Audio: https://cuse.com/showcase?Live=8639\n https://cuse.com/calendar.aspx?game_id=19038&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19038&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19039-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20270214T140000
 DTEND;TZID=America/New_York:20270214T160000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Women's Basketball vs Virginia (TV: Watch ACCNX)
-DESCRIPTION:Syracuse Women's Basketball vs Virginia\nTV: Watch ACCNX\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19039&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball vs Virginia\nTV: Watch ACCNX\nStreaming Audio: https://cuse.com/showcase?Live=8640\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19039&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19039&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19040-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20270218T180000
 DTEND;TZID=America/New_York:20270218T200000
 LOCATION:Chestnut Hill\, MA, Conte Forum
 SUMMARY:Syracuse Women's Basketball at Boston College (TV: Watch ACCNX)
-DESCRIPTION:Syracuse Women's Basketball at Boston College\nTV: Watch ACCNX\n https://cuse.com/calendar.aspx?game_id=19040&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball at Boston College\nTV: Watch ACCNX\nStreaming Audio: https://cuse.com/showcase?Live=8641\n https://cuse.com/calendar.aspx?game_id=19040&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19040&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19041-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20270222T180000
 DTEND;TZID=America/New_York:20270222T200000
 LOCATION:Clemson\, SC, Littlejohn Coliseum
 SUMMARY:Syracuse Women's Basketball at Clemson (TV: Watch ESPN2)
-DESCRIPTION:Syracuse Women's Basketball at Clemson\nTV: Watch ESPN2\n https://cuse.com/calendar.aspx?game_id=19041&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball at Clemson\nTV: Watch ESPN2\nStreaming Audio: https://cuse.com/showcase?Live=8642\n https://cuse.com/calendar.aspx?game_id=19041&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19041&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_19042-cuse.com
-DTSTAMP:20261023T161942Z
+DTSTAMP:20261023T205121Z
 DTSTART;TZID=America/New_York:20270228T120000
 DTEND;TZID=America/New_York:20270228T140000
 LOCATION:Syracuse\, NY, JMA Wireless Dome
 SUMMARY:Syracuse Women's Basketball vs Wake Forest  (TV: Watch ACCN)
-DESCRIPTION:Syracuse Women's Basketball vs Wake Forest \nTV: Watch ACCN\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19042&amp;sport_id=7
+DESCRIPTION:Syracuse Women's Basketball vs Wake Forest \nTV: Watch ACCN\nStreaming Audio: https://cuse.com/showcase?Live=8643\nTickets: https://cuse.com/feature/basketball-tickets\n https://cuse.com/calendar.aspx?game_id=19042&amp;sport_id=7
 URL:https://cuse.com/calendar.aspx?game_id=19042&amp;sport_id=7
 PRIORITY:3
 END:VEVENT
