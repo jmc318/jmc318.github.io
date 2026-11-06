@@ -67,6 +67,18 @@ PURDUE_PAGES = [
     ("Purdue Men's Basketball", "Purdue", "mbb", "https://purduesports.com/sports/mens-basketball/schedule"),
 ]
 
+# TV fallback (added 2026-11-06): Michigan State's basketball ICS feed carries
+# no "TV:" field at all (0 of 54 games, confirmed -- e.g. the 11/5 Toledo game
+# streamed on Peacock but the feed only listed "Streaming Audio"), while MSU's
+# own schedule web page shows a network logo on nearly every game. For any feed
+# event still missing a network, it's looked up on that sport's schedule page by
+# game date. Best-effort only: if the page can't be read, the run continues and
+# those games just show no network (never aborts, never fails the run).
+TV_FALLBACK_PAGES = {
+    "Michigan State Football": "https://msuspartans.com/sports/football/schedule",
+    "Michigan State Men's Basketball": "https://msuspartans.com/sports/mens-basketball/schedule",
+}
+
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
 }
@@ -104,6 +116,137 @@ def extract_tv_network(description_line):
     return m.group(1).strip() if m else None
 
 
+# Ordered (keyword, display name) rules for turning a logo *filename* into a
+# network name. Order matters: more specific names first (ESPN2 before ESPN,
+# Peacock before NBC, CBS Sports Network before CBS).
+NETWORK_KEYWORDS = [
+    ("peacock", "Peacock"), ("espn2", "ESPN2"), ("espnu", "ESPNU"),
+    ("espnews", "ESPNEWS"), ("espnplus", "ESPN+"), ("espn", "ESPN"),
+    ("cbssportsnetwork", "CBS Sports Network"), ("cbssn", "CBS Sports Network"),
+    ("cbs", "CBS"), ("fs1", "FS1"), ("fs2", "FS2"), ("btn", "BTN"),
+    ("bigtennetwork", "BTN"), ("b1g", "B1G+"), ("bigtenplus", "B1G+"),
+    ("trutv", "truTV"), ("tnt", "TNT"), ("tbs", "TBS"), ("youtube", "YouTube"),
+    ("primevideo", "Prime Video"), ("amazon", "Prime Video"), ("nbc", "NBC"),
+    ("abc", "ABC"), ("fox", "FOX"),
+]
+
+
+def normalize_network(raw):
+    """Clean up a network name. SIDEARM feeds/pages sometimes give a logo's
+    image filename instead of a name (seen live: 'NBCUniversal_Peacock_',
+    'espn-logo-espn-symbol-meaning-png-logo-0', 'TNT_Logo_2016',
+    'Peacock_NBCSN.jpg') and occasionally the literal text 'None'. Real
+    names typed by the school ('NBC/Peacock', 'CBS Sports Network') are left
+    exactly as-is. Returns None when there's no real network."""
+    if not raw:
+        return None
+    name = raw.strip()
+    if name.lower() in ("", "none", "null", "tba", "tbd", "n/a"):
+        return None
+    looks_like_filename = (
+        "_" in name or re.search(r"logo|\.(png|jpe?g|svg|gif|webp)$", name, re.I)
+        or (" " not in name and "-" in name)
+    )
+    if not looks_like_filename:
+        return name
+    # Drop the file extension BEFORE matching -- "..._schedules.png" squashed
+    # together contains "espn" (caught in testing 2026-11-06: BTN games were
+    # coming out as ESPN).
+    cleaned = re.sub(r"\.(png|jpe?g|svg|gif|webp)$", "", name, flags=re.I)
+    key = re.sub(r"[^a-z0-9]", "", cleaned.lower().replace("+", "plus"))
+    for keyword, display in NETWORK_KEYWORDS:
+        if keyword in key:
+            return display
+    cleaned = re.sub(r"[_-]+", " ", cleaned).strip()
+    print(f"NOTE: unrecognized network logo {raw!r}; showing it as {cleaned!r} "
+          f"(add it to NETWORK_KEYWORDS)")
+    return cleaned or None
+
+
+def tidy_tv_in_summary(event):
+    """Final pass over every event at write time: normalize the '(TV: ...)'
+    part of the title (also fixes carried-forward events published before
+    normalize_network existed), or drop it if it's not a real network."""
+    def repl(m):
+        network = normalize_network(m.group(1))
+        return f" (TV: {network})" if network else ""
+    return re.sub(r" \(TV: ([^)\r\n]*)\)", repl, event)
+
+
+MONTHS = {m: i for i, m in enumerate(
+    ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], 1)}
+
+
+def scrape_page_networks(url):
+    """Read MSU's (new-platform SIDEARM) schedule page and return
+    {(month, day): network} for every game card that shows a TV logo. Each game
+    is a 'game card'; its date appears as e.g. 'Nov 5 (Thu)' and its network
+    only as an <img alt="TV Logo"> whose image filename names the network
+    (e.g. '.../images/2026/1/12/Peacock_NBCSN.jpg') -- the alt text itself is
+    always the generic 'TV Logo', so the filename is the only clue."""
+    html = fetch(url)
+    cards = html.split('data-test-id="s-game-card-standard__root"')[1:]
+    networks = {}
+    for card in cards:
+        text = re.sub(r"<[^>]+>", " ", card)
+        date_m = re.search(r"\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{1,2})\s*\((?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\)", text)
+        if not date_m:
+            continue
+        tv_section = card.find("header-tv-and-radio")
+        if tv_section < 0:
+            continue
+        for img in re.findall(r"<img[^>]*>", card[tv_section:]):
+            if 'alt="TV Logo"' not in img:
+                continue
+            file_m = re.search(r"images%2F(?:[^&\"]*?%2F)?([^%&\"/]+\.(?:png|jpe?g|svg|gif|webp))", img, re.I)
+            network = normalize_network(file_m.group(1)) if file_m else None
+            if network:
+                networks[(MONTHS[date_m.group(1)], int(date_m.group(2)))] = network
+            break
+    return networks
+
+
+def event_local_date(event):
+    """(month, day) of an event's start in Eastern time (MSU's own zone, which
+    is what its schedule page shows)."""
+    m = re.search(r"^DTSTART(;VALUE=DATE)?(?:;TZID=[^:]+)?:(\d{8})(T\d{6}Z?)?", event, re.M)
+    if not m:
+        return None
+    if m.group(3) and m.group(3).endswith("Z"):
+        dt = datetime.strptime(m.group(2) + m.group(3)[:-1], "%Y%m%dT%H%M%S").replace(tzinfo=UTC).astimezone(EASTERN)
+    else:
+        dt = datetime.strptime(m.group(2), "%Y%m%d")
+    return dt.month, dt.day
+
+
+def fill_missing_tv(label, events):
+    """For a feed whose events are missing a network, look each one up on that
+    sport's schedule page (TV_FALLBACK_PAGES) by game date and add it to the
+    title. Never raises -- a page problem only means no extra networks."""
+    url = TV_FALLBACK_PAGES.get(label)
+    missing = [e for e in events if not re.search(r"^SUMMARY:.*\(TV: ", e, re.M)]
+    if not url or not missing:
+        return events
+    try:
+        networks = scrape_page_networks(url)
+    except Exception as e:
+        print(f"WARNING: {label}: couldn't read schedule page for TV networks ({e})", file=sys.stderr)
+        return events
+    out, filled = [], 0
+    for ev in events:
+        if ev in missing:
+            network = networks.get(event_local_date(ev))
+            if network:
+                ev = re.sub(r"^(SUMMARY:.*?)(\r?)$",
+                            lambda m, n=network: f"{m.group(1)} (TV: {n}){m.group(2)}",
+                            ev, count=1, flags=re.M)
+                filled += 1
+        out.append(ev)
+    print(f"{label}: added TV network from schedule page for {filled} of {len(missing)} game(s) missing one "
+          f"({len(networks)} networks found on page)")
+    return out
+
+
 def inject_tv_network_into_summary(lines):
     """Given a VEVENT's raw lines (pre-CATEGORIES), append the TV network
     (read off the DESCRIPTION field) onto the SUMMARY line, so it shows up in
@@ -112,7 +255,7 @@ def inject_tv_network_into_summary(lines):
     network = None
     for line in lines:
         if line.startswith("DESCRIPTION:"):
-            network = extract_tv_network(line)
+            network = normalize_network(extract_tv_network(line))
             break
     if not network:
         return lines
@@ -433,6 +576,7 @@ def main():
             print(f"ERROR: {label} returned 0 events, treating as a failure", file=sys.stderr)
             sys.exit(1)
         print(f"{label}: {len(events)} events (category: {category})")
+        events = fill_missing_tv(label, events)
         all_events.append((label, events))
 
     # Purdue: no working official feed as of 2026-08-12, so scraped instead --
@@ -482,7 +626,7 @@ def main():
     footer = "END:VCALENDAR\r\n"
     body_parts = []
     for label, events in all_events:
-        body_parts.extend(mark_time_tbd(utc_to_eastern_tzid(e)) for e in events)
+        body_parts.extend(tidy_tv_in_summary(mark_time_tbd(utc_to_eastern_tzid(e))) for e in events)
     body = "\r\n".join(body_parts) + "\r\n"
 
     # Normalize every line ending to CRLF (events recovered/carried forward
