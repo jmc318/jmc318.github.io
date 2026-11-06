@@ -90,7 +90,7 @@ OUTPUT_FILE = "sports.ics"
 MIRROR_FILE = "sports-calendar.ics"
 # Third address (2026-10-23): Outlook.com was again holding stale TBD copies, so
 # a new filename forces a fresh fetch. Add further names here the same way.
-EXTRA_FILES = ["sports-games.ics"]
+EXTRA_FILES = ["sports-games.ics", "sports-tv.ics"]  # sports-tv.ics added 2026-11-06
 NTFY_URL = "https://ntfy.sh/jeff-claude-3001"
 EASTERN = ZoneInfo("America/New_York")
 UTC = ZoneInfo("UTC")
