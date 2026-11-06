@@ -27,7 +27,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:vcal_17124-uwbadgers.com
-DTSTAMP:20261106T053208Z
+DTSTAMP:20261106T121406Z
 DTSTART;TZID=America/New_York:20260906T193000
 DTEND;TZID=America/New_York:20260906T223000
 LOCATION:Green Bay\, Wis., Lambeau Field
@@ -39,7 +39,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17125-uwbadgers.com
-DTSTAMP:20261106T053208Z
+DTSTAMP:20261106T121406Z
 DTSTART;TZID=America/New_York:20260912T191500
 DTEND;TZID=America/New_York:20260912T221500
 LOCATION:Madison\, Wis. - Stripe Out, Camp Randall Stadium
@@ -51,7 +51,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17126-uwbadgers.com
-DTSTAMP:20261106T053208Z
+DTSTAMP:20261106T121406Z
 DTSTART;TZID=America/New_York:20260919T123000
 DTEND;TZID=America/New_York:20260919T153000
 LOCATION:Madison\, Wis., Camp Randall Stadium
@@ -63,7 +63,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17144-uwbadgers.com
-DTSTAMP:20261106T053208Z
+DTSTAMP:20261106T121406Z
 DTSTART;TZID=America/New_York:20260926T170000
 DTEND;TZID=America/New_York:20260926T200000
 LOCATION:State College\, Pa.
@@ -75,7 +75,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17145-uwbadgers.com
-DTSTAMP:20261106T053208Z
+DTSTAMP:20261106T121406Z
 DTSTART;TZID=America/New_York:20261003T123000
 DTEND;TZID=America/New_York:20261003T153000
 LOCATION:Madison\, Wis. - Homecoming / Red Out, Camp Randall Stadium
@@ -87,7 +87,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17146-uwbadgers.com
-DTSTAMP:20261106T053208Z
+DTSTAMP:20261106T121406Z
 DTSTART;TZID=America/New_York:20261017T193000
 DTEND;TZID=America/New_York:20261017T223000
 LOCATION:Pasadena\, Calif.
@@ -99,7 +99,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17147-uwbadgers.com
-DTSTAMP:20261106T053208Z
+DTSTAMP:20261106T121406Z
 DTSTART;TZID=America/New_York:20261024T193000
 DTEND;TZID=America/New_York:20261024T223000
 LOCATION:Madison\, Wis., Camp Randall Stadium
@@ -111,7 +111,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17148-uwbadgers.com
-DTSTAMP:20261106T053208Z
+DTSTAMP:20261106T121406Z
 DTSTART;TZID=America/New_York:20261031T120000
 DTEND;TZID=America/New_York:20261031T150000
 LOCATION:Iowa City\, Iowa
@@ -123,7 +123,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17149-uwbadgers.com
-DTSTAMP:20261106T053208Z
+DTSTAMP:20261106T121406Z
 DTSTART;TZID=America/New_York:20261107T161500
 DTEND;TZID=America/New_York:20261107T191500
 LOCATION:Madison\, Wis., Camp Randall Stadium
@@ -135,7 +135,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17150-uwbadgers.com
-DTSTAMP:20261106T053208Z
+DTSTAMP:20261106T121406Z
 DTSTART;TZID=America/New_York:20261114T120000
 DTEND;TZID=America/New_York:20261114T150000
 LOCATION:College Park\, Md.
@@ -147,7 +147,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17151-uwbadgers.com
-DTSTAMP:20261106T053208Z
+DTSTAMP:20261106T121406Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 LOCATION:West Lafayette\, Ind.
@@ -159,7 +159,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17152-uwbadgers.com
-DTSTAMP:20261106T053208Z
+DTSTAMP:20261106T121406Z
 DTSTART;TZID=America/New_York:20261127T193000
 DTEND;TZID=America/New_York:20261127T223000
 LOCATION:Madison\, Wis., Camp Randall Stadium
@@ -171,7 +171,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17333-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20261010T130000
 DTEND;TZID=America/New_York:20261010T150000
 LOCATION:Madison\, WI, Kohl Center
@@ -183,11 +183,11 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17334-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20261015T193000
 DTEND;TZID=America/New_York:20261015T213000
 LOCATION:Green Bay\, WI
-SUMMARY:[W] Wisconsin Athletics Men's Basketball at Green Bay- Exhibition (TV: None)
+SUMMARY:[W] Wisconsin Athletics Men's Basketball at Green Bay- Exhibition
 DESCRIPTION:[W] Wisconsin Athletics Men's Basketball at Green Bay- Exhibition\nW 96-77\nTV: None\nRadio: Badger Radio Network\nStreaming Audio: https://uwbadgers.com/watch/?Live=892&type=Live\nTickets: https://ticketstar.evenue.net/events/GBMB\n https://uwbadgers.com/calendar.aspx?game_id=17334&amp;sport_id=3
 URL:https://uwbadgers.com/calendar.aspx?game_id=17334&amp;sport_id=3
 PRIORITY:3
@@ -195,7 +195,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17335-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20261027T190000
 DTEND;TZID=America/New_York:20261027T210000
 LOCATION:Madison\, WI, Kohl Center
@@ -207,7 +207,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17310-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20261102T193000
 DTEND;TZID=America/New_York:20261102T213000
 LOCATION:Madison\, WI, Kohl Center
@@ -219,7 +219,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17311-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20261106T193000
 DTEND;TZID=America/New_York:20261106T213000
 LOCATION:Madison\, WI, Kohl Center
@@ -231,7 +231,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17312-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20261110T203000
 DTEND;TZID=America/New_York:20261110T223000
 LOCATION:Madison\, WI, Kohl Center
@@ -243,7 +243,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17313-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20261115T200000
 DTEND;TZID=America/New_York:20261115T220000
 LOCATION:Madison\, WI, Kohl Center
@@ -255,7 +255,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17314-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20261119T203000
 DTEND;TZID=America/New_York:20261119T223000
 LOCATION:Nassau\, Bahamas
@@ -267,7 +267,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17315-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 LOCATION:Nassau\, Bahamas
@@ -279,7 +279,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17316-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20261125T190000
 DTEND;TZID=America/New_York:20261125T210000
 LOCATION:Madison\, WI, Kohl Center
@@ -291,7 +291,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17538-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20261201T210000
 DTEND;TZID=America/New_York:20261201T230000
 LOCATION:Evanston\, IL
@@ -303,7 +303,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17307-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20261205T140000
 DTEND;TZID=America/New_York:20261205T160000
 LOCATION:Milwaukee\, WI, Fiserv Forum
@@ -315,7 +315,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17539-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20261208T210000
 DTEND;TZID=America/New_York:20261208T230000
 LOCATION:Madison\, WI, Kohl Center
@@ -327,7 +327,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17308-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20261212T120000
 DTEND;TZID=America/New_York:20261212T140000
 LOCATION:Philadelphia\, PA
@@ -339,7 +339,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17309-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20261219T160000
 DTEND;TZID=America/New_York:20261219T180000
 LOCATION:Nashville\, TN
@@ -351,7 +351,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17317-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20261222T200000
 DTEND;TZID=America/New_York:20261222T220000
 LOCATION:Madison\, WI, Kohl Center
@@ -363,7 +363,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17318-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20261230T200000
 DTEND;TZID=America/New_York:20261230T220000
 LOCATION:Madison\, WI, Kohl Center
@@ -375,7 +375,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17540-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20270102T200000
 DTEND;TZID=America/New_York:20270102T220000
 LOCATION:Madison\, WI, Kohl Center
@@ -387,7 +387,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17541-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20270106T203000
 DTEND;TZID=America/New_York:20270106T223000
 LOCATION:Iowa City\, IA
@@ -399,7 +399,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17542-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20270109T120000
 DTEND;TZID=America/New_York:20270109T140000
 LOCATION:Madison\, WI, Kohl Center
@@ -411,7 +411,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17543-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20270113T190000
 DTEND;TZID=America/New_York:20270113T210000
 LOCATION:Madison\, WI, Kohl Center
@@ -423,7 +423,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17544-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20270116T180000
 DTEND;TZID=America/New_York:20270116T200000
 LOCATION:Los Angeles\, CA
@@ -435,7 +435,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17545-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20270119T223000
 DTEND;TZID=America/New_York:20270120T003000
 LOCATION:Los Angeles\, CA
@@ -447,7 +447,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17546-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20270123T140000
 DTEND;TZID=America/New_York:20270123T160000
 LOCATION:Madison\, WI, Kohl Center
@@ -459,7 +459,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17547-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20270126T190000
 DTEND;TZID=America/New_York:20270126T210000
 LOCATION:College Park\, MD
@@ -471,7 +471,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17548-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20270131T130000
 DTEND;TZID=America/New_York:20270131T150000
 LOCATION:Minneapolis\, MN
@@ -483,7 +483,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17549-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20270203T203000
 DTEND;TZID=America/New_York:20270203T223000
 LOCATION:Madison\, WI, Kohl Center
@@ -495,7 +495,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17550-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;VALUE=DATE:20270206
 DTEND;VALUE=DATE:20270207
 LOCATION:Madison\, WI, Kohl Center
@@ -507,7 +507,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17551-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20270209T203000
 DTEND;TZID=America/New_York:20270209T223000
 LOCATION:Columbus\, OH
@@ -519,7 +519,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17552-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20270213T120000
 DTEND;TZID=America/New_York:20270213T140000
 LOCATION:Piscataway\, NJ
@@ -531,7 +531,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17553-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20270219T200000
 DTEND;TZID=America/New_York:20270219T220000
 LOCATION:Madison\, WI, Kohl Center
@@ -543,7 +543,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17554-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20270224T203000
 DTEND;TZID=America/New_York:20270224T223000
 LOCATION:Madison\, WI, Kohl Center
@@ -555,7 +555,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17555-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20270228T133000
 DTEND;TZID=America/New_York:20270228T153000
 LOCATION:Urbana-Champaign\, IL
@@ -567,7 +567,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17556-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20270303T203000
 DTEND;TZID=America/New_York:20270303T223000
 LOCATION:Madison\, WI, Kohl Center
@@ -579,7 +579,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17557-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;TZID=America/New_York:20270306T154500
 DTEND;TZID=America/New_York:20270306T174500
 LOCATION:East Lansing\, MI
@@ -591,7 +591,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_17558-uwbadgers.com
-DTSTAMP:20261106T053748Z
+DTSTAMP:20261106T121323Z
 DTSTART;VALUE=DATE:20270309
 DTEND;VALUE=DATE:20270314
 LOCATION:Indianapolis\, IN, Gainbridge Fieldhouse
@@ -603,7 +603,7 @@ CATEGORIES:Wisconsin
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20502-msuspartans.com
-DTSTAMP:20261106T053258Z
+DTSTAMP:20261106T121715Z
 DTSTART;TZID=America/New_York:20260904T200000
 DTEND;TZID=America/New_York:20260904T230000
 LOCATION:East Lansing\, Mich., Spartan Stadium
@@ -615,7 +615,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20503-msuspartans.com
-DTSTAMP:20261106T053258Z
+DTSTAMP:20261106T121715Z
 DTSTART;TZID=America/New_York:20260912T153000
 DTEND;TZID=America/New_York:20260912T183000
 LOCATION:East Lansing\, Mich., Spartan Stadium
@@ -627,7 +627,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20504-msuspartans.com
-DTSTAMP:20261106T053258Z
+DTSTAMP:20261106T121715Z
 DTSTART;TZID=America/New_York:20260919T193000
 DTEND;TZID=America/New_York:20260919T223000
 LOCATION:South Bend\, Ind.
@@ -639,7 +639,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20505-msuspartans.com
-DTSTAMP:20261106T053258Z
+DTSTAMP:20261106T121715Z
 DTSTART;TZID=America/New_York:20260926T170000
 DTEND;TZID=America/New_York:20260926T200000
 LOCATION:East Lansing\, Mich., Spartan Stadium
@@ -651,7 +651,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20506-msuspartans.com
-DTSTAMP:20261106T053258Z
+DTSTAMP:20261106T121715Z
 DTSTART;TZID=America/New_York:20261003T123000
 DTEND;TZID=America/New_York:20261003T153000
 LOCATION:Madison\, Wis.
@@ -663,7 +663,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20507-msuspartans.com
-DTSTAMP:20261106T053258Z
+DTSTAMP:20261106T121715Z
 DTSTART;TZID=America/New_York:20261010T153000
 DTEND;TZID=America/New_York:20261010T183000
 LOCATION:East Lansing\, Mich., Spartan Stadium
@@ -675,7 +675,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20508-msuspartans.com
-DTSTAMP:20261106T053258Z
+DTSTAMP:20261106T121715Z
 DTSTART;TZID=America/New_York:20261017T120000
 DTEND;TZID=America/New_York:20261017T150000
 LOCATION:East Lansing\, Mich., Spartan Stadium
@@ -687,7 +687,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20509-msuspartans.com
-DTSTAMP:20261106T053258Z
+DTSTAMP:20261106T121715Z
 DTSTART;TZID=America/New_York:20261024T153000
 DTEND;TZID=America/New_York:20261024T183000
 LOCATION:Pasadena\, Calif.
@@ -699,7 +699,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20510-msuspartans.com
-DTSTAMP:20261106T053258Z
+DTSTAMP:20261106T121715Z
 DTSTART;TZID=America/New_York:20261107T193000
 DTEND;TZID=America/New_York:20261107T223000
 LOCATION:Ann Arbor\, Mich.
@@ -711,7 +711,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20511-msuspartans.com
-DTSTAMP:20261106T053258Z
+DTSTAMP:20261106T121715Z
 DTSTART;TZID=America/New_York:20261114T161500
 DTEND;TZID=America/New_York:20261114T191500
 LOCATION:East Lansing\, Mich., Spartan Stadium
@@ -723,7 +723,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20512-msuspartans.com
-DTSTAMP:20261106T053258Z
+DTSTAMP:20261106T121715Z
 DTSTART;TZID=America/New_York:20261120T200000
 DTEND;TZID=America/New_York:20261120T230000
 LOCATION:East Lansing\, Mich., Spartan Stadium
@@ -735,7 +735,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20513-msuspartans.com
-DTSTAMP:20261106T053258Z
+DTSTAMP:20261106T121715Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 LOCATION:Piscataway\, NJ
@@ -747,11 +747,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20902-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20261002T190000
 DTEND;TZID=America/New_York:20261002T210000
 LOCATION:East Lansing\, Mich., Breslin Center
-SUMMARY:[W] Michigan State University Men's Basketball vs Incarnate Word (exhibition)
+SUMMARY:[W] Michigan State University Men's Basketball vs Incarnate Word (exhibition) (TV: B1G+)
 DESCRIPTION:[W] Michigan State University Men's Basketball vs Incarnate Word (exhibition)\nW 89-59\n https://msuspartans.com/calendar.aspx?game_id=20902&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20902&amp;sport_id=6
 PRIORITY:3
@@ -759,11 +759,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20903-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20261020T190000
 DTEND;TZID=America/New_York:20261020T210000
 LOCATION:East Lansing\, Mich., Breslin Center
-SUMMARY:[L] Michigan State University Men's Basketball vs UConn (exhibition)
+SUMMARY:[L] Michigan State University Men's Basketball vs UConn (exhibition) (TV: B1G+)
 DESCRIPTION:[L] Michigan State University Men's Basketball vs UConn (exhibition)\nL 70-78\nStreaming Audio: https://msuspartans.com/showcase?Live=1736\nTickets: https://msuspartans.evenue.net/event/B26/B02\n https://msuspartans.com/calendar.aspx?game_id=20903&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20903&amp;sport_id=6
 PRIORITY:3
@@ -771,11 +771,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20904-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20261025T130000
 DTEND;TZID=America/New_York:20261025T150000
 LOCATION:Milwaukee\, WI
-SUMMARY:[L] Michigan State University Men's Basketball at Marquette (exhibition)
+SUMMARY:[L] Michigan State University Men's Basketball at Marquette (exhibition) (TV: YouTube)
 DESCRIPTION:[L] Michigan State University Men's Basketball at Marquette (exhibition)\nL 79-86\nTV Image Link: https://www.youtube.com/watch?v=h1UjPxpRBGA\nStreaming Audio: https://msuspartans.com/showcase?Live=1737\n https://msuspartans.com/calendar.aspx?game_id=20904&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20904&amp;sport_id=6
 PRIORITY:3
@@ -783,11 +783,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20905-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20261102T190000
 DTEND;TZID=America/New_York:20261102T210000
 LOCATION:East Lansing\, Mich., Breslin Center
-SUMMARY:[W] Michigan State University Men's Basketball vs Quinnipiac
+SUMMARY:[W] Michigan State University Men's Basketball vs Quinnipiac (TV: B1G+)
 DESCRIPTION:[W] Michigan State University Men's Basketball vs Quinnipiac\nW 96-59\nStreaming Audio: https://msuspartans.com/showcase?Live=1738\nTickets: https://msuspartans.evenue.net/event/B26/B03\n https://msuspartans.com/calendar.aspx?game_id=20905&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20905&amp;sport_id=6
 PRIORITY:3
@@ -795,11 +795,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20906-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20261105T200000
 DTEND;TZID=America/New_York:20261105T220000
 LOCATION:East Lansing\, Mich., Breslin Center
-SUMMARY:[W] Michigan State University Men's Basketball vs Toledo
+SUMMARY:[W] Michigan State University Men's Basketball vs Toledo (TV: Peacock)
 DESCRIPTION:[W] Michigan State University Men's Basketball vs Toledo\nW 91-61\nStreaming Audio: https://msuspartans.com/showcase?Live=1739\nTickets: https://msuspartans.evenue.net/event/B26/B04\n https://msuspartans.com/calendar.aspx?game_id=20906&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20906&amp;sport_id=6
 PRIORITY:3
@@ -807,11 +807,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20907-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20261110T190000
 DTEND;TZID=America/New_York:20261110T210000
 LOCATION:Chicago\, Ill.
-SUMMARY:Michigan State University Men's Basketball vs Duke
+SUMMARY:Michigan State University Men's Basketball vs Duke (TV: ESPN)
 DESCRIPTION:Michigan State University Men's Basketball vs Duke\nStreaming Audio: https://msuspartans.com/showcase?Live=1740\n https://msuspartans.com/calendar.aspx?game_id=20907&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20907&amp;sport_id=6
 PRIORITY:3
@@ -819,11 +819,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20908-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20261113T190000
 DTEND;TZID=America/New_York:20261113T210000
 LOCATION:East Lansing\, Mich., Breslin Center
-SUMMARY:Michigan State University Men's Basketball vs Northern Iowa- Military Appreciation Night
+SUMMARY:Michigan State University Men's Basketball vs Northern Iowa- Military Appreciation Night (TV: FS1)
 DESCRIPTION:Michigan State University Men's Basketball vs Northern Iowa- Military Appreciation Night\nStreaming Audio: https://msuspartans.com/showcase?Live=1741\nTickets: System.Threading.Tasks.Task`1[System.String]\n https://msuspartans.com/calendar.aspx?game_id=20908&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20908&amp;sport_id=6
 PRIORITY:3
@@ -831,11 +831,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20909-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20261117T210000
 DTEND;TZID=America/New_York:20261117T230000
 LOCATION:Knoxville\, TN
-SUMMARY:Michigan State University Men's Basketball at Tennessee
+SUMMARY:Michigan State University Men's Basketball at Tennessee (TV: ESPN2)
 DESCRIPTION:Michigan State University Men's Basketball at Tennessee\nStreaming Audio: https://msuspartans.com/showcase?Live=1742\n https://msuspartans.com/calendar.aspx?game_id=20909&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20909&amp;sport_id=6
 PRIORITY:3
@@ -843,11 +843,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20910-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20261121T120000
 DTEND;TZID=America/New_York:20261121T140000
 LOCATION:East Lansing\, Mich., Breslin Center
-SUMMARY:Michigan State University Men's Basketball vs Detroit Mercy
+SUMMARY:Michigan State University Men's Basketball vs Detroit Mercy (TV: BTN)
 DESCRIPTION:Michigan State University Men's Basketball vs Detroit Mercy\nStreaming Audio: https://msuspartans.com/showcase?Live=1743\nTickets: System.Threading.Tasks.Task`1[System.String]\n https://msuspartans.com/calendar.aspx?game_id=20910&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20910&amp;sport_id=6
 PRIORITY:3
@@ -855,11 +855,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20911-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20261126T163000
 DTEND;TZID=America/New_York:20261126T183000
 LOCATION:Detroit\, Mich.
-SUMMARY:Michigan State University Men's Basketball vs Arkansas
+SUMMARY:Michigan State University Men's Basketball vs Arkansas (TV: CBS)
 DESCRIPTION:Michigan State University Men's Basketball vs Arkansas\nStreaming Audio: https://msuspartans.com/showcase?Live=1744\n https://msuspartans.com/calendar.aspx?game_id=20911&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20911&amp;sport_id=6
 PRIORITY:3
@@ -867,11 +867,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20912-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20261202T183000
 DTEND;TZID=America/New_York:20261202T203000
 LOCATION:East Lansing\, Mich., Breslin Center
-SUMMARY:Michigan State University Men's Basketball vs Minnesota
+SUMMARY:Michigan State University Men's Basketball vs Minnesota (TV: BTN)
 DESCRIPTION:Michigan State University Men's Basketball vs Minnesota\nStreaming Audio: https://msuspartans.com/showcase?Live=1745\nTickets: System.Threading.Tasks.Task`1[System.String]\n https://msuspartans.com/calendar.aspx?game_id=20912&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20912&amp;sport_id=6
 PRIORITY:3
@@ -879,11 +879,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20913-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20261205T143000
 DTEND;TZID=America/New_York:20261205T163000
 LOCATION:East Lansing\, Mich., Breslin Center
-SUMMARY:Michigan State University Men's Basketball vs Drake
+SUMMARY:Michigan State University Men's Basketball vs Drake (TV: FS1)
 DESCRIPTION:Michigan State University Men's Basketball vs Drake\nStreaming Audio: https://msuspartans.com/showcase?Live=1746\nTickets: System.Threading.Tasks.Task`1[System.String]\n https://msuspartans.com/calendar.aspx?game_id=20913&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20913&amp;sport_id=6
 PRIORITY:3
@@ -891,11 +891,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20914-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20261209T203000
 DTEND;TZID=America/New_York:20261209T223000
 LOCATION:College Park\, MD
-SUMMARY:Michigan State University Men's Basketball at Maryland
+SUMMARY:Michigan State University Men's Basketball at Maryland (TV: BTN)
 DESCRIPTION:Michigan State University Men's Basketball at Maryland\nStreaming Audio: https://msuspartans.com/showcase?Live=1747\n https://msuspartans.com/calendar.aspx?game_id=20914&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20914&amp;sport_id=6
 PRIORITY:3
@@ -903,11 +903,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20915-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20261212T140000
 DTEND;TZID=America/New_York:20261212T160000
 LOCATION:East Lansing\, Mich., Breslin Center
-SUMMARY:Michigan State University Men's Basketball vs Merrimack
+SUMMARY:Michigan State University Men's Basketball vs Merrimack (TV: BTN)
 DESCRIPTION:Michigan State University Men's Basketball vs Merrimack\nStreaming Audio: https://msuspartans.com/showcase?Live=1748\nTickets: System.Threading.Tasks.Task`1[System.String]\n https://msuspartans.com/calendar.aspx?game_id=20915&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20915&amp;sport_id=6
 PRIORITY:3
@@ -915,11 +915,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20916-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20261219T170000
 DTEND;TZID=America/New_York:20261219T190000
 LOCATION:Palm Springs\, Calif.
-SUMMARY:Michigan State University Men's Basketball vs Gonzaga
+SUMMARY:Michigan State University Men's Basketball vs Gonzaga (TV: CBS)
 DESCRIPTION:Michigan State University Men's Basketball vs Gonzaga\nStreaming Audio: https://msuspartans.com/showcase?Live=1749\n https://msuspartans.com/calendar.aspx?game_id=20916&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20916&amp;sport_id=6
 PRIORITY:3
@@ -927,7 +927,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20917-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20261222T180000
 DTEND;TZID=America/New_York:20261222T200000
 LOCATION:East Lansing\, Mich., Breslin Center
@@ -939,11 +939,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20918-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20261229T200000
 DTEND;TZID=America/New_York:20261229T220000
 LOCATION:East Lansing\, Mich., Breslin Center
-SUMMARY:Michigan State University Men's Basketball vs Pennsylvania
+SUMMARY:Michigan State University Men's Basketball vs Pennsylvania (TV: FS1)
 DESCRIPTION:Michigan State University Men's Basketball vs Pennsylvania\nStreaming Audio: https://msuspartans.com/showcase?Live=1751\nTickets: System.Threading.Tasks.Task`1[System.String]\n https://msuspartans.com/calendar.aspx?game_id=20918&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20918&amp;sport_id=6
 PRIORITY:3
@@ -951,11 +951,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20919-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20270102T154500
 DTEND;TZID=America/New_York:20270102T174500
 LOCATION:Lincoln\, NE
-SUMMARY:Michigan State University Men's Basketball at Nebraska
+SUMMARY:Michigan State University Men's Basketball at Nebraska (TV: CBS)
 DESCRIPTION:Michigan State University Men's Basketball at Nebraska\nStreaming Audio: https://msuspartans.com/showcase?Live=1752\n https://msuspartans.com/calendar.aspx?game_id=20919&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20919&amp;sport_id=6
 PRIORITY:3
@@ -963,11 +963,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20920-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20270105T183000
 DTEND;TZID=America/New_York:20270105T203000
 LOCATION:East Lansing\, Mich., Breslin Center
-SUMMARY:Michigan State University Men's Basketball vs Washington
+SUMMARY:Michigan State University Men's Basketball vs Washington (TV: FS1)
 DESCRIPTION:Michigan State University Men's Basketball vs Washington\nStreaming Audio: https://msuspartans.com/showcase?Live=1753\nTickets: System.Threading.Tasks.Task`1[System.String]\n https://msuspartans.com/calendar.aspx?game_id=20920&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20920&amp;sport_id=6
 PRIORITY:3
@@ -975,11 +975,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20921-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20270109T200000
 DTEND;TZID=America/New_York:20270109T220000
 LOCATION:Los Angeles\, CA
-SUMMARY:Michigan State University Men's Basketball at UCLA
+SUMMARY:Michigan State University Men's Basketball at UCLA (TV: FOX)
 DESCRIPTION:Michigan State University Men's Basketball at UCLA\nStreaming Audio: https://msuspartans.com/showcase?Live=1754\n https://msuspartans.com/calendar.aspx?game_id=20921&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20921&amp;sport_id=6
 PRIORITY:3
@@ -987,11 +987,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20922-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20270112T220000
 DTEND;TZID=America/New_York:20270112T235959
 LOCATION:Los Angeles\, CA
-SUMMARY:Michigan State University Men's Basketball at USC
+SUMMARY:Michigan State University Men's Basketball at USC (TV: Peacock)
 DESCRIPTION:Michigan State University Men's Basketball at USC\nStreaming Audio: https://msuspartans.com/showcase?Live=1755\n https://msuspartans.com/calendar.aspx?game_id=20922&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20922&amp;sport_id=6
 PRIORITY:3
@@ -999,11 +999,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20923-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20270116T160000
 DTEND;TZID=America/New_York:20270116T180000
 LOCATION:East Lansing\, Mich., Breslin Center
-SUMMARY:Michigan State University Men's Basketball vs Oregon- Go Green, Wear White
+SUMMARY:Michigan State University Men's Basketball vs Oregon- Go Green, Wear White (TV: FS1)
 DESCRIPTION:Michigan State University Men's Basketball vs Oregon- Go Green, Wear White\nStreaming Audio: https://msuspartans.com/showcase?Live=1756\nTickets: System.Threading.Tasks.Task`1[System.String]\n https://msuspartans.com/calendar.aspx?game_id=20923&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20923&amp;sport_id=6
 PRIORITY:3
@@ -1011,11 +1011,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20924-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20270123T130000
 DTEND;TZID=America/New_York:20270123T150000
 LOCATION:Columbus\, OH
-SUMMARY:Michigan State University Men's Basketball at Ohio State 
+SUMMARY:Michigan State University Men's Basketball at Ohio State  (TV: CBS)
 DESCRIPTION:Michigan State University Men's Basketball at Ohio State \nStreaming Audio: https://msuspartans.com/showcase?Live=1757\n https://msuspartans.com/calendar.aspx?game_id=20924&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20924&amp;sport_id=6
 PRIORITY:3
@@ -1023,11 +1023,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20925-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20270126T190000
 DTEND;TZID=America/New_York:20270126T210000
 LOCATION:East Lansing\, Mich., Breslin Center
-SUMMARY:Michigan State University Men's Basketball vs Penn State- Coaches v Cancer
+SUMMARY:Michigan State University Men's Basketball vs Penn State- Coaches v Cancer (TV: BTN)
 DESCRIPTION:Michigan State University Men's Basketball vs Penn State- Coaches v Cancer\nStreaming Audio: https://msuspartans.com/showcase?Live=1758\n https://msuspartans.com/calendar.aspx?game_id=20925&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20925&amp;sport_id=6
 PRIORITY:3
@@ -1035,11 +1035,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20926-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;VALUE=DATE:20270130
 DTEND;VALUE=DATE:20270131
 LOCATION:East Lansing\, Mich., Breslin Center
-SUMMARY:Michigan State University Men's Basketball vs Purdue (time TBD)
+SUMMARY:Michigan State University Men's Basketball vs Purdue (TV: FOX) (time TBD)
 DESCRIPTION:Michigan State University Men's Basketball vs Purdue\nStreaming Audio: https://msuspartans.com/showcase?Live=1759\n https://msuspartans.com/calendar.aspx?game_id=20926&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20926&amp;sport_id=6
 PRIORITY:3
@@ -1047,11 +1047,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20927-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20270202T190000
 DTEND;TZID=America/New_York:20270202T210000
 LOCATION:East Lansing\, Mich., Breslin Center
-SUMMARY:Michigan State University Men's Basketball vs Maryland
+SUMMARY:Michigan State University Men's Basketball vs Maryland (TV: Peacock)
 DESCRIPTION:Michigan State University Men's Basketball vs Maryland\nStreaming Audio: https://msuspartans.com/showcase?Live=1760\n https://msuspartans.com/calendar.aspx?game_id=20927&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20927&amp;sport_id=6
 PRIORITY:3
@@ -1059,11 +1059,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20928-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20270205T200000
 DTEND;TZID=America/New_York:20270205T220000
 LOCATION:Urbana-Champaign\, IL
-SUMMARY:Michigan State University Men's Basketball at Illinois
+SUMMARY:Michigan State University Men's Basketball at Illinois (TV: FOX)
 DESCRIPTION:Michigan State University Men's Basketball at Illinois\nStreaming Audio: https://msuspartans.com/showcase?Live=1761\n https://msuspartans.com/calendar.aspx?game_id=20928&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20928&amp;sport_id=6
 PRIORITY:3
@@ -1071,11 +1071,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20929-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20270210T183000
 DTEND;TZID=America/New_York:20270210T203000
 LOCATION:East Lansing\, Mich., Breslin Center
-SUMMARY:Michigan State University Men's Basketball vs Rutgers
+SUMMARY:Michigan State University Men's Basketball vs Rutgers (TV: BTN)
 DESCRIPTION:Michigan State University Men's Basketball vs Rutgers\nStreaming Audio: https://msuspartans.com/showcase?Live=1762\n https://msuspartans.com/calendar.aspx?game_id=20929&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20929&amp;sport_id=6
 PRIORITY:3
@@ -1083,11 +1083,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20930-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20270213T130000
 DTEND;TZID=America/New_York:20270213T150000
 LOCATION:Ann Arbor\, MI
-SUMMARY:Michigan State University Men's Basketball at Michigan
+SUMMARY:Michigan State University Men's Basketball at Michigan (TV: CBS)
 DESCRIPTION:Michigan State University Men's Basketball at Michigan\nStreaming Audio: https://msuspartans.com/showcase?Live=1763\n https://msuspartans.com/calendar.aspx?game_id=20930&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20930&amp;sport_id=6
 PRIORITY:3
@@ -1095,11 +1095,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20931-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20270216T210000
 DTEND;TZID=America/New_York:20270216T230000
 LOCATION:Iowa City\, IA
-SUMMARY:Michigan State University Men's Basketball at Iowa
+SUMMARY:Michigan State University Men's Basketball at Iowa (TV: Peacock)
 DESCRIPTION:Michigan State University Men's Basketball at Iowa\nStreaming Audio: https://msuspartans.com/showcase?Live=1764\n https://msuspartans.com/calendar.aspx?game_id=20931&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20931&amp;sport_id=6
 PRIORITY:3
@@ -1107,11 +1107,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20932-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20270220T200000
 DTEND;TZID=America/New_York:20270220T220000
 LOCATION:East Lansing\, Mich., Breslin Center
-SUMMARY:Michigan State University Men's Basketball vs Nebraska
+SUMMARY:Michigan State University Men's Basketball vs Nebraska (TV: FOX)
 DESCRIPTION:Michigan State University Men's Basketball vs Nebraska\nStreaming Audio: https://msuspartans.com/showcase?Live=1765\n https://msuspartans.com/calendar.aspx?game_id=20932&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20932&amp;sport_id=6
 PRIORITY:3
@@ -1119,11 +1119,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20933-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20270223T190000
 DTEND;TZID=America/New_York:20270223T210000
 LOCATION:Bloomington\, IN
-SUMMARY:Michigan State University Men's Basketball at Indiana
+SUMMARY:Michigan State University Men's Basketball at Indiana (TV: Peacock)
 DESCRIPTION:Michigan State University Men's Basketball at Indiana\nStreaming Audio: https://msuspartans.com/showcase?Live=1766\n https://msuspartans.com/calendar.aspx?game_id=20933&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20933&amp;sport_id=6
 PRIORITY:3
@@ -1131,11 +1131,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20934-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20270226T200000
 DTEND;TZID=America/New_York:20270226T220000
 LOCATION:East Lansing\, Mich., Breslin Center
-SUMMARY:Michigan State University Men's Basketball vs Michigan- Go Green, Wear White
+SUMMARY:Michigan State University Men's Basketball vs Michigan- Go Green, Wear White (TV: FOX)
 DESCRIPTION:Michigan State University Men's Basketball vs Michigan- Go Green, Wear White\nStreaming Audio: https://msuspartans.com/showcase?Live=1767\n https://msuspartans.com/calendar.aspx?game_id=20934&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20934&amp;sport_id=6
 PRIORITY:3
@@ -1143,11 +1143,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20935-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20270302T203000
 DTEND;TZID=America/New_York:20270302T223000
 LOCATION:Evanston\, IL
-SUMMARY:Michigan State University Men's Basketball at Northwestern
+SUMMARY:Michigan State University Men's Basketball at Northwestern (TV: FS1)
 DESCRIPTION:Michigan State University Men's Basketball at Northwestern\nStreaming Audio: https://msuspartans.com/showcase?Live=1768\n https://msuspartans.com/calendar.aspx?game_id=20935&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20935&amp;sport_id=6
 PRIORITY:3
@@ -1155,11 +1155,11 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20936-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;TZID=America/New_York:20270306T154500
 DTEND;TZID=America/New_York:20270306T174500
 LOCATION:East Lansing\, Mich., Breslin Center
-SUMMARY:Michigan State University Men's Basketball vs Wisconsin- Senior Celebrations
+SUMMARY:Michigan State University Men's Basketball vs Wisconsin- Senior Celebrations (TV: CBS)
 DESCRIPTION:Michigan State University Men's Basketball vs Wisconsin- Senior Celebrations\nStreaming Audio: https://msuspartans.com/showcase?Live=1769\n https://msuspartans.com/calendar.aspx?game_id=20936&amp;sport_id=6
 URL:https://msuspartans.com/calendar.aspx?game_id=20936&amp;sport_id=6
 PRIORITY:3
@@ -1167,7 +1167,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20937-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;VALUE=DATE:20270309
 DTEND;VALUE=DATE:20270310
 LOCATION:Indianapolis\, Ind.
@@ -1179,7 +1179,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20938-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;VALUE=DATE:20270310
 DTEND;VALUE=DATE:20270311
 LOCATION:Indianapolis\, Ind.
@@ -1191,7 +1191,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20939-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;VALUE=DATE:20270311
 DTEND;VALUE=DATE:20270312
 LOCATION:Indianapolis\, Ind.
@@ -1203,7 +1203,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20940-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;VALUE=DATE:20270312
 DTEND;VALUE=DATE:20270313
 LOCATION:Indianapolis\, Ind.
@@ -1215,7 +1215,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20941-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;VALUE=DATE:20270313
 DTEND;VALUE=DATE:20270314
 LOCATION:Indianapolis\, Ind.
@@ -1227,7 +1227,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20942-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;VALUE=DATE:20270314
 DTEND;VALUE=DATE:20270315
 LOCATION:Indianapolis\, Ind.
@@ -1239,7 +1239,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20943-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;VALUE=DATE:20270316
 DTEND;VALUE=DATE:20270317
 LOCATION:Dayton\, Ohio / Wichita\, Kan.
@@ -1251,7 +1251,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20944-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;VALUE=DATE:20270317
 DTEND;VALUE=DATE:20270318
 LOCATION:Dayton\, Ohio / Wichita\, Kan.
@@ -1263,7 +1263,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20945-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;VALUE=DATE:20270318
 DTEND;VALUE=DATE:20270319
 LOCATION:Multiple Locations
@@ -1275,7 +1275,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20946-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;VALUE=DATE:20270319
 DTEND;VALUE=DATE:20270320
 LOCATION:Multiple Locations
@@ -1287,7 +1287,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20947-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;VALUE=DATE:20270320
 DTEND;VALUE=DATE:20270321
 LOCATION:Multiple Locations
@@ -1299,7 +1299,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20948-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;VALUE=DATE:20270321
 DTEND;VALUE=DATE:20270322
 LOCATION:Multiple Locations
@@ -1311,7 +1311,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20949-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;VALUE=DATE:20270325
 DTEND;VALUE=DATE:20270326
 LOCATION:Multiple Locations
@@ -1323,7 +1323,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20950-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;VALUE=DATE:20270326
 DTEND;VALUE=DATE:20270327
 LOCATION:Multiple Locations
@@ -1335,7 +1335,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20951-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;VALUE=DATE:20270327
 DTEND;VALUE=DATE:20270328
 LOCATION:Multiple Locations
@@ -1347,7 +1347,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20952-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;VALUE=DATE:20270328
 DTEND;VALUE=DATE:20270329
 LOCATION:Multiple Locations
@@ -1359,7 +1359,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20953-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;VALUE=DATE:20270403
 DTEND;VALUE=DATE:20270404
 LOCATION:Detroit\, Mich.
@@ -1371,7 +1371,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20954-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;VALUE=DATE:20270404
 DTEND;VALUE=DATE:20270405
 LOCATION:Detroit\, Mich.
@@ -1383,7 +1383,7 @@ CATEGORIES:Michigan State
 END:VEVENT
 BEGIN:VEVENT
 UID:vcal_20955-msuspartans.com
-DTSTAMP:20261106T053443Z
+DTSTAMP:20261106T121914Z
 DTSTART;VALUE=DATE:20270405
 DTEND;VALUE=DATE:20270406
 LOCATION:Detroit\, Mich.
@@ -1429,7 +1429,7 @@ DTSTAMP:20260926T204709Z
 DTSTART;TZID=America/New_York:20260926T140000
 DTEND;TZID=America/New_York:20260926T170000
 LOCATION:West Lafayette\, Ind.
-SUMMARY:Purdue Football vs. Notre Dame (TV: NBCUniversal_Peacock_)
+SUMMARY:Purdue Football vs. Notre Dame (TV: Peacock)
 URL:https://purduesports.com/sports/football/schedule
 CATEGORIES:Purdue
 END:VEVENT
@@ -1475,7 +1475,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-fb-16513@purduesports.com
-DTSTAMP:20261106T054104Z
+DTSTAMP:20261106T122230Z
 DTSTART;TZID=America/New_York:20261107T123000
 DTEND;TZID=America/New_York:20261107T153000
 LOCATION:West Lafayette\, Ind.
@@ -1485,7 +1485,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-fb-16515@purduesports.com
-DTSTAMP:20261106T054104Z
+DTSTAMP:20261106T122230Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 LOCATION:Iowa City\, Iowa
@@ -1495,7 +1495,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-fb-16516@purduesports.com
-DTSTAMP:20261106T054104Z
+DTSTAMP:20261106T122230Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 LOCATION:West Lafayette\, Ind.
@@ -1505,7 +1505,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-fb-16517@purduesports.com
-DTSTAMP:20261106T054104Z
+DTSTAMP:20261106T122230Z
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
 LOCATION:Bloomington\, Ind.
@@ -1549,13 +1549,13 @@ DTSTAMP:20261103T004301Z
 DTSTART;TZID=America/New_York:20261102T193000
 DTEND;TZID=America/New_York:20261102T223000
 LOCATION:Las Vegas\, Nev. / T-Mobile Arena
-SUMMARY:Purdue Men's Basketball vs. Gonzaga (TV: TNT_Logo_2016)
+SUMMARY:Purdue Men's Basketball vs. Gonzaga (TV: TNT)
 URL:https://purduesports.com/sports/mens-basketball/schedule
 CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-16870@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20261106T183000
 DTEND;TZID=America/New_York:20261106T213000
 LOCATION:West Lafayette\, Ind.
@@ -1565,7 +1565,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-16871@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20261109T203000
 DTEND;TZID=America/New_York:20261109T233000
 LOCATION:West Lafayette\, Ind.
@@ -1575,7 +1575,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-16873@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20261113T190000
 DTEND;TZID=America/New_York:20261113T220000
 LOCATION:West Lafayette\, Ind.
@@ -1585,7 +1585,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-16874@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20261117T183000
 DTEND;TZID=America/New_York:20261117T213000
 LOCATION:West Lafayette\, Ind.
@@ -1595,7 +1595,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-16875@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20261120T190000
 DTEND;TZID=America/New_York:20261120T220000
 LOCATION:West Lafayette\, Ind.
@@ -1605,7 +1605,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-16876@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20261124T180000
 DTEND;TZID=America/New_York:20261124T210000
 LOCATION:Fort Myers\, Fla. / Suncoast Credit Union Arena
@@ -1615,7 +1615,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-16877@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20261126T120000
 DTEND;TZID=America/New_York:20261126T150000
 LOCATION:Fort Myers\, Fla. / Suncoast Credit Union Arena
@@ -1625,37 +1625,37 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17215@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20261201T190000
 DTEND;TZID=America/New_York:20261201T220000
 LOCATION:West Lafayette\, Ind.
-SUMMARY:Purdue Men's Basketball vs. Iowa (TV: NBCUniversal_Peacock_)
+SUMMARY:Purdue Men's Basketball vs. Iowa (TV: Peacock)
 URL:https://purduesports.com/sports/mens-basketball/schedule
 CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-16878@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20261205T200000
 DTEND;TZID=America/New_York:20261205T230000
 LOCATION:Ames\, Iowa
-SUMMARY:Purdue Men's Basketball at Iowa State (TV: espn-logo-espn-symbol-meaning-png-logo-0)
+SUMMARY:Purdue Men's Basketball at Iowa State (TV: ESPN)
 URL:https://purduesports.com/sports/mens-basketball/schedule
 CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17216@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20261208T210000
 DTEND;TZID=America/New_York:20261209T000000
 LOCATION:Madison\, Wis.
-SUMMARY:Purdue Men's Basketball at Wisconsin (TV: NBCUniversal_Peacock_)
+SUMMARY:Purdue Men's Basketball at Wisconsin (TV: Peacock)
 URL:https://purduesports.com/sports/mens-basketball/schedule
 CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-16879@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20261211T200000
 DTEND;TZID=America/New_York:20261211T230000
 LOCATION:West Lafayette\, Ind.
@@ -1665,7 +1665,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-16995@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20261219T173000
 DTEND;TZID=America/New_York:20261219T203000
 LOCATION:Indianapolis\, Ind.
@@ -1675,7 +1675,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-16880@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20261221T180000
 DTEND;TZID=America/New_York:20261221T210000
 LOCATION:West Lafayette\, Ind.
@@ -1685,7 +1685,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17217@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20261230T180000
 DTEND;TZID=America/New_York:20261230T210000
 LOCATION:West Lafayette\, Ind.
@@ -1695,7 +1695,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17218@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20270102T120000
 DTEND;TZID=America/New_York:20270102T150000
 LOCATION:West Lafayette\, Ind.
@@ -1705,17 +1705,17 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17219@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20270105T210000
 DTEND;TZID=America/New_York:20270106T000000
 LOCATION:Champaign\, Ill.
-SUMMARY:Purdue Men's Basketball at Illinois (TV: NBCUniversal_Peacock_)
+SUMMARY:Purdue Men's Basketball at Illinois (TV: Peacock)
 URL:https://purduesports.com/sports/mens-basketball/schedule
 CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17220@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20270108T200000
 DTEND;TZID=America/New_York:20270108T230000
 LOCATION:Ann Arbor\, Mich.
@@ -1725,17 +1725,17 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17221@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20270112T200000
 DTEND;TZID=America/New_York:20270112T230000
 LOCATION:West Lafayette\, Ind.
-SUMMARY:Purdue Men's Basketball vs. Ohio State (TV: NBCUniversal_Peacock_)
+SUMMARY:Purdue Men's Basketball vs. Ohio State (TV: Peacock)
 URL:https://purduesports.com/sports/mens-basketball/schedule
 CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17222@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20270117T140000
 DTEND;TZID=America/New_York:20270117T170000
 LOCATION:Minneapolis\, Minn.
@@ -1745,7 +1745,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17223@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20270120T183000
 DTEND;TZID=America/New_York:20270120T213000
 LOCATION:State College\, Pa.
@@ -1755,7 +1755,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17224@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20270123T120000
 DTEND;TZID=America/New_York:20270123T150000
 LOCATION:West Lafayette\, Ind.
@@ -1765,17 +1765,17 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17225@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20270126T180000
 DTEND;TZID=America/New_York:20270126T210000
 LOCATION:West Lafayette\, Ind.
-SUMMARY:Purdue Men's Basketball vs. Nebraska (TV: NBCUniversal_Peacock_)
+SUMMARY:Purdue Men's Basketball vs. Nebraska (TV: Peacock)
 URL:https://purduesports.com/sports/mens-basketball/schedule
 CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17226@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;VALUE=DATE:20270130
 DTEND;VALUE=DATE:20270131
 LOCATION:East Lansing\, Mich.
@@ -1785,7 +1785,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17227@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20270203T183000
 DTEND;TZID=America/New_York:20270203T213000
 LOCATION:Piscataway\, N.J.
@@ -1795,7 +1795,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17228@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20270206T120000
 DTEND;TZID=America/New_York:20270206T150000
 LOCATION:West Lafayette\, Ind.
@@ -1805,7 +1805,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17229@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20270212T200000
 DTEND;TZID=America/New_York:20270212T230000
 LOCATION:West Lafayette\, Ind.
@@ -1815,17 +1815,17 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17230@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20270216T190000
 DTEND;TZID=America/New_York:20270216T220000
 LOCATION:Bloomington\, Ind.
-SUMMARY:Purdue Men's Basketball at Indiana (TV: NBCUniversal_Peacock_)
+SUMMARY:Purdue Men's Basketball at Indiana (TV: Peacock)
 URL:https://purduesports.com/sports/mens-basketball/schedule
 CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17231@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20270221T130000
 DTEND;TZID=America/New_York:20270221T160000
 LOCATION:West Lafayette\, Ind.
@@ -1835,7 +1835,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17232@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20270224T223000
 DTEND;TZID=America/New_York:20270225T013000
 LOCATION:Eugene\, Ore.
@@ -1845,7 +1845,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17233@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20270227T203000
 DTEND;TZID=America/New_York:20270227T233000
 LOCATION:Seattle\, Wash.
@@ -1855,7 +1855,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17234@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;TZID=America/New_York:20270305T200000
 DTEND;TZID=America/New_York:20270305T230000
 LOCATION:West Lafayette\, Ind.
@@ -1865,7 +1865,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17235@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;VALUE=DATE:20270309
 DTEND;VALUE=DATE:20270310
 LOCATION:Indianapolis\, Ind.
@@ -1875,7 +1875,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17236@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;VALUE=DATE:20270310
 DTEND;VALUE=DATE:20270311
 LOCATION:Indianapolis\, Ind.
@@ -1885,7 +1885,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17237@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;VALUE=DATE:20270311
 DTEND;VALUE=DATE:20270312
 LOCATION:Indianapolis\, Ind.
@@ -1895,7 +1895,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17238@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;VALUE=DATE:20270312
 DTEND;VALUE=DATE:20270313
 LOCATION:Indianapolis\, Ind.
@@ -1905,7 +1905,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17239@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;VALUE=DATE:20270313
 DTEND;VALUE=DATE:20270314
 LOCATION:Indianapolis\, Ind.
@@ -1915,7 +1915,7 @@ CATEGORIES:Purdue
 END:VEVENT
 BEGIN:VEVENT
 UID:purdue-mbb-17240@purduesports.com
-DTSTAMP:20261106T054107Z
+DTSTAMP:20261106T122233Z
 DTSTART;VALUE=DATE:20270314
 DTEND;VALUE=DATE:20270315
 LOCATION:Indianapolis\, Ind.
