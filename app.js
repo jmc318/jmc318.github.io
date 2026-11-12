@@ -1,6 +1,6 @@
 const STORAGE_KEY = 'beachWeatherLocations';
 const CACHE_PREFIX = 'beachWeatherCache_';
-const CACHE_VERSION = 15;
+const CACHE_VERSION = 16;
 const CACHE_MAX_AGE_MS = 30 * 60 * 1000;
 const STEP_HOURS = 3;
 const TIMELINE_STEPS = 56; // 7 days at 3-hour resolution
@@ -134,6 +134,12 @@ function sumQpfInches(qpfIntervals, rangeStart, rangeEnd) {
   return Math.round((totalMm / 25.4) * 100) / 100;
 }
 
+// Same overlap-weighted sum, for NOAA's snowfall amount, rounded to 0.1".
+function sumSnowInches(snowIntervals, rangeStart, rangeEnd) {
+  const inches = sumQpfInches(snowIntervals, rangeStart, rangeEnd);
+  return Math.round(inches * 10) / 10;
+}
+
 function degToCompass(deg) {
   if (deg === null || deg === undefined) return '';
   const dirs = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];
@@ -170,6 +176,7 @@ function buildTimeline(gridProps) {
   const pop = parseSeries(gridProps.probabilityOfPrecipitation && gridProps.probabilityOfPrecipitation.values);
   const qpf = parseSeries(gridProps.quantitativePrecipitation && gridProps.quantitativePrecipitation.values);
   const weather = parseSeries(gridProps.weather && gridProps.weather.values);
+  const snow = parseSeries(gridProps.snowfallAmount && gridProps.snowfallAmount.values);
 
   const now = new Date();
   const startHour = now.getHours() - (now.getHours() % STEP_HOURS);
@@ -177,6 +184,7 @@ function buildTimeline(gridProps) {
 
   const timeline = [];
   let lastQpfInterval = null;
+  let lastSnowInterval = null;
   for (let i = 0; i < TIMELINE_STEPS; i++) {
     const t = new Date(start.getTime() + i * STEP_HOURS * 3600000);
     const c = sampleAt(temp, t);
@@ -193,6 +201,13 @@ function buildTimeline(gridProps) {
       qpfInches = Math.round((qpfIv.value / 25.4) * 100) / 100;
     }
     if (qpfIv) lastQpfInterval = qpfIv;
+    // snowfall works the same way as rain: one total per NOAA block
+    const snowIv = findInterval(snow, t);
+    let snowInches = 0;
+    if (snowIv && snowIv !== lastSnowInterval && snowIv.value !== null) {
+      snowInches = Math.round((snowIv.value / 25.4) * 10) / 10;
+    }
+    if (snowIv) lastSnowInterval = snowIv;
     timeline.push({
       t: t.toISOString(),
       temp: c === null ? null : Math.round(c * 9 / 5 + 32),
@@ -208,6 +223,8 @@ function buildTimeline(gridProps) {
       // contiguous columns from the same block into one shaded span.
       qpfKey: qpfIv && qpfIv.value !== null ? qpfIv.start.toISOString() : null,
       thunderPct: getThunderPct(sampleAt(weather, t)),
+      snowIn: snowInches,
+      snowKey: snowIv && snowIv.value !== null ? snowIv.start.toISOString() : null,
     });
   }
   return timeline;
@@ -242,9 +259,11 @@ async function resolveAndFetchForecast(lat, lon) {
   }
 
   const qpfSeries = parseSeries(gridData.properties.quantitativePrecipitation && gridData.properties.quantitativePrecipitation.values);
+  const snowSeries = parseSeries(gridData.properties.snowfallAmount && gridData.properties.snowfallAmount.values);
   const periods = forecastData.properties.periods.map(p => ({
     ...p,
     rainIn: sumQpfInches(qpfSeries, new Date(p.startTime), new Date(p.endTime)),
+    snowIn: sumSnowInches(snowSeries, new Date(p.startTime), new Date(p.endTime)),
   }));
 
   return {
@@ -274,11 +293,11 @@ function formatDayLabel(d) {
   return d.toLocaleDateString('en-US', { weekday: 'short' }) + ' ' + (d.getMonth() + 1) + '/' + d.getDate();
 }
 
-const ROW = { axisTop: 30, temp: 100, humidity: 62, sky: 62, wind: 78, rain: 78, thunder: 34, axisBottom: 24 };
+const ROW = { axisTop: 30, temp: 100, humidity: 62, sky: 62, wind: 78, rain: 78, snow: 34, thunder: 34, axisBottom: 24 };
 const COL_W = 46;
 
 function bandY(rowKey) {
-  const order = ['axisTop', 'temp', 'humidity', 'sky', 'wind', 'rain', 'thunder', 'axisBottom'];
+  const order = ['axisTop', 'temp', 'humidity', 'sky', 'wind', 'rain', 'snow', 'thunder', 'axisBottom'];
   let y = 0;
   for (const key of order) {
     if (key === rowKey) return y;
@@ -315,7 +334,7 @@ function buildHourlyChart(timeline) {
   });
 
   // row separator lines
-  ['temp', 'humidity', 'sky', 'wind', 'rain', 'thunder'].forEach(key => {
+  ['temp', 'humidity', 'sky', 'wind', 'rain', 'snow', 'thunder'].forEach(key => {
     svg += `<line x1="0" y1="${bandY(key)}" x2="${width}" y2="${bandY(key)}" stroke="#888" stroke-width="1.5"/>`;
   });
 
@@ -455,6 +474,29 @@ function buildHourlyChart(timeline) {
     }
   });
 
+  // snow: expected snowfall per NOAA block, shaded across the block's columns
+  const snTop = bandY('snow'), snH = ROW.snow;
+  {
+    let i = 0;
+    while (i < timeline.length) {
+      const key = timeline[i].snowKey;
+      if (key === null || key === undefined) { i++; continue; }
+      let j = i;
+      while (j + 1 < timeline.length && timeline[j + 1].snowKey === key) j++;
+      if (timeline[i].snowIn > 0) {
+        const xStart = i * COL_W, xEnd = (j + 1) * COL_W;
+        svg += `<rect x="${xStart}" y="${snTop + 14}" width="${xEnd - xStart}" height="17" fill="#00838f" fill-opacity="0.12" stroke="#00838f" stroke-width="1" stroke-opacity="0.5"/>`;
+      }
+      i = j + 1;
+    }
+  }
+  svg += `<text x="4" y="${snTop + 11}" font-size="10" fill="#555">Snow in</text>`;
+  timeline.forEach((p, i) => {
+    if (!(p.snowIn > 0)) return;
+    const x = i * COL_W + COL_W / 2;
+    svg += `<text x="${x}" y="${snTop + 27}" font-size="9" fill="#006064" font-weight="600" text-anchor="middle">❄${p.snowIn.toFixed(1)}"</text>`;
+  });
+
   // thunder: approximate chance above a lightning icon
   const thTop = bandY('thunder'), thH = ROW.thunder;
   timeline.forEach((p, i) => {
@@ -473,6 +515,7 @@ function buildHourlyChart(timeline) {
     <div class="hc-row" style="height:${ROW.sky}px">Sky<br>cover</div>
     <div class="hc-row" style="height:${ROW.wind}px">Wind<br>mph</div>
     <div class="hc-row" style="height:${ROW.rain}px">Precip<br>%&nbsp;/&nbsp;in</div>
+    <div class="hc-row" style="height:${ROW.snow}px">Snow<br>in</div>
     <div class="hc-row" style="height:${ROW.thunder}px">Thunder<br>%</div>
     <div class="hc-row" style="height:${ROW.axisBottom}px"></div>
   </div>`;
@@ -493,6 +536,7 @@ function renderPanelContent(panelEl, loc, data) {
     const precipLines = [];
     if (pct > 0) precipLines.push(`${pct}% rain`);
     if (p.rainIn > 0) precipLines.push(`${p.rainIn}" rain`);
+    if (p.snowIn > 0) precipLines.push(`${p.snowIn}" snow`);
     return `<div class="fcard">
       <div class="name">${escapeHtml(p.name)}</div>
       <div class="icon">${iconFor(p.shortForecast, p.isDaytime)}</div>
