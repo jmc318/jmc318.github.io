@@ -541,15 +541,15 @@ def _events_by_uid(ics_text):
 
 
 def notify_newly_timed(previous_ics, new_ics):
-    """ntfy Jeff when a game flips from all-day (TBD) to a real time, since
-    Outlook.com may keep showing the old TBD copy for a day or more."""
+    """ntfy Jeff when a game flips from all-day (TBD) to a real time. FYI only:
+    Jeff's PC copies the feed into Outlook every 3 hours (Sync-SportsCalendar.ps1, 2026-11-22)."""
     old, new = _events_by_uid(previous_ics), _events_by_uid(new_ics)
     changed = [new[u][1] for u, (allday, _) in old.items()
                if allday and u in new and not new[u][0]]
     if not changed:
         return
     names = [re.sub(r" \(time TBD\)", "", c) for c in changed]
-    body = "Game time announced:\n" + "\n".join(names[:10]) + "\nIf Outlook still shows TBD, re-subscribe."
+    body = "Game time announced:\n" + "\n".join(names[:10]) + "\nOutlook picks this up within 3 hours on its own - nothing to do."
     try:
         req = urllib.request.Request(NTFY_URL, data=body.encode("utf-8"),
                                      headers={"Title": "Sports calendar: times set"})
